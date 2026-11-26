@@ -1,7 +1,0 @@
-﻿STT,Chiều chất lượng DAMA,Bản thô (Trước tiền xử lý),Bản Nền tảng 22 (Sau tiền xử lý),Chênh lệch,Đánh giá
-1,1. Completeness (Mức bản ghi),93.56%,100.00% (21 cột sạch 0 null),+6.44%,ĐẠT (Điền khuyết Group Median 3 cấp)
-2,2. Consistency (Tính nhất quán),36.69%,100.00% (92.68M dòng thỏa mãn logic),+63.31%,"ĐẠT (Loại bỏ tàu neo đậu, trôi dạt sog < 1 kn)"
-3,3. Accuracy (Tính chính xác động học),45.90%,"92.73% toàn năm (Q1-Q3: 100%, Q4: 70.90%)",+46.82%,ĐẠT (Tương quan r tăng từ +0.28 lên +0.78)
-4,4. Timeliness (Tính kịp thời),65.00%,100.00% (365/365 ngày trọn vẹn năm 2025),+35.00%,ĐẠT (Giới hạn cửa sổ dự báo tác nghiệp <= 168h)
-5,5. Validity (Tính hợp lệ),96.31%,100.00% (Khớp schema PyArrow & vật lý),+3.69%,"ĐẠT (Lọc bỏ tọa độ ngoại lai, kích thước âm)"
-6,6. Uniqueness (Tính duy nhất),99.72%,100.00% (Khử sạch hoàn toàn trùng lặp),+0.28%,ĐẠT (SlidingBatchDeduplicator 7 ngày)

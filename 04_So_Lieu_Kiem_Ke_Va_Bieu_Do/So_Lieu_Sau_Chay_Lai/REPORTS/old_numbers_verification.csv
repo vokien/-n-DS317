@@ -1,8 +1,0 @@
-﻿metric,value
-raw_pre_split_total_rows,257652436.0
-raw18_split_train_rows,209615498.0
-raw18_split_test_rows,47319756.0
-raw_dama_total_rows,256935254.0
-base22_total_rows,92681850.0
-base22_non_cargo_missing,0.0
-base22_pearson_dist_target,0.50971

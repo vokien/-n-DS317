@@ -46,7 +46,7 @@
 |:---:|:---|:---:|:---:|:---:|:---|
 | 1 | **1. Completeness (Mức bản ghi)** | 93.56% | 100.00% (21 cột sạch 0 null) | +6.44% | **ĐẠT** (Điền khuyết Group Median 3 cấp) |
 | 2 | **2. Consistency (Tính nhất quán)** | 36.69% | 100.00% (92.68M dòng thỏa mãn) | +63.31% | **ĐẠT** (Loại bỏ neo đậu status 1,5 & trôi dạt) |
-| 3 | **3. Accuracy (Tính chính xác)** | 45.90% | 92.73% toàn năm (Q1-Q3: 100%, Q4: 70.9%) | +46.82% | **ĐẠT** (Tương quan r tăng từ +0.26 lên +0.78) |
+| 3 | **3. Accuracy (Tính chính xác)** | 45.90% | 92.73% toàn năm (Q1-Q3: 100%, Q4: 70.9%) | +46.82% | **ĐẠT** (Pearson r tăng từ +0.2589 lên +0.5097) |
 | 4 | **4. Timeliness (Tính kịp thời)** | 65.00% | 100.00% (365/365 ngày trọn vẹn) | +35.00% | **ĐẠT** (Giới hạn cửa sổ tác nghiệp <= 168h) |
 | 5 | **5. Validity (Tính hợp lệ)** | 96.31% | 100.00% (Khớp schema PyArrow & vật lý) | +3.69% | **ĐẠT** (Lọc bỏ tọa độ ngoại lai & kích thước âm) |
 | 6 | **6. Uniqueness (Tính duy nhất)** | 99.72% | 100.00% (Khử sạch hoàn toàn trùng lặp) | +0.28% | **ĐẠT** (SlidingBatchDeduplicator 7 ngày) |

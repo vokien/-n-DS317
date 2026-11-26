@@ -1,11 +1,8 @@
-Tong so dong: 80,782,630; so dong mau ve bieu do: 549,612
-[BD1] Target_Hours: mean=38.69h, median~26h, P90~97h, P99~156h, max=168.0h
-      Ty le dong co Target_Hours <= 24h: 48.1%
-      Ty le dong co Target_Hours <= 48h: 70.0%
-      Ty le dong co Target_Hours <= 72h: 82.2%
-[BD2] Pearson r(Dist_To_Berth_NM, Target_Hours) = 0.7629 (so lieu do tu lan chay 5,000 km truoc khi bo Dist_To_Berth_KM va ap nguong 1,800/2,300 NM; quy doi tuong duong theo NM tren tap cu la Target_Hours ~ 0.0983 * Dist_To_Berth_NM + 13.281, 1/slope = 10.2 knots hieu dung - can chay lai Kaggle de cap nhat tri so moi)
-[BD3] sog - Cargo (tàu hàng): median=11.70, Q1=9.30, Q3=14.00
-[BD3] sog - Tanker (tàu dầu): median=11.70, Q1=9.50, Q3=13.20
-[BD3] draft - Cargo (tàu hàng): median=9.00, Q1=7.30, Q3=11.00
-[BD3] draft - Tanker (tàu dầu): median=8.80, Q1=7.90, Q3=10.40
-[BD4] So o luoi co du lieu: 248,485; o dam nhat chua 150,852 ban tin
+[Ghi chú kiểm toán] Các ảnh Hinh1..Hinh4.png trong thư mục này được xuất từ đợt EDA mẫu ban đầu (549,612 bản ghi mẫu; trong đó BD2 từng ghi nhận r = +0.7629 từ đợt tiền xử lý trước khi áp ngưỡng 1,800/2,300 NM).
+Khi trích dẫn số liệu toàn năm chính thức cho đồ án, sử dụng bộ số liệu kiểm kê sau chạy lại trong So_Lieu_Sau_Chay_Lai/:
+- Tập thô trước chia (pre-split, full_summary.json): 320,776,922 bản ghi thô (Pearson raw r = +0.2807; mẫu lọc pre-split 90,586,699 bản ghi đạt r = +0.7772).
+- Tập thô sau chia (RAW18, 01_ban_tho_18_thuoc_tinh): 256,935,254 bản ghi (Train 209,615,498 + Test 47,319,756), Pearson thô r = +0.2589.
+- Tập chuẩn hóa sau tiền xử lý (Base22 / Prep27): 92,681,850 bản ghi (Train 68,489,376 + Test Q4 24,192,474), 0 ô khuyết ngoài cột cargo, Pearson r = +0.50971.
+- Thống kê mô tả vận tốc & mớn nước (RAW18_SPLIT/raw18_moments_and_quantiles.csv):
+  + Train sog: mean=5.76 kn, median=1.70 kn, Q3=11.70 kn; Test sog: mean=5.78 kn, median=2.20 kn, Q3=11.50 kn.
+  + Train draft: mean=8.63 m, median=8.50 m, Q1=6.90 m, Q3=10.60 m; Test draft: mean=8.41 m, median=8.30 m, Q1=6.70 m, Q3=10.30 m.
