@@ -48,7 +48,8 @@
 
 Toàn bộ khung chạy thực nghiệm chuẩn đã được cài đặt tại:
 
-- `Luu_tru_goc/3_Code/DS317_06_Thuc_Nghiem_Baseline_7_Module.ipynb`
+- [`02_Runner_Song_Song_Chinh_Thuc_v2/`](../02_Ma_Nguon_Tien_Xu_Ly_Va_Thuc_Nghiem/02_Runner_Song_Song_Chinh_Thuc_v2/DS317_Runner_Song_Song_1_Baseline_M1_M2_M3.ipynb) (`DS317_Runner_Song_Song_1_Baseline_M1_M2_M3.ipynb` và `DS317_Runner_Song_Song_2_M4_M5_M6_M7.ipynb`)
+- [`03_Notebook_Tach_Le_Tung_Module/DS317_Thuc_Nghiem_00_Baseline.ipynb`](../02_Ma_Nguon_Tien_Xu_Ly_Va_Thuc_Nghiem/03_Notebook_Tach_Le_Tung_Module/DS317_Thuc_Nghiem_00_Baseline.ipynb) (cùng các notebook tách lẻ `M1..M7` và kho output tập trung [`05_Output_Cac_Notebook/`](../05_Output_Cac_Notebook/README.md))
 
 ### Cơ chế Vận hành & Cách Tùy biến cho 7 Thành viên
 

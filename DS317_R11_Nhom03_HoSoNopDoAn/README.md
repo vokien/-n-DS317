@@ -15,5 +15,6 @@ Thư mục chuẩn bị tập hợp sản phẩm nghiệm thu cuối kỳ của 
 | 7 | `07_Demo/` | Mã nguồn ứng dụng Demo (Streamlit / script suy luận ETA) và ảnh/video minh họa |
 | 8 | `08_QuanLyNhom/` | Kế hoạch tổng thể, bảng phân công nhiệm vụ và đánh giá thành viên nhóm |
 
-## Lưu Ý Đẩy Lên GitHub
+## Lưu Ý Đẩy Lên GitHub & Đồng Bộ Output
+- Toàn bộ kết quả đầu ra của các notebook được tập trung trước tại [`05_Output_Cac_Notebook/`](../05_Output_Cac_Notebook/README.md). Khi đã tổng hợp đủ output sau các lượt chạy Kaggle, sử dụng [`dong_bo_ho_so_nop.py`](../05_Output_Cac_Notebook/dong_bo_ho_so_nop.py) (`--dry-run` để xem trước) để sao chép các tệp trọng số và kết quả nhẹ sang `05_Model/` và `06_Results/`.
 - Các tệp dữ liệu hoặc trọng số dung lượng lớn (`>= 50 MB` hoặc `>= 100 MB`) cần kiểm tra với `.gitignore` ở thư mục gốc repo hoặc lưu trữ ngoài qua liên kết trong `04_Data/` / `05_Model/` trước khi `git push`.

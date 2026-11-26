@@ -2,7 +2,7 @@
 
 **Học phần:** DS317 — Khai phá Dữ liệu trong Doanh nghiệp (UIT - ĐHQG-HCM)
 **Nhóm thực hiện:** Nhóm 03 (7 thành viên)
-**Nguồn dữ liệu chuẩn hóa (Engine v2):** `Kết quả chạy Runner 1 và 2/` (`runner1_results.zip`, `runner2_results.zip`, `runner1_master_summary.csv`, `runner2_master_summary.csv`, `m1_common_rows_comparison.csv`, `m7_intervals_m7_adaptive_m7_clusters.csv`) và benchmark điền khuyết thuộc tính thân vỏ tại `Số liệu sau chạy lại/IMPUTE_BENCHMARK/table_6_1_mask_recover.csv`.
+**Nguồn dữ liệu chuẩn hóa (Engine v2):** [`05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/`](../05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/runner1_master_summary.csv) (`runner1_master_summary.csv`, `m1_common_rows_comparison.csv`), [`05_Output_Cac_Notebook/08_Runner_Song_Song_2_M4_M5_M6_M7/results/`](../05_Output_Cac_Notebook/08_Runner_Song_Song_2_M4_M5_M6_M7/results/runner2_master_summary.csv) (`runner2_master_summary.csv`, `m7_intervals_m7_adaptive_m7_clusters.csv`) và benchmark điền khuyết thuộc tính thân vỏ tại [`05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/IMPUTE_BENCHMARK/table_6_1_mask_recover.csv`](../05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/IMPUTE_BENCHMARK/table_6_1_mask_recover.csv).
 
 ---
 

@@ -49,7 +49,7 @@
 * **Mô tả chi tiết:**
   - Tổng hợp số liệu định lượng từ kết quả thực thi pipeline toàn năm `NOAA_AIS_Pipeline_FullYear_2025.ipynb` của Nhóm trưởng để hoàn thiện bảng kiểm kê 7 tiêu chí:
     1. *Nguồn gốc:* NOAA / BOEM thông qua nền tảng Marine Cadastre, thu thập qua mạng lưới trạm bờ VHF của USCG, giấy phép công cộng U.S. Public Domain.
-    2. *Quy mô:* Trọn vẹn 365 ngày năm 2025 (toàn năm liên tục, dung lượng nén ~70 GB thô từ Azure Blob). Tự viết mã nạp tệp Parquet đầu ra để đo đạc và báo cáo chính xác tổng số bản ghi sạch sau lọc, tổng số chuyến hành hải độc nhất (`trip_id`), số lượng tàu thương mại độc nhất (`mmsi`), và tỷ lệ cơ cấu giữa tàu hàng (Cargo) và tàu dầu (Tanker).
+    2. *Quy mô:* Trọn vẹn 365 ngày năm 2025 (toàn năm liên tục, dung lượng nén gốc `13.15 GB` trong `NOAA_AIS_2025_RAW/`: `31` tệp `.csv.zst`, `1` tệp `.zip`, `1` tệp `.tif`). Tự viết mã nạp tệp Parquet đầu ra để đo đạc và báo cáo chính xác tổng số bản ghi sạch sau lọc (`92,681,850` dòng trên `Base22`/`Prep27`), tổng số chuyến hành hải độc nhất (`trip_id`), số lượng tàu thương mại độc nhất (`mmsi`), và tỷ lệ cơ cấu giữa tàu hàng (Cargo) và tàu dầu (Tanker).
     3. *Cấu trúc:* Bảng dữ liệu chuỗi thời gian nén Snappy theo cấu trúc cột PyArrow; đơn vị phân tích: một quan trắc hành hải của tàu thương mại trước thời điểm cập bến.
     4. *Nhãn:* Mốc cập bến thực tế ATA (suy diễn từ danh bạ Pass 1 `ata_catalog.parquet` của pipeline) và biến mục tiêu liên tục `Target_Hours` trong khung cửa sổ 0 - 168 giờ.
     5. *Chất lượng:* Tự đo lường và lập bảng thống kê tỷ lệ khuyết thiếu (% missing) thực tế từ bản tin AIS gốc cho các trường kích thước thân vỏ (`length`, `width`, `draft`, `cargo`); kiểm tra tính toàn vẹn của các cột tọa độ, vận tốc và thời gian.
@@ -214,7 +214,7 @@
   - Xây dựng Bảng phát biểu bài toán Hồi quy có giám sát (Regression) theo cấu trúc chuẩn môn học:
     * *Cho trước:* Hành trình quan trắc NOAA AIS 2025 của các chuyến tàu hàng/tàu dầu trong cự ly 168h trước khi cập bến.
     * *Cần tìm:* Số giờ di chuyển thực tế còn lại cho đến khi tàu cập bến chính thức (`Target_Hours`).
-    * *Đầu vào:* 21 thuộc tính động học (vị trí, cự ly `Dist_To_Berth_NM`, vận tốc `sog`, hướng `cog_sin`/`cos`), thông số tàu (`length`, `width`, `draft`, `Area_Proxy`, `Volume_Proxy`, `Is_Tanker`).
+    * *Đầu vào:* Hệ 3 phiên bản dữ liệu **18 / 22 / 27 thuộc tính** (`SCHEMA_RAW_LABELED` 18 cột, `SCHEMA_BASE` 22 cột, `SCHEMA_PREPROCESSED` 27 cột) gồm đặc trưng động học (vị trí, cự ly `Dist_To_Berth_NM`, vận tốc `sog`, hướng `cog_sin`/`cos`), thông số tàu (`length`, `width`, `draft`, `Area_Proxy`, `Volume_Proxy`, `Is_Tanker`).
     * *Đầu ra:* Giá trị số thực liên tục (giờ) kèm khoảng an toàn 90% ($\pm \Delta t$).
     * *Ràng buộc:* Thời gian phản hồi dự báo $< 2$ giây/chuyến tàu; giải thích được mức độ quan trọng thuộc tính.
     * *Ngoài phạm vi:* Không điều động tránh va chạm luồng (COLREGs), không xếp dỡ container trong bãi cảng.

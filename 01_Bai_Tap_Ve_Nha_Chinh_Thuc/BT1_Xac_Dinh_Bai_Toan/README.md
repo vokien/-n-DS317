@@ -12,7 +12,7 @@ Thực hiện trọn vẹn 4 bước tiền đề nhằm chuyển hóa nhu cầu
 ### Bước 1. Rà soát tài sản dữ liệu (Data Inventory)
 - **Tài sản dữ liệu:** Dữ liệu tự động nhận dạng tàu biển NOAA AIS năm 2025 (Hoa Kỳ).
 - **Quy chuẩn kiểm kê 7 tiêu chí theo DAMA:** Tên bảng/tập dữ liệu, nguồn thu thập (USCG/NOAA), quy mô vật lý (`13.15 GB` dữ liệu gốc `NOAA_AIS_2025_RAW/`, `320,776,922` dòng thô trước chia, `256,935,254` dòng sau chia ở `01_ban_tho_18_thuoc_tinh`, tiền xử lý còn `92,681,850` dòng sạch ở `02_ban_nen_tang_22_thuoc_tinh` / `03_ban_tien_xu_ly_27_thuoc_tinh`), định dạng lưu trữ (Parquet Snappy / CSV.zst), tần suất phát sinh (1-60 giây/bản tin), mức hạt dữ liệu (Data Grain: bản tin định vị thời gian thực theo từng tàu), và danh mục các trường thông tin chính (MMSI, kinh/vĩ độ, vận tốc sog, hướng cog, mớn nước draft, loại tàu vessel_type, khoảng cách bến, thời điểm cập bến ata_time).
-- **Tài liệu chi tiết:** [`Bước 1 - Rà soát tài sản dữ liệu.xlsx`](B%C6%B0%E1%BB%9Bc%201%20-%20R%C3%A0%20so%C3%A1t%20t%C3%A0i%20s%E1%BA%A3n%20d%E1%BB%AF%20li%E1%BB%87u.xlsx)
+- **Tài liệu chi tiết:** [`Bước 1 - Rà soát tài sản dữ liệu.xlsx`](B%C6%B0%E1%BB%9Bc%201%20-%20R%C3%A0%20so%C3%A1t%20t%C3%A0i%20s%E1%BA%A3n%20d%E1%BB%AF%20li%E1%BB%87u.xlsx) và bảng đối chuẩn phiên bản tại [`dataset_versions_inventory.csv`](../../05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/RAW18_SPLIT/dataset_versions_inventory.csv).
 
 ### Bước 2. Xác định bối cảnh và nhu cầu của doanh nghiệp
 - **Bối cảnh doanh nghiệp:** Trung tâm Điều độ và Khai thác Cầu bến cảng biển đối mặt với bài toán tối ưu hóa công suất khai thác luồng lạch và bến bãi. Hiện tượng thông báo giờ đến (ETA) tự khai báo của thuyền trưởng bị sai lệch lớn (sai số trung bình 12-24 giờ) dẫn đến việc cầu bến bị bỏ trống lãng phí hoặc tàu phải neo đậu chờ đợi gây tốn kém chi phí lưu bến (Demurrage cost từ 15,000 - 30,000 USD/ngày).
@@ -21,8 +21,8 @@ Thực hiện trọn vẹn 4 bước tiền đề nhằm chuyển hóa nhu cầu
 
 ### Bước 3. Chuyển bài toán nghiệp vụ thành bài toán khai phá dữ liệu
 - **Phát biểu bài toán:** Hồi quy chuỗi thời gian (Time-series Regression) dự báo biến mục tiêu liên tục `Target_Hours` (thời gian còn lại tính bằng giờ đến khi cập bến) từ chuỗi đặc trưng động học không - thời gian.
-- **Đầu vào (Input):** 21-22 thuộc tính động học hành hải, vị trí không gian, cự ly hình học đến bến và đặc tính thân vỏ tàu.
-- **Đầu ra (Output):** Biến thực $0 < \text{Target\_Hours} \le 168.0$ giờ, kèm khoảng an toàn 90% ($\pm \Delta t$) đóng vai trò biên độ đệm rủi ro cho kế hoạch điều độ.
+- **Đầu vào (Input):** Hệ **18 / 22 / 27 thuộc tính** (`01_ban_tho_18_thuoc_tinh`, `02_ban_nen_tang_22_thuoc_tinh`, `03_ban_tien_xu_ly_27_thuoc_tinh`), gồm động học hành hải, vị trí không gian, cự ly hình học đến bến và đặc tính thân vỏ tàu.
+- **Đầu ra (Output):** Biến thực `Target_Hours` (cửa sổ lọc tập Train áp dụng $0 < \text{Target\_Hours} \le 168.0$ giờ; còn tập Eval bảo tồn phân phối đầy đủ với `max = 2,124.64h` để tránh rò rỉ nhãn mục tiêu), kèm khoảng an toàn 90% ($\pm \Delta t$) đóng vai trò biên độ đệm rủi ro cho kế hoạch điều độ.
 - **Tài liệu chi tiết:** [`Bước 3 - Chuyển bài toán nghiệp vụ thành bài toán KPDL.docx`](B%C6%B0%E1%BB%9Bc%203%20-%20Chuy%E1%BB%83n%20b%C3%A0i%20to%C3%A1n%20nghi%E1%BB%87p%20v%E1%BB%A5%20th%C3%A0nh%20b%C3%A0i%20to%C3%A1n%20KPDL.docx)
 
 ### Bước 4. Thẩm định tính khả thi

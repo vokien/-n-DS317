@@ -1,5 +1,5 @@
 [Ghi chú kiểm toán] Các ảnh Hinh1..Hinh4.png trong thư mục này được xuất từ đợt EDA mẫu ban đầu (549,612 bản ghi mẫu; trong đó BD2 từng ghi nhận r = +0.7629 từ đợt tiền xử lý trước khi áp ngưỡng 1,800/2,300 NM).
-Khi trích dẫn số liệu toàn năm chính thức cho đồ án, sử dụng bộ số liệu kiểm kê sau chạy lại trong So_Lieu_Sau_Chay_Lai/:
+Khi trích dẫn số liệu toàn năm chính thức cho đồ án, sử dụng bộ số liệu kiểm kê đã quy tập trong `05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/`:
 - Tập thô trước chia (pre-split, full_summary.json): 320,776,922 bản ghi thô (Pearson raw r = +0.2807; mẫu lọc pre-split 90,586,699 bản ghi đạt r = +0.7772).
 - Tập thô sau chia (RAW18, 01_ban_tho_18_thuoc_tinh): 256,935,254 bản ghi (Train 209,615,498 + Test 47,319,756), Pearson thô r = +0.2589.
 - Tập chuẩn hóa sau tiền xử lý (Base22 / Prep27): 92,681,850 bản ghi (Train 68,489,376 + Test Q4 24,192,474), 0 ô khuyết ngoài cột cargo, Pearson r = +0.50971.

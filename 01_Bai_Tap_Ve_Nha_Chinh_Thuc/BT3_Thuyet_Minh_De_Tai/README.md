@@ -13,7 +13,7 @@ Xác lập hồ sơ "Thuyết minh đề tài" chính thức (Lab 3) nhằm cam 
 
 ### Ứng dụng bài tập Chương 4 vào Mục 5.1: Báo cáo chất lượng dữ liệu 6 chiều DAMA
 - Trích xuất toàn bộ kết quả đo lường định lượng từ **BT2** trên `92,681,850` bản ghi sạch (`Base22`) và `256,935,254` bản ghi thô (`RAW18`):
-  - Bảng 5.3 (bộ số liệu sau chạy lại trong `So_Lieu_Sau_Chay_Lai/DAMA/`):
+  - Bảng 5.3 (bộ số liệu chuẩn hóa trong [`05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/DAMA/`](../../05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/DAMA/dama_6_dimensions_by_quarter.csv)):
     - `RAW18 (256.94M dòng)`: Completeness bản ghi `93.5626%` (thuộc tính `99.5467%`), Consistency `36.6940%`, Accuracy `45.9011%` (`r = +0.2589`), Timeliness `64.9956%`, Validity `96.3052%`, Uniqueness `99.7228%`.
     - `Base22 (92.68M dòng)`: Completeness `100.0%` (0 ô khuyết ngoài cột `cargo`), Consistency `100.0%`, Accuracy `92.7259%` (`Q1-Q3: 100.0%`, `Q4: 70.9036%`, `r = +0.50971`), Timeliness `100.0%`, Validity `100.0%`, Uniqueness `100.0%`.
   - Bảng 5.4: Giám sát phân rã 6 chiều chất lượng dữ liệu qua 4 Quý (Q1 - Q4 năm 2025) trên `RAW18` và `Base22`.

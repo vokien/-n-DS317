@@ -38,11 +38,17 @@ DS317_DoAn_Nhom03_TongHop/
 │   └── 03_Notebook_Tach_Le_Tung_Module/       # 8 Notebook tách lẻ độc lập (00_Baseline + M1..M7)
 ├── 03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/
 │   ├── Tong_Hop_Ket_Qua_Thuc_Nghiem_Ablation_7_Module.md
-│   ├── Bao_cao_Modules/                       # Báo cáo chi tiết các module (M3, M5, M6)
-│   └── Ket_Qua_Chay_Runner_1_va_2/            # 78 CSV kết quả (26 x 3 file) + master/M1/M7 CSVs
+│   └── Bao_cao_Modules/                       # Báo cáo chi tiết các module (M3, M5, M6)
 ├── 04_So_Lieu_Kiem_Ke_Va_Bieu_Do/
-│   ├── Hinh_Anh_Bieu_Do_Chung/                # Biểu đồ EDA, trực quan hóa & thống kê nhận xét
-│   └── So_Lieu_Sau_Chay_Lai/                  # Bộ số liệu kiểm kê DAMA, benchmark & waterfall
+│   └── Hinh_Anh_Bieu_Do_Chung/                # Biểu đồ EDA, trực quan hóa & thống kê nhận xét
+├── 05_Output_Cac_Notebook/                    # Kho tập trung output của tất cả notebook (9 thư mục con + script đồng bộ)
+│   ├── README.md                              # Bảng ánh xạ notebook -> thư mục output & quy tắc Git
+│   ├── dong_bo_ho_so_nop.py                   # Kiểm kê & đồng bộ file nhẹ sang hồ sơ nộp đồ án
+│   ├── 01_DS317_01_Pipeline_Tien_Xu_Ly/ ... 05_DS317_05_Thoi_Tiet_RTMA_2025/
+│   ├── 06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/   # 102 file kiểm kê DAMA, benchmark & waterfall hiện có
+│   ├── 07_Runner_Song_Song_1_Baseline_M1_M2_M3/  # 42 CSV kết quả + saved_models/ + detailed_predictions/
+│   ├── 08_Runner_Song_Song_2_M4_M5_M6_M7/        # 42 CSV kết quả + saved_models/ + detailed_predictions/
+│   └── 09_Notebook_Tach_Le_Tung_Module/       # Khung lưu output cho 8 notebook tách lẻ (00_Baseline + M1..M7)
 └── DS317_R11_Nhom03_HoSoNopDoAn/              # Khung 8 thư mục nộp đồ án chuẩn môn học DS317
 ```
 
@@ -82,6 +88,8 @@ Nếu chạy cục bộ trên máy cá nhân, thành viên cần đồng bộ c�
      - `DS317_Runner_Song_Song_2_M4_M5_M6_M7.ipynb` -> xuất `runner2_results.zip`, `saved_models/` và `detailed_predictions/`.
 3. **Chạy hoặc kiểm thử riêng từng Module:**
    - Sử dụng các notebook trong `02_Ma_Nguon_Tien_Xu_Ly_Va_Thuc_Nghiem/03_Notebook_Tach_Le_Tung_Module/` (`DS317_Thuc_Nghiem_00_Baseline.ipynb` và `DS317_Thuc_Nghiem_M1..M7_*.ipynb`), thuận tiện khi thành viên phụ trách module cần tái lập hoặc tinh chỉnh độc lập.
+4. **Lưu trữ tập trung output & đồng bộ hồ sơ nộp đồ án:**
+   - Sau khi các notebook chạy xong trên Kaggle, giải nén và đặt output vào đúng thư mục đích trong [`05_Output_Cac_Notebook/`](05_Output_Cac_Notebook/README.md), sau đó kiểm tra bằng `python 05_Output_Cac_Notebook/dong_bo_ho_so_nop.py --dry-run` trước khi đồng bộ sang `DS317_R11_Nhom03_HoSoNopDoAn/`.
 
 ---
 

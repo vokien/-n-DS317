@@ -14,16 +14,17 @@
 1. **Đã xóa bỏ các tệp lỗi / số liệu Engine v1 hoặc tệp trung gian gây nhiễu:**
    - Xóa `03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Giai_Thich_Chenh_Lech_So_Lieu_Phan_Tang_168h.md` (sẽ viết lại bằng phân tích lỗi có kiểm chứng từ dự đoán thật sau khi chạy lại Runner).
    - Xóa `03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Bao_cao_Modules/Bao_cao_Thuc_nghiem_Ablation_Module_M7_LeSyLiem.md` (dùng số liệu Engine v1 cũ).
-   - Xóa `table_4_3_dama_comparison_raw_vs_base22.csv`, `old_numbers_verification.csv`, và `Huong_dan_cap_nhat_BaiTapVeNha.md` trong `04_So_Lieu_Kiem_Ke_Va_Bieu_Do/So_Lieu_Sau_Chay_Lai/`.
+   - Xóa `table_4_3_dama_comparison_raw_vs_base22.csv`, `old_numbers_verification.csv`, và `Huong_dan_cap_nhat_BaiTapVeNha.md` (trước đây nằm ở `04_So_Lieu_Kiem_Ke_Va_Bieu_Do/So_Lieu_Sau_Chay_Lai/`, nay bộ số liệu kiểm kê đã quy tập về [`05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/`](../05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/) — xem hướng dẫn tại [`05_Output_Cac_Notebook/README.md`](../05_Output_Cac_Notebook/README.md)).
 2. **Đã sửa sạch sai lệch số liệu trên các tệp README:**
    - Cập nhật [`README.md`](../README.md): chuẩn hóa `256,935,254` bản ghi thô sau chia (`01_ban_tho_18_thuoc_tinh`) so với `320,776,922` bản ghi trước chia (`pre-split`), và kiểm kê chuẩn tệp thô (`31` tệp `.csv.zst` + `1` tệp `.zip` + `1` tệp `.tif` = `33` tệp, tổng `13.15 GB`).
    - Cập nhật [`BT1_Xac_Dinh_Bai_Toan/README.md`](../01_Bai_Tap_Ve_Nha_Chinh_Thuc/BT1_Xac_Dinh_Bai_Toan/README.md), [`BT2_Do_Luong_Chat_Luong_Du_Lieu/README.md`](../01_Bai_Tap_Ve_Nha_Chinh_Thuc/BT2_Do_Luong_Chat_Luong_Du_Lieu/README.md), và [`BT3_Thuyet_Minh_De_Tai/README.md`](../01_Bai_Tap_Ve_Nha_Chinh_Thuc/BT3_Thuyet_Minh_De_Tai/README.md) (mục 2 cập nhật DAMA 6 chiều `RAW18` vs `Base22` và Pearson `r = +0.2589 -> +0.50971`).
 3. **Đã nâng cấp mã nguồn thực nghiệm & kiểm kê (đang chờ chạy lại trên Kaggle):**
    - Nâng cấp [`DS317_Runner_Song_Song_1_Baseline_M1_M2_M3.ipynb`](../02_Ma_Nguon_Tien_Xu_Ly_Va_Thuc_Nghiem/02_Runner_Song_Song_Chinh_Thuc_v2/DS317_Runner_Song_Song_1_Baseline_M1_M2_M3.ipynb) và [`DS317_Runner_Song_Song_2_M4_M5_M6_M7.ipynb`](../02_Ma_Nguon_Tien_Xu_Ly_Va_Thuc_Nghiem/02_Runner_Song_Song_Chinh_Thuc_v2/DS317_Runner_Song_Song_2_M4_M5_M6_M7.ipynb): tách `eval_meta_fold{1,2,3}.parquet` + `pred_*.parquet` nén `zstd`, xuất sidecar `*_meta.json` kèm trọng số trong `saved_models/`, và đóng gói `runner{1,2}_saved_models.zip` tách riêng khỏi `runner{1,2}_results.zip` (an toàn dưới trần `20 GB` của Kaggle).
    - Nâng cấp [`DS317_02_Kham_Pha_Kiem_Ke_Chat_Luong.ipynb`](../02_Ma_Nguon_Tien_Xu_Ly_Va_Thuc_Nghiem/01_Pipeline_Tien_Xu_Ly_Va_BTVN/DS317_02_Kham_Pha_Kiem_Ke_Chat_Luong.ipynb) để xuất đầy đủ số liệu cho cả bản thô (`01_ban_tho_18_thuoc_tinh`) và bản 26 đặc trưng (`03_ban_tien_xu_ly_27_thuoc_tinh`).
-   - **Lưu ý phụ thuộc:** 3 notebook trên đã sẵn sàng trên Git, hiện **đang chờ Nhóm trưởng chạy lại trên Kaggle** để sinh tệp trọng số, `detailed_predictions/` và bảng DAMA 26 đặc trưng mới.
-4. **Đã khởi tạo khung 8 thư mục nộp bài chuẩn:**
+   - **Lưu ý phụ thuộc:** 3 notebook trên đã sẵn sàng trên Git, hiện **đang chờ Nhóm trưởng chạy lại trên Kaggle** và đưa output vào [`05_Output_Cac_Notebook/`](../05_Output_Cac_Notebook/README.md) (`02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/`, `07_Runner_Song_Song_1_Baseline_M1_M2_M3/`, `08_Runner_Song_Song_2_M4_M5_M6_M7/`), sau đó dùng [`dong_bo_ho_so_nop.py`](../05_Output_Cac_Notebook/dong_bo_ho_so_nop.py) để đồng bộ sang `DS317_R11_Nhom03_HoSoNopDoAn/`.
+4. **Đã khởi tạo khung 8 thư mục nộp bài chuẩn và kho tập trung output:**
    - Thư mục [`DS317_R11_Nhom03_HoSoNopDoAn/`](../DS317_R11_Nhom03_HoSoNopDoAn/README.md) đã có đủ 8 thư mục con (`01_BaoCao/` đến `08_QuanLyNhom/`).
+   - Thư mục [`05_Output_Cac_Notebook/`](../05_Output_Cac_Notebook/README.md) đã có đủ 9 thư mục con lưu trữ tập trung kết quả của mọi notebook (đã chuyển `102` file kiểm kê BTVN và `84` CSV Runner v2 vào đúng vị trí).
 
 ---
 

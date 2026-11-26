@@ -9,6 +9,7 @@
 - Đo lường và kiểm toán thực chứng 6 chiều DAMA trên **Tập dữ liệu thô (Raw Data - 256,935,254 dòng)** nhằm phát hiện khiếm khuyết, vi phạm logic và mâu thuẫn nghiệp vụ thực tế.
 - Giám sát chất lượng dữ liệu theo trục thời gian phân rã qua 4 Quý (Q1 - Q4 năm 2025) nhằm kiểm soát rủi ro trôi dạt dữ liệu (Data Drift).
 - Thiết lập bảng đối chiếu Trước vs Sau tiền xử lý (Dữ liệu thô vs Bản Nền tảng 22 cột) để chứng minh hiệu quả làm sạch và tính tất yếu của pipeline tiền xử lý.
+- **Lưu ý phiên bản số liệu:** Các bảng DAMA hiện có (bao gồm [`dama_6_dimensions_by_quarter.csv`](../../05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/DAMA/dama_6_dimensions_by_quarter.csv)) được trích xuất từ đợt chạy `Pass 2` cũ trên `Base22` (`92,681,850` dòng) và `RAW18` (`256,935,254` dòng); hiện nhóm đang chờ output mới đồng nhất cho cả `RAW18` và bản `26` đặc trưng (`Prep27`) từ `DS317_02_Kham_Pha_Kiem_Ke_Chat_Luong.ipynb` đưa vào [`05_Output_Cac_Notebook/02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/`](../../05_Output_Cac_Notebook/02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/).
 
 ---
 

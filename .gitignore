@@ -35,6 +35,18 @@ catboost_info/
 kaggle_work_*/
 ds317_tong_hop_so_lieu/
 
+# 3b. Output nang (> 100 MB) tu Kaggle trong 05_Output_Cac_Notebook/ va goi ZIP lon
+# Giu nguyen toan bo .csv, .json, .md, .png, .txt, *_meta.json, preview .csv
+05_Output_Cac_Notebook/**/detailed_predictions/*.parquet
+05_Output_Cac_Notebook/**/*.csv.gz
+05_Output_Cac_Notebook/**/ata_catalog*.parquet
+05_Output_Cac_Notebook/**/q1_mmsi_medians.parquet
+05_Output_Cac_Notebook/**/raw_sample.parquet
+runner*_saved_models.zip
+runner*_results.zip
+ds317_02_eda_dama_results.zip
+*_v2_results.zip
+
 # 4. Python & Jupyter runtime caches
 __pycache__/
 *.py[cod]
