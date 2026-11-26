@@ -12,7 +12,7 @@
 Để các thành viên nắm đúng phiên bản mới nhất trên nhánh `main` và không thực hiện lại các đầu việc đã hoàn thành:
 
 1. **Đã xóa bỏ các tệp lỗi / số liệu Engine v1 hoặc tệp trung gian gây nhiễu:**
-   - Xóa [`03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Giai_Thich_Chenh_Lech_So_Lieu_Phan_Tang_168h.md`](../03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/) (sẽ viết lại bằng phân tích lỗi có kiểm chứng từ dự đoán thật sau khi chạy lại Runner).
+   - Xóa `03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Giai_Thich_Chenh_Lech_So_Lieu_Phan_Tang_168h.md` (sẽ viết lại bằng phân tích lỗi có kiểm chứng từ dự đoán thật sau khi chạy lại Runner).
    - Xóa `03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Bao_cao_Modules/Bao_cao_Thuc_nghiem_Ablation_Module_M7_LeSyLiem.md` (dùng số liệu Engine v1 cũ).
    - Xóa `table_4_3_dama_comparison_raw_vs_base22.csv`, `old_numbers_verification.csv`, và `Huong_dan_cap_nhat_BaiTapVeNha.md` trong `04_So_Lieu_Kiem_Ke_Va_Bieu_Do/So_Lieu_Sau_Chay_Lai/`.
 2. **Đã sửa sạch sai lệch số liệu trên các tệp README:**
