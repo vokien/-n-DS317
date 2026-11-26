@@ -1,0 +1,4 @@
+﻿Loai_Ngoai_Lai,Dinh_Nghia_Hang_Hai,So_Mau_Phat_Hien,Ty_Le_Pct,Hanh_Dong_Xu_Ly
+Toan cuc (Global Outlier),"Vuot nguong vat ly thiet ke (SOG > 25 kn, Draft > 18m hoac <= 0.5m, Dai > 400m, Rong > 62m, Dien tich > 25000 m2, v_implied > 35 kn)",86,0.172,"Kiem tra ky thuat cam bien AIS, kiem chung lai mmsi va loai tau"
+Ngu canh (Contextual Outlier),"Bat thuong theo ngu canh (sat ben toc do cao > 10 kn, chay khoi lech mui > 60 do, dung xa ben, mau thuan cu ly - ETA)",283,0.566,Canh bao an toan hang hai va dieu phoi luong cap ben (VTS)
+Tap the (Collective Outlier),"Chuoi tin hieu sai lech quy dao (v_implied lech phi ly < 1.62 hoac > 25 kn o cu ly xa, quy dao quay vong loitering xa ben)",614,1.228,Loai bo khoi tap huan luyen ETA hoac danh dau can thiep chuyen di

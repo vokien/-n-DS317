@@ -1,0 +1,23 @@
+Do chinh xac tai tao: 82.50%
+|--- Dien tich tau (m2) <= 0.33
+|   |--- Cu ly den ben (NM) <= -0.02
+|   |   |--- Do lech huong mui (do) <= 2.03
+|   |   |   |--- class: 0
+|   |   |--- Do lech huong mui (do) >  2.03
+|   |   |   |--- class: 2
+|   |--- Cu ly den ben (NM) >  -0.02
+|   |   |--- Huong di chuyen Cos <= -0.08
+|   |   |   |--- class: 3
+|   |   |--- Huong di chuyen Cos >  -0.08
+|   |   |   |--- class: 0
+|--- Dien tich tau (m2) >  0.33
+|   |--- Mon nuoc (m) <= -0.04
+|   |   |--- Huong di chuyen Cos <= -0.58
+|   |   |   |--- class: 3
+|   |   |--- Huong di chuyen Cos >  -0.58
+|   |   |   |--- class: 0
+|   |--- Mon nuoc (m) >  -0.04
+|   |   |--- Cu ly den ben (NM) <= 0.96
+|   |   |   |--- class: 1
+|   |   |--- Cu ly den ben (NM) >  0.96
+|   |   |   |--- class: 3

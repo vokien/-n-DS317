@@ -1,0 +1,6 @@
+﻿Phuong_Phap,So_Luong_Ngoai_Lai,Ty_Le_Pct,Thoi_Gian_Chay_s,Jaccard_Overlap_Vs_iForest
+Tukey IQR SOG (Baseline),634,1.27,0.01,0.0538
+Modified Z-score SOG,70,0.14,0.01,0.0077
+Khoang cach tam cum K-means,1500,3.0,0.05,0.3526
+Isolation Forest (Chinh),1500,3.0,0.59,1.0
+Local Outlier Factor (LOF),1500,3.0,3.36,0.065

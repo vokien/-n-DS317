@@ -1,0 +1,11 @@
+Tong so dong: 80,782,630; so dong mau ve bieu do: 549,612
+[BD1] Target_Hours: mean=38.69h, median~26h, P90~97h, P99~156h, max=168.0h
+      Ty le dong co Target_Hours <= 24h: 48.1%
+      Ty le dong co Target_Hours <= 48h: 70.0%
+      Ty le dong co Target_Hours <= 72h: 82.2%
+[BD2] Pearson r(Dist_To_Berth_NM, Target_Hours) = 0.7629 (so lieu do tu lan chay 5,000 km truoc khi bo Dist_To_Berth_KM va ap nguong 1,800/2,300 NM; quy doi tuong duong theo NM tren tap cu la Target_Hours ~ 0.0983 * Dist_To_Berth_NM + 13.281, 1/slope = 10.2 knots hieu dung - can chay lai Kaggle de cap nhat tri so moi)
+[BD3] sog - Cargo (tàu hàng): median=11.70, Q1=9.30, Q3=14.00
+[BD3] sog - Tanker (tàu dầu): median=11.70, Q1=9.50, Q3=13.20
+[BD3] draft - Cargo (tàu hàng): median=9.00, Q1=7.30, Q3=11.00
+[BD3] draft - Tanker (tàu dầu): median=8.80, Q1=7.90, Q3=10.40
+[BD4] So o luoi co du lieu: 248,485; o dam nhat chua 150,852 ban tin

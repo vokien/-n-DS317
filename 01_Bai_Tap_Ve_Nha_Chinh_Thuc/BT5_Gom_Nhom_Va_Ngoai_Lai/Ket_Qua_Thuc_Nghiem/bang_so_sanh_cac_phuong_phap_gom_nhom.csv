@@ -1,0 +1,5 @@
+﻿Thuat_Toan,So_Cum,Ty_Le_Nhieu_Pct,Silhouette,Calinski_Harabasz,Davies_Bouldin,ARI_Vs_Baseline,Bootstrap_ARI_Stability,Thoi_Gian_Fit_s
+K-means,4,0.0,0.1801,9254.2,1.6314,1.0,0.6777,0.75
+GMM,4,0.0,0.1536,7736.3,1.7425,0.2919,0.4922,1.14
+Ward,4,0.0,0.1256,7434.0,1.876,0.4398,1.0,3.07
+DBSCAN,4,2.16,0.3833,298.2,0.6143,0.0282,1.0,27.15

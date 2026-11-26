@@ -1,0 +1,3 @@
+Pipeline tiền xử lý dữ liệu nền tảng: https://www.kaggle.com/code/kienvo134/t-i-v-x-l-noaa-ais-2025-full-year?scriptVersionId=371126211
+Dataset nền tảng: https://www.kaggle.com/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng
+Baseline thực nghiệm: https://www.kaggle.com/code/kienvo134/baseline-th-c-nghi-m

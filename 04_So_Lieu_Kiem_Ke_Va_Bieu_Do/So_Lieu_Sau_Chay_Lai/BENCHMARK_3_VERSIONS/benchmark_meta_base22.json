@@ -1,0 +1,8 @@
+{
+  "version_dir": "02_ban_nen_tang_22_thuoc_tinh",
+  "n_train": 68489376,
+  "dummy_median_h": 31.595000000000002,
+  "nonfinite_filled_tr": 0,
+  "nonfinite_filled_te": 0,
+  "elapsed_sec": 46.37
+}

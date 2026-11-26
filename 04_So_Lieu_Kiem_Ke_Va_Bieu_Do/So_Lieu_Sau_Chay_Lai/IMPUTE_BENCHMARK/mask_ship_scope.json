@@ -1,0 +1,6 @@
+{
+  "n_ref_train": 50177,
+  "n_val_observed": 27143,
+  "mask_repeats": 20,
+  "note": "Chay tren ban tho truoc dien khuyet (khong cham 02/03)."
+}

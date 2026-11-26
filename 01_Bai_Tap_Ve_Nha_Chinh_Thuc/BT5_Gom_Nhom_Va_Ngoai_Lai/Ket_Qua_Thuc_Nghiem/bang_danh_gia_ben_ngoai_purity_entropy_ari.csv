@@ -1,0 +1,2 @@
+﻿Mo_Hinh,Nhan_Tham_Chieu,Purity,Weighted_Entropy,Adjusted_Rand_Index (ARI),Normalized_Mutual_Info (NMI)
+K-means (k=4),Is_Tanker (Cargo vs Tanker),0.6769,0.9017,-0.0055,0.0047

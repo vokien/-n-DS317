@@ -1,0 +1,5 @@
+﻿Thuat_Toan,Thoi_Gian,Loai_Mo_Hinh,Y_Tuong_Cot_Loi,Uu_Diem,Nhuoc_Diem
+K-means (Baseline),1967 (MacQueen) · O(N·k·d·I) · Rat nhanh,Phan hoach (Partition-based),Toi thieu hoa tong binh phuong khoang cach noi cum W(C),"Tuyen tinh voi N, chay cuc nhanh tren Big Data, de dien giai","Chi tim cum hinh cau loi, nhay voi ngoai lai, can biet truoc k"
+GMM (Gaussian Mixture),1977 (Dempster et al.) · O(N·k·d^2·I) · Trung binh,Xac suat/Hon hop (Probabilistic),Cuc dai hoa hop ly EM voi ma tran hiep phuong sai mem,"Tim duoc cum elip linh hoat, cho xac suat mem tung cum, tinh BIC","Nhay voi diem khoi tao, nguy co cuc tieu cuc bo, ton RAM"
+Ward Hierarchical,1963 (Ward) · O(N^2 log N) · Cham tren tap lon,Phan cap gop dan (Agglomerative),Gop cap cum lam tang phuong sai noi cum it nhat,"Bieu dien cay dendrogram truc quan, khong can k truoc","Do phuc tap bo nho O(N^2), kho mo rong tap hang trieu dong"
+DBSCAN,1996 (Ester et al.) · O(N log N) voi kd-tree · Nhanh,Mat do (Density-based),Noi cac diem loi co >= minPts diem trong ban kinh eps,"Tim cum hinh dang tuy y, tu phat hien va loai bo nhieu","Kho chon eps khi mat do lech, khong co ham predict truc tiep"

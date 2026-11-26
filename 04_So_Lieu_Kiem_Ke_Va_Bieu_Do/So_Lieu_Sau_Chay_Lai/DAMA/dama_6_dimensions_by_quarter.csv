@@ -1,0 +1,5 @@
+﻿quarter,rows,Completeness_21cols_pct,Cargo_missing_pct,Uniqueness_pct,Validity_pct,Accuracy_pct,Consistency_pct,Timeliness_pct
+Q1,19266035,100.0,0.4635,100.0,100.0,100.0,100.0,100.0
+Q2,25088114,100.0,0.519,100.0,100.0,100.0,100.0,100.0
+Q3,24135227,100.0,0.3325,100.0,100.0,100.0,100.0,100.0
+Q4,24192474,100.0,0.6798,100.0,100.0,70.9036,100.0,100.0

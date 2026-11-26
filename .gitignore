@@ -1,0 +1,47 @@
+# ==============================================================================
+# DS317 - Nhom 03: Git Ignore Rules
+# Chuyen biet chan du lieu tho/trung gian dung luong lon va file tam he thong
+# ==============================================================================
+
+# 1. Du lieu tho NOAA AIS & Weather RTMA dung luong lon (> 50-100 MB)
+*.zst
+*.tif
+*.gpkg
+AISVesselTracks2025.zip
+NOAA_AIS_2025_RAW/
+weather_rtma_2025_sidecar/
+
+# 2. Cac file Parquet du lieu tho / trung gian / train-test full-year lon
+# Khong dung quy tac chan blanket *.parquet de bao toan mau BT5 (1.55 MB):
+#   01_Bai_Tap_Ve_Nha_Chinh_Thuc/BT5_Gom_Nhom_Va_Ngoai_Lai/
+#     Ket_Qua_Thuc_Nghiem/ais_sample_clustering_outlier.parquet
+**/q1.parquet
+**/q2.parquet
+**/q3.parquet
+**/q4.parquet
+q1.parquet
+q2.parquet
+q3.parquet
+q4.parquet
+**/train.parquet
+**/test.parquet
+**/noaa_ais_2025*.parquet
+noaa_ais_2025*.parquet
+!**/ais_sample_clustering_outlier.parquet
+
+# 3. Thu muc tam cua thuat toan, Runner & Kaggle work
+catboost_info/
+*_done.flag
+kaggle_work_*/
+ds317_tong_hop_so_lieu/
+
+# 4. Python & Jupyter runtime caches
+__pycache__/
+*.py[cod]
+*.pyc
+.ipynb_checkpoints/
+
+# 5. File he thong OS
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,26 @@
+{
+  "raw18": {
+    "version_dir": "01_ban_tho_18_thuoc_tinh",
+    "n_train": 209615498,
+    "dummy_median_h": 91.805,
+    "nonfinite_filled_tr": 16045691,
+    "nonfinite_filled_te": 3284418,
+    "elapsed_sec": 107.52
+  },
+  "base22": {
+    "version_dir": "02_ban_nen_tang_22_thuoc_tinh",
+    "n_train": 68489376,
+    "dummy_median_h": 31.595000000000002,
+    "nonfinite_filled_tr": 0,
+    "nonfinite_filled_te": 0,
+    "elapsed_sec": 46.37
+  },
+  "prep27": {
+    "version_dir": "03_ban_tien_xu_ly_27_thuoc_tinh",
+    "n_train": 68489376,
+    "dummy_median_h": 31.595000000000002,
+    "nonfinite_filled_tr": 0,
+    "nonfinite_filled_te": 0,
+    "elapsed_sec": 333.01
+  }
+}
