@@ -1,8 +1,0 @@
-﻿dimension,rows_matching,total_rows,score_pct,benchmark_standard,evaluation
-1. Completeness (Mức bản ghi),240395409,256935254,93.5626,>= 95.0%,KHÔNG ĐẠT (Khuyết cargo và thân vỏ)
-   Completeness (Mức thuộc tính),4603870439,4624834572,99.5467,>= 95.0%,ĐẠT
-2. Consistency (Tính nhất quán),94279701,256935254,36.694,100.0%,"KHÔNG ĐẠT (Nhiễu neo đậu status 1,5 & trôi dạt)"
-3. Accuracy (Tính chính xác động học),117936010,256935254,45.9011,>= 90.0%,"KHÔNG ĐẠT (v_implied < 1.62kn, r=0.2589)"
-4. Timeliness (Tính kịp thời tác nghiệp),166996581,256935254,64.9956,>= 90.0%,KHÔNG ĐẠT (Nhiều quan trắc ngoài cửa sổ 7 ngày)
-5. Validity (Tính hợp lệ dải vật lý),247442006,256935254,96.3052,>= 95.0%,ĐẠT
-6. Uniqueness (Tính duy nhất),256223135,256935254,99.7228,>= 99.0%,ĐẠT (Trùng lặp trạm bờ VHF nhỏ)
