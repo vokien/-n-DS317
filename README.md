@@ -38,7 +38,6 @@ DS317_DoAn_Nhom03_TongHop/
 │   └── 03_Notebook_Tach_Le_Tung_Module/       # 8 Notebook tách lẻ độc lập (00_Baseline + M1..M7)
 ├── 03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/
 │   ├── Tong_Hop_Ket_Qua_Thuc_Nghiem_Ablation_7_Module.md
-│   ├── Giai_Thich_Chenh_Lech_So_Lieu_Phan_Tang_168h.md
 │   ├── Bao_cao_Modules/                       # Báo cáo chi tiết các module (M3, M5, M6)
 │   └── Ket_Qua_Chay_Runner_1_va_2/            # 78 CSV kết quả (26 x 3 file) + master/M1/M7 CSVs
 ├── 04_So_Lieu_Kiem_Ke_Va_Bieu_Do/
@@ -87,7 +86,6 @@ Nếu chạy cục bộ trên máy cá nhân, thành viên cần đồng bộ c�
 
 Chi tiết đầy đủ cho toàn bộ 182 cặp biến thể - mô hình được trình bày tại:
 - [Báo cáo tổng hợp Ablation 7 Module](03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Tong_Hop_Ket_Qua_Thuc_Nghiem_Ablation_7_Module.md)
-- [Báo cáo phân tích chênh lệch phân tầng 168h](03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Giai_Thich_Chenh_Lech_So_Lieu_Phan_Tang_168h.md)
 
 | Hạng mục / Module | Biến thể & Mô hình tiêu biểu | Chỉ số nổi bật (Trung bình 3 Fold) | Ý nghĩa kỹ thuật |
 | :--- | :--- | :--- | :--- |
