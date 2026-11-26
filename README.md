@@ -46,6 +46,17 @@ DS317_DoAn_Nhom03_TongHop/
 └── DS317_R11_Nhom03_HoSoNopDoAn/              # Khung 8 thư mục nộp đồ án chuẩn môn học DS317
 ```
 
+**Tài liệu điều phối & hoàn thiện cuối kỳ:**
+- [Kế hoạch hoàn thiện và phân công công việc cuối kỳ (7 thành viên)](00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md)
+
+- **Kế hoạch hoàn thiện cuối kỳ & Phân công hiện tại (7 thành viên):** [Kế hoạch hoàn thiện và phân công công việc cuối kỳ](00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md)
+
+**Tài liệu điều phối & phân công giai đoạn cuối kỳ:**
+- [Kế hoạch hoàn thiện và phân công công việc cuối kỳ](00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md)
+
+**Kế hoạch triển khai giai đoạn cuối kỳ:**
+- [Kế hoạch hoàn thiện và phân công công việc cuối kỳ (Nhóm 03)](00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md)
+
 ---
 
 ## 3. Thiết Lập Dữ Liệu Ngoài GitHub (Kaggle & Local)
