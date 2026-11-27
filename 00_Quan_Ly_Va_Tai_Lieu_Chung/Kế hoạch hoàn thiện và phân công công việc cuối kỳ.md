@@ -1,10 +1,11 @@
 # Kế Hoạch Hoàn Thiện và Phân Công Công Việc Cuối Kỳ - Nhóm 03 (DS317.R11)
 
-- **Học phần:** DS317 - Khai phá dữ liệu trong doanh nghiệp (UIT)
+- **Học phần:** DS317 - Khai phá dữ liệu trong doanh nghiệp (UIT - ĐHQG-HCM)
 - **Đề tài:** Dự báo thời điểm cập cảng của tàu biển thay thế ETA tự khai báo (*Prediction of Vessel Port Arrival Time Replacing Self-Reported ETA*)
 - **Kho lưu trữ chuẩn:** `DS317_DoAn_Nhom03_TongHop/` | **Thư mục nộp bài chuẩn 8 phần:** [`DS317_R11_Nhom03_HoSoNopDoAn/`](../DS317_R11_Nhom03_HoSoNopDoAn/README.md)
 - **Kho output tập trung các notebook:** [`05_Output_Cac_Notebook/`](../05_Output_Cac_Notebook/README.md)
-- **Phạm vi tài liệu này:** Cập nhật hiện trạng thực tế mới nhất sau khi đã hoàn tất 100% việc chạy thực nghiệm và quy tập kết quả đầu ra tập trung; cung cấp bản đồ tra cứu tệp nguồn chuẩn hóa (số liệu, tham số, trọng số) cho toàn nhóm; và xác định rõ lộ trình phân công công việc toàn diện cho 7 thành viên từ khâu Kỹ thuật, Thực nghiệm & Demo cho đến Báo cáo 7 chương, Slide bảo vệ và Hồ sơ quản lý nhóm.
+- **Khu vực không gian làm việc của 7 thành viên:** [`06_Dong_Gop_Cac_Thanh_Vien/`](../06_Dong_Gop_Cac_Thanh_Vien/README.md)
+- **Phạm vi tài liệu này:** Cập nhật hiện trạng thực tế mới nhất sau khi đã hoàn tất 100% việc chạy thực nghiệm và quy tập kết quả đầu ra tập trung; cung cấp bản đồ tra cứu tệp nguồn chuẩn hóa (số liệu, tham số, trọng số) cho toàn nhóm; giải thích bản chất khoa học - kỹ thuật về sai số giữa Lab 3 và Engine v2; xác lập cơ chế phân quyền thư mục làm việc Git cho 7 thành viên; và phân công chi tiết 7 chương Báo cáo cuối kỳ, Slide, Demo Web và Hồ sơ nghiệm thu.
 
 ---
 
@@ -12,161 +13,149 @@
 
 ### 1. Bảng theo dõi tiến độ các sản phẩm bàn giao bắt buộc (Chiếm 100% điểm A4)
 
-|  STT  | Hạng mục bắt buộc (theo quy định môn học)                                                                              | Tỷ trọng / Vai trò                        | Thư mục đích                  | Trạng thái hiện tại                                                                                                     | Người phụ trách chính                                                  |
-| :---: | :--------------------------------------------------------------------------------------------------------------------- | :---------------------------------------- | :---------------------------- | :---------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------- |
-|   1   | **Chương trình Demo Web/App tương tác (`app.py`)** (kết nối trọng số thật, tích hợp BI Dashboard & dự báo ETA)         | **50%** điểm sản phẩm A4                  | `03_SourceCode/` & `07_Demo/` | **Đang xây dựng** (Đã có sẵn trọng số mô hình và số liệu DAMA để tích hợp)                                              | **Đỗ Văn Lộc**                                                         |
-|   2   | **Chạy lại Runner 1, Runner 2 & `DS317_02`, thu thập Trọng số & Đồng bộ Output**                                       | Nền tảng cốt lõi của toàn bộ đồ án        | `05_Model/` & `06_Results/`   | **ĐÃ HOÀN THÀNH 100%** (781 tệp, 166 results, 560 parameters, 546 weights trong 2 zip + 10 weights tại chỗ, 30 biểu đồ) | **Võ Đình Kiên**                                                       |
-|   3   | **Báo cáo Đồ án Cuối kỳ 7 Chương** (`.docx` & `.pdf`, 30-50 trang)                                                     | **30%** điểm sản phẩm A4                  | `01_BaoCao/`                  | **Đang triển khai viết** (Đã có đầy đủ số liệu thực nghiệm Engine v2 và phân công chi tiết 7 chương)                    | **Cả nhóm** (Võ Đình Kiên chủ trì)                                     |
-|   4   | **Bộ Slide Bảo vệ Cuối kỳ 10 phần** (`.pptx` & `.pdf`)                                                                 | **20%** điểm sản phẩm A4                  | `02_Slides/`                  | **Đang triển khai thiết kế** (Đã chốt bố cục 10 phần chuẩn môn học)                                                     | **Cả nhóm** (Đỗ Văn Lộc chủ trì)                                       |
-|   5   | **Bộ dữ liệu mẫu chạy Demo & `requirements.txt`** (1,000-5,000 dòng đầy đủ 27 đặc trưng + RTMA, kèm hướng dẫn tái lập) | Điều kiện nghiệm thu Demo & chấm mã nguồn | `04_Data/` & `03_SourceCode/` | **Đang hoàn thiện** (Đã có schema và tệp tiền xử lý mẫu để trích xuất)                                                  | **Quách Tuấn Kiệt** (Data mẫu) & **Võ Đình Kiên** (`requirements.txt`) |
+| STT | Hạng mục bắt buộc (theo quy định môn học) | Tỷ trọng / Vai trò | Thư mục đích | Trạng thái hiện tại | Người phụ trách chính |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | **Chương trình Demo Web/App tương tác (`app.py`)** (kết nối trọng số thật, tích hợp BI Dashboard & dự báo ETA) | **50%** điểm sản phẩm A4 | `03_SourceCode/` & `07_Demo/` | **Đang xây dựng** (Đã có sẵn trọng số mô hình và số liệu DAMA để tích hợp) | **Đỗ Văn Lộc** |
+| 2 | **Báo cáo Đồ án Cuối kỳ 7 Chương** (`.docx` & `.pdf`, 30-50 trang) | **30%** điểm sản phẩm A4 | `01_BaoCao/` | **Đang triển khai viết** (Đã có đầy đủ số liệu thực nghiệm Engine v2 và phân công chi tiết 7 chương) | **Cả nhóm** (Võ Đình Kiên chủ trì) |
+| 3 | **Bộ Slide Bảo vệ Cuối kỳ 10 phần** (`.pptx` & `.pdf`) | **20%** điểm sản phẩm A4 | `02_Slides/` | **Đang triển khai thiết kế** (Đã chốt bố cục 10 phần chuẩn môn học) | **Cả nhóm** (Đỗ Văn Lộc chủ trì) |
+| 4 | **Bộ dữ liệu mẫu chạy Demo & `requirements.txt`** (1,000-5,000 dòng đầy đủ 27 đặc trưng + RTMA, kèm hướng dẫn tái lập) | Điều kiện nghiệm thu Demo & chấm mã nguồn | `04_Data/` & `03_SourceCode/` | **Đang hoàn thiện** (Đã có schema và tệp tiền xử lý mẫu để trích xuất) | **Quách Tuấn Kiệt** (Data mẫu) & **Võ Đình Kiên** (`requirements.txt`) |
+
+---
 
 ### 2. Nhóm tiêu chí Kỹ thuật, Biểu đồ & Học thuật chuyên sâu (Sẵn sàng triển khai từ dữ liệu có sẵn)
 
 1. **Kiểm định ý nghĩa thống kê chính thức (Statistical Significance Testing):**
-
    - **Hiện trạng:** Đã có số liệu chi tiết qua 3 Fold của 7 mô hình và 13 biến thể trong `05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/` và `08_Runner_Song_Song_2_M4_M5_M6_M7/results/`.
-   - **Yêu cầu hoàn thiện:** Thực hiện kiểm định `Wilcoxon signed-rank test`, `Diebold-Mariano test` hoặc `Paired Bootstrap` (2,000 lần lặp) kèm tính toán `p-value` so sánh giữa Baseline B0 và các mô hình tốt nhất (CatBoost, XGBoost, LightGBM, M6 Asymmetric, M7 Conformal). Phụ trách: **Lê Sỹ Liêm**.
+   - **Yêu cầu hoàn thiện:** Thực hiện kiểm định `Wilcoxon signed-rank test`, `Diebold-Mariano test` hoặc `Paired Bootstrap` (2,000 lần lặp) kèm tính toán giá trị `p-value` so sánh giữa Baseline B0 và các mô hình tốt nhất (CatBoost, XGBoost, LightGBM, M6 Asymmetric, M7 Conformal). Phụ trách: **Lê Sỹ Liêm**.
 2. **Biểu đồ Chương 4 & Chương 5 chuẩn Engine v2 (`DPI >= 300`):**
-
    - **Hiện trạng:** Thư mục `06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/Hinh_Anh_Bieu_Do/` và `02_DS317_02.../CHARTS/` đã có 30 biểu đồ chuẩn cho EDA và BTVN.
    - **Yêu cầu hoàn thiện:** Thiết kế bổ sung các biểu đồ Engine v2 cho Chương 4 và Chương 5: sơ đồ kiến trúc Engine v2 tích hợp BI Dashboard, biểu đồ so sánh 7 mô hình theo phân tầng (`All`, `LE_168h`, `GT_168h`), biểu đồ Delta Ablation `M1-M7`, biểu đồ phân tích sai số residual theo phân tầng 168h. Phụ trách: **Huỳnh Chí Kiên**.
 3. **Giải thích mô hình chuyên sâu bằng SHAP (`SHAP Summary Plot` & `SHAP Beeswarm Plot`):**
-
    - **Hiện trạng:** Đã có đầy đủ trọng số mô hình trong gói `runner1_saved_models.zip` và `runner2_saved_models.zip` (hoặc giải nén trong `05_Model/`).
    - **Yêu cầu hoàn thiện:** Nạp mô hình tốt nhất (CatBoost/XGBoost/LightGBM) cùng bộ dữ liệu kiểm thử để trích xuất SHAP values, vẽ `SHAP Summary Plot` và `SHAP Beeswarm Plot` giải thích mức độ ảnh hưởng của `Dist_To_Berth_NM`, `sog`, các biến tương tác M3 và thời tiết RTMA M4. Phụ trách: **Huỳnh Chí Kiên**.
 4. **Phân tích lỗi Case Study có kiểm chứng (Error Analysis):**
-
    - **Hiện trạng:** Đã có bảng số liệu đánh giá chi tiết theo từng chuyến đi và phân tầng thời gian.
    - **Yêu cầu hoàn thiện:** Trích xuất các trường hợp tàu biển thật (kèm định danh `MMSI`, loại tàu, vận tốc `sog`, khoảng cách `Dist_To_Berth_NM`) có sai số residual lớn nhất ở cả 2 tầng `<= 168h` và `> 168h`, phân tích nguyên nhân vật lý/hàng hải, viết tài liệu **Giải thích phân tầng 168h mới** thay thế bản cũ đã xóa. Phụ trách: **Trần Hồng Lĩnh**.
 5. **Quy đổi Tài chính USD / Business ROI và Đánh giá Mất mát Bất đối xứng (M6/M7):**
-
    - **Hiện trạng:** Đã có kết quả thực nghiệm M6 Asymmetric Loss (`m6_asym_*`) và M7 Conformal Prediction (`m7_conformal_*`).
    - **Yêu cầu hoàn thiện:** Xây dựng bảng quy đổi tài chính thực tế cho doanh nghiệp cảng biển: tham chiếu đơn giá nhân công bốc xếp ILWU (56.85 USD/giờ), chi phí thuê tàu theo ngày (15,800 - 90,500 USD/ngày), định lượng khoản tiết kiệm USD khi giảm tỷ lệ dự báo sớm (`Underprediction_pct`) từ M6 và độ tin cậy từ khoảng dự báo M7 Conformal (`PICP_90` vs `MPIW`). Phụ trách: **Lê Sỹ Liêm** & **Trần Hồng Lĩnh**.
 6. **Tuân thủ Pháp lý & Đạo đức AI:**
-
-   - **Yêu cầu hoàn thiện:** Rà soát và hoàn thiện tài liệu tuân thủ **Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15**, **Luật Dữ liệu 60/2024/QH15** (làm rõ cơ chế ẩn danh hóa định danh tàu biển `MMSI` thành `Vessel_Hash_ID`), và soạn thảo mục **Khai báo sử dụng AI** minh bạch theo chuẩn liêm chính học thuật. Phụ trách: **Nguyễn Hữu Bảo Lộc**.
+   - **Yêu cầu hoàn thiện:** Rà soát và hoàn thiện tài liệu tuân thủ **Luật Bảo vệ dữ liệu cá nhân**, và soạn thảo mục **Khai báo sử dụng AI** minh bạch theo chuẩn liêm chính học thuật. Phụ trách: **Nguyễn Hữu Bảo Lộc**.
 7. **Hồ sơ Quản lý Nhóm cuối kỳ (`08_QuanLyNhom/`):**
-
-   - **Yêu cầu hoàn thiện:** Hoàn thiện Nhật ký thực nghiệm tổng hợp, Scope Changelog (lý giải điều chỉnh từ Engine v1 sang Engine v2), tập hợp Biên bản họp nhóm giai đoạn sau Lab 3 và Bảng tự đánh giá đóng góp % của 7 thành viên. Phụ trách: **Võ Đình Kiên** & **Đỗ Văn Lộc**.
-
----
-
-## PHẦN B: TRẠNG THÁI KHẮC PHỤC SAI LỆCH SỐ LIỆU VÀ CÁC ĐIỂM CẦN LƯU Ý
-
-### 1. Trạng thái khắc phục các sai lệch số liệu
-
-- **Các điểm đã giải quyết dứt điểm 100% trong kho lưu trữ:**
-
-  - Đã xóa sạch 2 thư mục cũ gây nhầm lẫn: `Ket_Qua_Chay_Runner_1_va_2/` và `So_Lieu_Sau_Chay_Lai/`. Toàn bộ dữ liệu số liệu đã quy tập duy nhất tại [`05_Output_Cac_Notebook/`](../05_Output_Cac_Notebook/README.md).
-  - Đã xóa tệp `Giai_Thich_Chenh_Lech_So_Lieu_Phan_Tang_168h.md` và `Bao_cao_Thuc_nghiem_Ablation_Module_M7_LeSyLiem.md` do chứa số liệu cũ không khớp.
-  - Đã chuẩn hóa số liệu DAMA 6 chiều, tương quan Pearson và số bản ghi trên `README.md` gốc, `BT1`, `BT2`, và `BT3`.
-  - Đã kích hoạt 29 tệp DAMA 26 đặc trưng từ `ds317_02_eda_dama_results.zip`.
-- **Các điểm cần lưu ý khi các thành viên tổng hợp Báo cáo 7 chương:**
-
-  - 03 báo cáo Word chuyên đề cũ trong `03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Bao_cao_Modules/` (`Bao_cao_Thuc_nghiem_Module_M3_Ablation_Study.docx`, `BaoCao_M5.docx`, `Bao_cao_Thuc_nghiem_Module_M6.docx`) còn lưu số liệu Engine v1 cũ. Khi viết Chương 5 của Báo cáo cuối kỳ, các thành viên phụ trách (Quách Tuấn Kiệt, Nguyễn Hữu Bảo Lộc, Trần Hồng Lĩnh) **bắt buộc phải lấy số liệu mới nhất** từ `05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/` và `08_Runner_Song_Song_2_M4_M5_M6_M7/results/`.
-  - Mốc đối chứng `15.79h` trong tài liệu Lab 3 cũ (`Lab3_DS317.R11_Nhom03_ThuyetMinh.docx`) được tính trên phạm vi dữ liệu trước đây; khi trình bày trong Báo cáo cuối kỳ, cần chú thích rõ ngữ cảnh và đối chiếu sang hệ quy chiếu Engine v2 hiện tại (`LE_168h` MAE `21.64h - 24.94h`, `All` MAE `110.12h - 114.85h`).
-
-### 2. Chuẩn hóa quy cách văn bản khi soạn thảo
-
-- Thống nhất sử dụng dấu chấm `.` làm dấu thập phân cho toàn bộ văn bản và bảng biểu (ví dụ: `21.64`, `0.50971`).
-- Sử dụng dấu gạch ngang tiêu chuẩn `-` (ASCII 0x2D), tuyệt đối không dùng ký tự gạch ngang dài en-dash (U+2013) hoặc em-dash (U+2014).
-- Đánh số thứ tự liên tục cho toàn bộ Bảng (Bảng 1.1, Bảng 1.2, ...) và Hình (Hình 1.1, Hình 1.2, ...) kèm trích dẫn nguồn cụ thể.
+   - **Yêu cầu hoàn thiện:** Hoàn thiện Nhật ký thực nghiệm tổng hợp, Scope Changelog (lý giải điều chỉnh từ Engine v1 sang Engine v2), tập hợp Biên bản họp nhóm giai đoạn sau Lab 3 và Bảng tự đánh giá đóng góp % của 7 thành viên. Phụ trách: **Đỗ Văn Lộc**.
 
 ---
 
-## PHẦN C: BẢNG PHÂN CÔNG CHI TIẾT 7 THÀNH VIÊN VÀ HƯỚNG DẪN TRA CỨU TỆP NGUỒN
+## PHẦN B: PHÂN TÍCH BẢN CHẤT KHOA HỌC & KỸ THUẬT VỀ SỰ KHÁC BIỆT SAI SỐ (LAB 3: 15.79h vs. ENGINE V2: 21.64h - 24.94h)
 
-### 1. Bản đồ tra cứu tệp nguồn chuẩn hóa cho 7 thành viên
+Một câu hỏi cốt lõi thường được đặt ra trong các buổi phản biện trước Hội đồng Đồ án:
+> *"Tại sao ở Lab 3 mô hình cơ sở Ridge Regression đạt MAE 15.79h, nhưng khi nâng cấp mô hình toàn diện lên Engine v2 với các thuật toán SOTA (CatBoost, LightGBM, XGBoost, ST-GNN, PatchTST) thì sai số phân tầng cốt lõi lại ghi nhận ở mức 21.64h - 24.94h?"*
 
-Tất cả các thành viên khi thực hiện nhiệm vụ hãy tra cứu trực tiếp từ các đường dẫn chuẩn hóa dưới đây:
+Các thành viên nhóm cần nắm vững 4 nguyên nhân khoa học và kỹ thuật nền tảng sau đây để giải thích mạch lạc, tự tin và thuyết phục:
 
-| Phân hệ thực nghiệm                 | Thư mục nguồn trong `05_Output_Cac_Notebook/`                                                                    | Thư mục đã đồng bộ trong `DS317_R11_Nhom03_HoSoNopDoAn/` | Nội dung dữ liệu chính                                                                                                                                                                                |
-| :---------------------------------- | :--------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **DAMA & Khám phá 26 đặc trưng**    | [`02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/`](../05_Output_Cac_Notebook/02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/)   | `06_Results/`                                            | 29 tệp: DAMA 6 chiều (5 CSV), Từ điển 27 thuộc tính (7 CSV), EDA (2 CSV), Pearson (2 CSV), Validation (4 CSV), Biểu đồ chất lượng (6 PNG).                                                            |
-| **Baseline Ridge**                  | [`04_DS317_04_Baseline_Ridge/`](../05_Output_Cac_Notebook/04_DS317_04_Baseline_Ridge/)                           | `05_Model/` & `06_Results/`                              | 5 tệp: `results/benchmark_results_raw_complete_case.csv`, `parameters/raw_baseline_metadata.json`, `saved_models/ridge_raw_cc_model.joblib`.                                                          |
-| **Kiểm kê tổng hợp BTVN**           | [`06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/`](../05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/)         | `05_Model/` & `06_Results/`                              | 102 tệp: 60 CSV số liệu kiểm kê 3 phiên bản dữ liệu, 9 metadata JSON, 8 mô hình joblib, 24 PNG biểu đồ EDA/DAMA.                                                                                      |
-| **Runner 1 (Baseline, M1, M2, M3)** | [`07_Runner_Song_Song_1_Baseline_M1_M2_M3/`](../05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/) | `05_Model/` & `06_Results/`                              | 316 tệp: 42 CSV số liệu (`results/`), 274 tệp tham số (`parameters/` gồm 273 `*_meta.json` + `parameters_summary.csv`), gói trọng số `runner1_saved_models.zip` (72.98 MB chứa 273 weights).          |
-| **Runner 2 (M4, M5, M6, M7)**       | [`08_Runner_Song_Song_2_M4_M5_M6_M7/`](../05_Output_Cac_Notebook/08_Runner_Song_Song_2_M4_M5_M6_M7/)             | `05_Model/` & `06_Results/`                              | 329 tệp: 42 CSV số liệu (`results/`), 274 tệp tham số (`parameters/` gồm 273 `*_meta.json` + `parameters_summary.csv`), 13 flag, gói trọng số `runner2_saved_models.zip` (74.40 MB chứa 273 weights). |
+```
++---------------------------------------------------------------------------------------------------------+
+|                  BẢN CHẤT SỰ THAY ĐỔI HỆ QUY CHIẾU THỰC NGHIỆM (PARADIGM SHIFT)                         |
++---------------------------------------------------------------------------------------------------------+
+|   LAB 3 (Thuyết minh ban đầu)                   |   ENGINE V2 (Hệ thống thực nghiệm chuẩn hóa)          |
+|   - Chia ngẫu nhiên / Cửa sổ hẹp                |   - Out-of-Time Walk-Forward 3 Folds                  |
+|   - Dữ liệu bị cắt cúp: Target <= 168h          |   - Toàn dải hành trình liên tục (Full Voyage)        |
+|   - Dummy MAE = 27.23h (Mẫu nhỏ, gần bờ)        |   - Dummy MAE All = 129.20h - 156.47h                 |
+|   - MAE 15.79h chiếm > 58% dải mục tiêu         |   - Phân tầng LE_168h MAE = 21.64h - 24.94h (~13%)    |
+|   - Tồn tại rò rỉ dữ liệu (Temporal Leakage)    |   - Triệt tiêu 100% rò rỉ dữ liệu (Zero Leakage)      |
+|   - Tối ưu L2 MSE đối xứng thông thường         |   - Tối ưu Custom Asymmetric Loss (Phạt sớm w=2.5)    |
++---------------------------------------------------------------------------------------------------------+
+```
 
----
+### 1. Chiến lược phân chia dữ liệu (Data Splitting Protocol) & Triệt tiêu Rò rỉ Chuỗi Thời gian (Data Leakage)
+- **Ở Lab 3:** Dữ liệu thử nghiệm ban đầu vô tình chịu ảnh hưởng của hiện tượng **Rò rỉ Chuỗi Thời gian (Temporal Data Leakage)**: Cùng một định danh tàu (`mmsi`) hoặc cùng một chuyến hải trình (`trip_id`) xuất hiện đan xen ở cả tập Train và Test. Với tần suất phát tín hiệu AIS dày đặc (2-10 giây/bản tin), khi mô hình học thấy vị trí tàu lúc 10:00 ở tập Train, mô hình chỉ cần "nội suy" hoặc ghi nhớ quỹ đạo là có thể đoán chính xác thời điểm cập cảng lúc 10:05 ở tập Test. Kết quả là mốc `MAE = 15.79h` mang tính **"lạc quan ảo" (over-optimistic)**, không phản ánh năng lực khái quát hóa thực tế.
+- **Ở Engine v2:** Nhóm thiết lập giao thức **Out-of-Time Time-based Walk-Forward Expanding Window 3 Folds** nghiêm ngặt nhất (Fold 1: Train Q1 -> Test Q2; Fold 2: Train Q1-Q2 -> Test Q3; Fold 3: Train Q1-Q3 -> Blind Test Q4). Toàn bộ các chuyến tàu vượt biên quý (`TRAIN_CROSSING_EXCLUDED`) đều bị loại bỏ, bảo đảm tính thuần khiết 100% (`TRAIN_PURE`, `TEST_PURE`). Mô hình trong Engine v2 bắt buộc phải suy luận trên những con tàu hoàn toàn mới trong tương lai mà nó chưa từng gặp, triệt tiêu hoàn toàn hiện tượng học vẹt.
 
-### 2. Bảng phân công chi tiết cho 7 thành viên Nhóm 03
+### 2. Chân trời dự báo & Hiện tượng Cắt cúp Cửa sổ (Prediction Horizon & Truncation Bias)
+- **Ở Lab 3:** Dữ liệu bị gọt giũa và cắt cúp cứng trong cửa sổ ngắn ($0 < \text{Target\_Hours} \le 168\text{h}$), trong đó các bản tin gần bờ và gần luồng hoa tiêu (Pilot Station) với cự ly ngắn chiếm tỷ trọng áp đảo. Bằng chứng rõ nhất là mô hình ngây thơ Dummy Regressor ở Lab 3 chỉ có $MAE = 27.23\text{h}$ (trung vị của tập dữ liệu chỉ quanh 25-30h). Do đó, sai số `15.79h` thực chất chiếm tới hơn **58%** giá trị trung vị của tập dữ liệu đó.
+- **Ở Engine v2:** Nhóm giữ nguyên **toàn dải chân trời hành trình liên tục (Full Voyage Horizon)** không cắt cúp nhân tạo, bao gồm cả các hành trình xa khơi vượt đại dương hàng nghìn hải lý (chân trời dự báo lên đến hàng trăm giờ, Dummy MAE toàn cục lên tới `129.20h - 156.47h`). Khi phân tầng đánh giá chuyên biệt trên nhóm $\le 168\text{h}$ (`LE_168h`, chiếm 78.61% tập kiểm thử), các tàu phân bố đều từ 0 đến 168 giờ với cự ly hàng trăm hải lý ngoài biển mở. Mức sai số `21.64h - 24.94h` trên phân tầng này chỉ chiếm **12.8% - 14.8%** chân trời dự báo, phản ánh năng lực dự báo thực chiến và có độ tin cậy vượt trội trong điều độ cầu bến.
 
-Do toàn bộ dữ liệu, tham số và trọng số đã sẵn sàng 100%, **cả 7 thành viên tiến hành song song ngay lập tức** theo thế mạnh chuyên môn:
+### 3. Quy mô dữ liệu, Tính toàn diện & Trôi dạt Phân phối Mùa vụ (Scale & Concept Drift)
+- **Ở Lab 3:** Thử nghiệm trên tập mẫu con nhỏ, lọc bớt các điều kiện hành hải phức tạp.
+- **Ở Engine v2:** Xử lý trực tiếp toàn bộ **320.78 triệu bản ghi thô pre-split** (`256.94M` `RAW18`), tinh chế thành **92.68 triệu bản ghi sạch** (`Base22`/`Prep27`), bao phủ trọn vẹn **11,632 tàu thương mại độc nhất** trên toàn bộ lãnh hải Hoa Kỳ (Đại Tây Dương, Thái Bình Dương, Vịnh Mexico, Alaska). Tập kiểm thử Blind Test Quý 4 chịu trọn vẹn sự biến động thời tiết khắc nghiệt của mùa đông (gió bão cấp 8-10, sóng biển $>4\text{m}$, hiện tượng trôi dạt và giảm tốc chờ bến kéo dài). Mức sai số `21.64h - 24.94h` phản ánh đúng thực tế khắc nghiệt ngoài đại dương.
 
-|  STT  | Thành viên & MSSV                       | Thế mạnh BTVN & Module đã làm                                    | Nhiệm vụ kỹ thuật, thực nghiệm & demo trọng tâm                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Tệp nguồn tra cứu chính                                                                                                                                                                    | Sản phẩm bàn giao & Thư mục đích                                                                                                                                                                       |
-| :---: | :-------------------------------------- | :--------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   1   | **Võ Đình Kiên**(`24520893`Nhóm trưởng) | Master Pipeline, Big Data/PyArrow, M4 RTMA, MLOps & Quản lý Repo | 1. Chuẩn hóa `requirements.txt` và tài liệu hướng dẫn cài đặt môi trường, tái lập thực nghiệm.2. Hoàn thiện Nhật ký thực nghiệm tổng hợp (`Experiment Log`) và `Scope Changelog` lý giải chuyển dịch Engine v1 sang v2.3. Điều phối tổng thể quá trình tích hợp Báo cáo, Slide và nghiệm thu Hồ sơ nộp bài.                                                                                                                                                                                                           | - `05_Output_Cac_Notebook/`- `02_Ma_Nguon_Tien_Xu_Ly_Va_Thuc_Nghiem/`                                                                                                                      | - `03_SourceCode/requirements.txt`- `08_QuanLyNhom/` (Experiment Log, Scope Changelog, Bảng phân công)- Thư mục nộp bài chuẩn `DS317_R11_Nhom03_HoSoNopDoAn/`                                          |
-|   2   | **Đỗ Văn Lộc**(`24520977`Thư ký)        | Mockup Web Demo Mục 9, M2 Điền khuyết median, Độ đo nghiệp vụ    | 1. Lập trình hoàn thiện **Ứng dụng Web Demo Streamlit (`app.py`)** tích hợp **BI Dashboard tương tác**: hiển thị giám sát CLDL DAMA 6 chiều, biểu đồ phân phối, suy luận ETA từ trọng số thật, diễn giải điều độ cảng.2. Soạn kịch bản demo và quay **Video demo màn hình dự phòng (`<= 3` phút)**.3. Tập hợp Biên bản họp nhóm giai đoạn cuối kỳ và Bảng tự đánh giá đóng góp % của 7 thành viên.                                                                                                                    | - `02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/` (DAMA, Từ điển)- `05_Model/` (trọng số CatBoost/XGBoost/LightGBM)- `04_Data/` (bộ mẫu demo)                                                    | - `03_SourceCode/app.py` (mã nguồn demo)- `07_Demo/` (tệp chạy demo, video `<= 3` phút, hướng dẫn sử dụng)- `08_QuanLyNhom/` (Biên bản họp nhóm, Bảng đánh giá đóng góp %)                             |
-|   3   | **Quách Tuấn Kiệt**(`24520911`)         | Data Inventory 7 tiêu chí, 6 chiều DAMA BT2, M3 Feature Creation | 1. Trích xuất **Bộ dữ liệu mẫu chạy Demo** (1,000 - 5,000 bản ghi đầy đủ 27 đặc trưng + RTMA, dung lượng nhẹ để Demo tải `< 3` giây).2. Tổng hợp bảng đối chiếu chất lượng dữ liệu DAMA 18 cột vs 27 cột từ `DS317_02` và Từ điển 27 thuộc tính phục vụ tab BI Monitoring trên Demo và Chương 3 Báo cáo.3. Đối chiếu số liệu thực nghiệm M3 Feature Creation từ Engine v2 mới.                                                                                                                                        | - `02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/` (DAMA, Dictionary)- `07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/` (`m3_*`)                                                                | - `04_Data/` (tệp mẫu demo CSV/Parquet, Data Dictionary 27 thuộc tính, file txt trích dẫn link dữ liệu lớn Kaggle/Drive)- `06_Results/` (bảng tổng hợp DAMA 18 vs 27 cột, bảng đối chiếu M3 Engine v2) |
-|   4   | **Huỳnh Chí Kiên**(`24520880`)          | Biểu đồ EDA `DPI >= 300`, Tiền xử lý dữ liệu, M1 Ngoại lai IQR   | 1. Thực hiện giải thích mô hình bằng **SHAP (`SHAP Summary Plot` & `SHAP Beeswarm Plot`)** trên mô hình tốt nhất nạp từ trọng số có sẵn.2. Thiết kế trọn bộ **Biểu đồ Chương 4 & Chương 5 chuẩn `DPI >= 300`**: Sơ đồ kiến trúc Engine v2 + BI Dashboard, biểu đồ so sánh 7 mô hình (`All`, `LE_168h`, `GT_168h`), biểu đồ Delta Ablation `M1-M7`, biểu đồ phân tích residual phân tầng 168h.3. Đối chiếu số liệu thực nghiệm M1 IQR Filter từ Engine v2 mới.                                                         | - `05_Model/` (trọng số mô hình tốt nhất)- `07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/` (`00_baseline_*`, `m1_*`)- `08_Runner_Song_Song_2_M4_M5_M6_M7/results/` (`runner2_master_*`) | - `06_Results/` (trọn bộ ảnh biểu đồ SHAP và biểu đồ Chương 4, Chương 5 chuẩn `DPI >= 300`)- `03_SourceCode/` (mã nguồn Python vẽ biểu đồ và trích xuất SHAP)                                          |
-|   5   | **Nguyễn Hữu Bảo Lộc**(`24520983`)      | Khảo sát SOTA, Tài liệu tham khảo IEEE BibTeX, M5 MI & log1p     | 1. Rà soát và hoàn thiện tài liệu **Tuân thủ Pháp lý & Đạo đức AI** (Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15, Luật Dữ liệu 60/2024/QH15, cơ chế ẩn danh hóa `MMSI` thành `Vessel_Hash_ID`) và soạn thảo bản **Khai báo sử dụng AI**.2. Cập nhật và chuẩn hóa danh mục tài liệu tham khảo IEEE (`references.bib`).3. Đối chiếu số liệu thực nghiệm M5 Mutual Information & log1p từ Engine v2 mới.                                                                                                                    | - `00_Quan_Ly_Va_Tai_Lieu_Chung/`- `08_Runner_Song_Song_2_M4_M5_M6_M7/results/` (`m5_*`)                                                                                                   | - Tài liệu Pháp lý, Đạo đức AI & Khai báo AI (lưu tại `08_QuanLyNhom/` và đưa vào Chương 7 Báo cáo)- Tệp `references.bib` cập nhật- `06_Results/` (bảng đối chiếu số liệu M5 Engine v2)                |
-|   6   | **Lê Sỹ Liêm**(`24520951`)              | Time-based Split, Giám sát PSI BT4, M7 Conformal, Độ đo kỹ thuật | 1. Thực hiện **Kiểm định ý nghĩa thống kê chính thức & Phân tích độ ổn định**: chạy `Wilcoxon signed-rank test`, `Diebold-Mariano test` / `Paired Bootstrap 2,000 lần` (`p-value`) giữa Baseline B0 và các mô hình/biến thể tốt nhất; phân tích phương sai sai số qua 3-Fold.2. Trích xuất **Biểu đồ Conformal Prediction `PICP_90` vs `MPIW`** cho M7 chuẩn Engine v2.3. Xây dựng **Bảng Quy đổi Tài chính USD / Business ROI** cho cảng biển (đơn giá ILWU 56.85 USD/h, chi phí thuê tàu 15,800 - 90,500 USD/ngày). | - `07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/`- `08_Runner_Song_Song_2_M4_M5_M6_M7/results/` (`m7_*`, `runner2_master_*`)                                                            | - `06_Results/` (bảng CSV/MD kết quả kiểm định thống kê `p-value`, phân tích 3-Fold, biểu đồ Conformal M7, Bảng quy đổi USD/ROI)- `03_SourceCode/` (mã nguồn script kiểm định thống kê)                |
-|   7   | **Trần Hồng Lĩnh**(`24520970`)          | Baseline & GBDT, M6 Asymmetric Loss, Phân tích sai số            | 1. Thực hiện **Phân tích lỗi Case Study có kiểm chứng (Error Analysis)**: trích xuất mẫu tàu/MMSI thật có sai số residual lớn nhất ở cả tầng `<= 168h` và `> 168h`, phân tích đối chiếu với `Dist_To_Berth_NM`, `sog`, `vessel_type`.2. Soạn thảo tài liệu **Giải thích hiện tượng phân tầng 168h mới** dựa trên bằng chứng dữ liệu thật thay cho bản cũ đã xóa.3. Xuất **Biểu đồ Business ROI / AsymCost** cho M6 và đối chiếu số liệu thực nghiệm M6 từ Engine v2 mới.                                              | - `07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/`- `08_Runner_Song_Song_2_M4_M5_M6_M7/results/` (`m6_*`, `parameters/parameters_summary.csv`)                                           | - `06_Results/` (bài phân tích lỗi Case Study, tài liệu Giải thích phân tầng 168h có kiểm chứng, biểu đồ Business ROI/AsymCost M6, bảng đối chiếu M6 Engine v2)                                        |
-
----
-
-## PHẦN D: LỘ TRÌNH VÀ PHÂN CÔNG HOÀN THIỆN BÁO CÁO 7 CHƯƠNG, SLIDE BẢO VỆ VÀ THUYẾT TRÌNH
-
-Sau khi hoàn tất các sản phẩm thành phần ở Phần C, nhóm sẽ triển khai hợp nhất Báo cáo, Slide và luyện tập thuyết trình bảo vệ theo phân công dưới đây:
-
-### 1. Phân công biên soạn Báo cáo Đồ án Cuối kỳ 7 Chương (`01_BaoCao/`)
-
-Báo cáo hoàn chỉnh từ 30-50 trang (không kể phụ lục), định dạng `.docx` và `.pdf`. Phân công chủ trì từng chương dựa trên chuyên môn:
-
-|    Chương    | Tiêu đề chương & Nội dung trọng tâm                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Người phụ trách chính     | Người phối hợp                          | Sản phẩm đầu vào cần tích hợp                                                                                     |
-| :----------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------ | :-------------------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| **Chương 1** | **Tổng quan Đề tài & Bối cảnh Doanh nghiệp**- Giới thiệu bài toán dự báo ETA tàu biển thay thế tự khai báo.- Bối cảnh cảng biển, chuỗi cung ứng hàng hải, tác động chi phí USD.- Mục tiêu, nhiệm vụ và phạm vi giới hạn của đề tài.                                                                                                                                                                                                                                                      | **Võ Đình Kiên**          | **Đỗ Văn Lộc**                          | BTVN BT1, tài liệu bối cảnh nghiệp vụ, đơn giá ILWU và chi phí thuê tàu.                                          |
-| **Chương 2** | **Khảo sát Hiện trạng & Cơ sở Lý thuyết**- Khảo sát các công trình liên quan (SOTA) về dự báo ETA hàng hải.- Cơ sở lý thuyết các thuật toán học máy (Ridge, GBDT: LightGBM, XGBoost, CatBoost, MLP, Random Forest).- Chuẩn chất lượng dữ liệu DAMA/ISO 8000, kỹ thuật Conformal Prediction và Asymmetric Loss.                                                                                                                                                                           | **Nguyễn Hữu Bảo Lộc**    | **Lê Sỹ Liêm**                          | BTVN BT3, danh mục IEEE `references.bib`, cơ sở lý thuyết M6/M7.                                                  |
-| **Chương 3** | **Khám phá, Tiền xử lý & Đo lường Chất lượng Dữ liệu**- Thu thập dữ liệu AIS và mô tả 3 phiên bản dữ liệu (`RAW18`, `Base22`, `Preprocessed27`).- Đánh giá chất lượng dữ liệu theo chuẩn DAMA 6 chiều trước/sau xử lý.- Quy trình làm sạch dữ liệu, xử lý tọa độ, tốc độ, mớn nước, và kỹ thuật điền khuyết median theo nhóm tàu.                                                                                                                                                        | **Quách Tuấn Kiệt**       | **Huỳnh Chí Kiên**                      | 29 tệp kết quả từ `02_DS317_02...`, từ điển 27 thuộc tính, biểu đồ EDA/DAMA `06_DS317_Tong_Hop...`.               |
-| **Chương 4** | **Thiết kế Kiến trúc Giải pháp & Thiết lập Thực nghiệm**- Kiến trúc tổng thể hệ thống Engine v2 tích hợp BI Dashboard.- Kỹ thuật tạo đặc trưng (Feature Engineering): M3 không gian/động học, M4 tích hợp thời tiết RTMA 2025, M5 chọn lọc đặc trưng MI & log1p.- Chiến lược chia dữ liệu theo chuỗi thời gian (Time-based Split 3-Fold) và các độ đo đánh giá kỹ thuật/nghiệp vụ.                                                                                                       | **Huỳnh Chí Kiên**        | **Trần Hồng Lĩnh**                      | Sơ đồ kiến trúc Engine v2, tài liệu M3, M4 RTMA, M5, chiến lược Time-based Split BT4.                             |
-| **Chương 5** | **Kết quả Thực nghiệm, Phân tích Ablation & Thảo luận**- Bảng kết quả tổng hợp 7 mô hình qua 3-Fold theo 3 phân tầng (`All`, `LE_168h`, `GT_168h`).- Phân tích chuyên sâu Ablation Study 7 Module (M1 đến M7).- Kiểm định ý nghĩa thống kê chính thức (p-value, 3-Fold stability).- Giải thích mô hình bằng SHAP (Summary & Beeswarm Plot).- Phân tích lỗi Case Study có kiểm chứng và giải thích phân tầng 168h.- Đánh giá Business ROI và quy đổi tài chính USD cho doanh nghiệp cảng. | **Lê Sỹ Liêm**            | **Trần Hồng Lĩnh** & **Huỳnh Chí Kiên** | 84 CSV từ Runner 1 & 2 (`results/`), bảng kiểm định thống kê, biểu đồ SHAP, biểu đồ Conformal M7, biểu đồ ROI M6. |
-| **Chương 6** | **Xây dựng Ứng dụng Demo & Hệ thống BI Dashboard**- Thiết kế giao diện và kiến trúc ứng dụng Streamlit tương tác.- Phân hệ BI Dashboard: giám sát chất lượng dữ liệu DAMA, phân phối đặc trưng.- Phân hệ Dự báo ETA: nạp dữ liệu tàu, suy luận từ trọng số thật, trực quan hóa khoảng tin cậy Conformal.- Đánh giá hiệu năng thời gian thực và kịch bản hỗ trợ điều độ cảng.                                                                                                             | **Đỗ Văn Lộc**            | **Quách Tuấn Kiệt**                     | Mã nguồn `app.py`, bộ dữ liệu mẫu demo, ảnh chụp giao diện, video demo.                                           |
-| **Chương 7** | **Kết luận, Đạo đức AI & Hướng Phát triển**- Tổng kết các đóng góp chính của đề tài.- Tuân thủ pháp lý (Luật 91/2025/QH15, Luật 60/2024/QH15), đạo đức AI và cơ chế bảo vệ danh tính tàu.- Khai báo sử dụng công cụ AI minh bạch trong nghiên cứu.- Các hạn chế còn tồn đọng và hướng nghiên cứu mở rộng trong tương lai.                                                                                                                                                                | **Nguyễn Hữu Bảo Lộc**    | **Võ Đình Kiên**                        | Tài liệu pháp lý, đạo đức AI, biên bản nghiệm thu đồ án.                                                          |
-| **Hợp nhất** | **Kiểm tra Định dạng, Mục lục, Phụ lục & Xuất bản Báo cáo**- Thống nhất dấu chấm thập phân `.`, dấu gạch ngang chuẩn `-`.- Đánh số liên tục Hình, Bảng, Công thức toán học KaTeX.- Kiểm tra liên kết tài liệu tham khảo và xuất bản song song `.docx` và `.pdf`.                                                                                                                                                                                                                         | **Võ Đình Kiên**(Chủ trì) | **Đỗ Văn Lộc**(Hỗ trợ)                  | Toàn bộ 7 chương thành phần, phụ lục mã nguồn và bảng kiểm kê.                                                    |
+### 4. Đánh đổi Hàm mục tiêu Nghiệp vụ Bất đối xứng (Asymmetric Loss Trade-off)
+- **Ở Lab 3:** Ridge Regression tối ưu hóa sai số bình phương đối xứng ($L_2$ Loss), phạt lỗi dự báo sớm và dự báo trễ như nhau.
+- **Ở Engine v2:** Nhóm triển khai Module M6 với **Custom Asymmetric Loss** (phạt nặng trường hợp dự báo tàu đến sớm gấp $w=2.5$ lần so với tàu đến trễ, vì tàu đến sớm sẽ khiến cảng chưa kịp bố trí cầu bến, công nhân cẩu bãi nhàn rỗi tiêu tốn hàng nghìn USD/giờ). Về mặt toán học (biên Pareto), khi ép mô hình triệt tiêu dự báo sớm (giảm `Underprediction_pct` từ 50% xuống mức an toàn), mô hình chủ động chấp nhận tăng nhẹ MAE đối xứng quanh mốc `21.64h - 24.94h` để đạt mục tiêu kinh tế tối thượng: **tiết kiệm hàng triệu USD chi phí vận hành cho doanh nghiệp cảng**.
 
 ---
 
-### 2. Phân công thiết kế Bộ Slide Bảo vệ Cuối kỳ 10 phần (`02_Slides/`)
+## PHẦN C: KHÔNG GIAN LÀM VIỆC CỦA 7 THÀNH VIÊN TRÊN GITHUB (`06_Dong_Gop_Cac_Thanh_Vien/`)
 
-Slide trình bày bảo vệ từ 25-35 trang, thiết kế hiện đại, tập trung vào hình ảnh, biểu đồ trực quan và kết quả định lượng:
+Nhằm bảo đảm tính độc lập, tránh xung đột mã nguồn (merge conflicts) và minh bạch hóa tỷ lệ đóng góp của từng cá nhân, nhóm thiết lập 7 thư mục làm việc cá nhân riêng biệt tại [`06_Dong_Gop_Cac_Thanh_Vien/`](../06_Dong_Gop_Cac_Thanh_Vien/README.md):
 
-|  Phần Slide  | Tiêu đề nội dung                                                                  | Người phụ trách thiết kế | Thời lượng thuyết trình dự kiến |
-| :----------: | :-------------------------------------------------------------------------------- | :----------------------- | :-----------------------------: |
-| **Slide 01** | Bìa đề tài, Thông tin nhóm 03, Giảng viên hướng dẫn & Mục lục tổng quan           | **Võ Đình Kiên**         |             1 phút              |
-| **Slide 02** | Bối cảnh doanh nghiệp cảng biển, Đặt vấn đề & Mục tiêu giải pháp                  | **Võ Đình Kiên**         |             2 phút              |
-| **Slide 03** | Khảo sát nghiên cứu liên quan (SOTA) & Cơ sở lý thuyết nền tảng                   | **Nguyễn Hữu Bảo Lộc**   |             2 phút              |
-| **Slide 04** | Dữ liệu nghiên cứu, Quy trình tiền xử lý & Đánh giá chất lượng chuẩn DAMA 6 chiều | **Quách Tuấn Kiệt**      |            2.5 phút             |
-| **Slide 05** | Kiến trúc giải pháp tổng thể Engine v2 & Kỹ thuật đặc trưng (M1 - M5)             | **Huỳnh Chí Kiên**       |            2.5 phút             |
-| **Slide 06** | Thiết lập thực nghiệm (Time-based Split 3-Fold) & Kết quả đối chuẩn 7 mô hình     | **Huỳnh Chí Kiên**       |             2 phút              |
-| **Slide 07** | Phân tích chuyên sâu Ablation Study (M1-M7), Kiểm định thống kê & Phân tích SHAP  | **Lê Sỹ Liêm**           |             3 phút              |
-| **Slide 08** | Phân tích lỗi Case Study, Phân tầng 168h & Đánh giá Business ROI tài chính USD    | **Trần Hồng Lĩnh**       |            2.5 phút             |
-| **Slide 09** | Trực tiếp Demo Ứng dụng Web Streamlit & Phân hệ BI Dashboard giám sát             | **Đỗ Văn Lộc**           |            3.5 phút             |
-| **Slide 10** | Kết luận, Tuân thủ Pháp lý, Đạo đức AI & Hướng phát triển tương lai               | **Nguyễn Hữu Bảo Lộc**   |            1.5 phút             |
-| **Tổng kết** | **Phần hỏi đáp và phản biện với Hội đồng (Q&A)**                                  | **Cả 7 thành viên**      |          10 - 15 phút           |
+| STT | Thành viên & MSSV | Vai trò chuyên trách | Đường dẫn thư mục cá nhân | Tệp hướng dẫn riêng |
+| :-: | :--- | :--- | :--- | :--- |
+| 1 | **Võ Đình Kiên** *(24520893)* | Nhóm trưởng, Quản trị dự án & Kiến trúc | `06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_01_VoDinhKien/` | [`Thanh_Vien_01_VoDinhKien/README.md`](../06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_01_VoDinhKien/README.md) |
+| 2 | **Đỗ Văn Lộc** *(24520977)* | Thư ký, Kỹ sư Demo Web `app.py` & Slide | `06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_02_DoVanLoc/` | [`Thanh_Vien_02_DoVanLoc/README.md`](../06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_02_DoVanLoc/README.md) |
+| 3 | **Quách Tuấn Kiệt** *(24520911)* | Kỹ sư Dữ liệu mẫu & Chất lượng DAMA | `06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_03_QuachTuanKiet/` | [`Thanh_Vien_03_QuachTuanKiet/README.md`](../06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_03_QuachTuanKiet/README.md) |
+| 4 | **Huỳnh Chí Kiên** *(24520880)* | Chuyên viên EDA, Biểu đồ & XAI (SHAP) | `06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_04_HuynhChiKien/` | [`Thanh_Vien_04_HuynhChiKien/README.md`](../06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_04_HuynhChiKien/README.md) |
+| 5 | **Nguyễn Hữu Bảo Lộc** *(24520983)* | Chuyên viên SOTA IEEE & Đạo đức AI | `06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_05_NguyenHuuBaoLoc/` | [`Thanh_Vien_05_NguyenHuuBaoLoc/README.md`](../06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_05_NguyenHuuBaoLoc/README.md) |
+| 6 | **Lê Sỹ Liêm** *(24520951)* | Chuyên viên Kiểm định Thống kê & ROI Cảng | `06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_06_LeSyLiem/` | [`Thanh_Vien_06_LeSyLiem/README.md`](../06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_06_LeSyLiem/README.md) |
+| 7 | **Trần Hồng Lĩnh** *(24520970)* | Kỹ sư ML/DL, Error Analysis Case Study | `06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_07_TranHongLinh/` | [`Thanh_Vien_07_TranHongLinh/README.md`](../06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_07_TranHongLinh/README.md) |
 
 ---
 
-### 3. Nguyên tắc Thuyết trình Bảo vệ và Chuẩn bị Kịch bản Q&A Phản biện
+## PHẦN D: PHÂN CÔNG CHI TIẾT 7 CHƯƠNG BÁO CÁO VÀ CÁC SẢN PHẨM CUỐI KỲ
 
-1. **Phân vai thuyết trình bình đẳng 7 thành viên:**
-   - Đảm bảo 100% thành viên đều trực tiếp trình bày trên bục bảo vệ theo đúng phân công các slide ở bảng trên.
-   - Thời lượng mỗi thành viên từ 2 đến 3.5 phút, tổng thời gian trình bày toàn nhóm khống chế nghiêm ngặt trong khoảng **20 - 22 phút**.
-2. **Kịch bản Demo tương tác trực tiếp & Video dự phòng:**
-   - **Đỗ Văn Lộc** chuẩn bị ứng dụng Streamlit chạy mượt mà trên môi trường local (hoặc Cloud) với bộ dữ liệu mẫu do **Quách Tuấn Kiệt** chuẩn bị, phản hồi suy luận `< 3` giây.
-   - Luôn có sẵn tệp video quay màn hình dự phòng (`<= 3` phút, độ phân giải 1080p, thuyết minh rõ ràng) lưu trong `07_Demo/` để trình chiếu ngay lập tức nếu phòng bảo vệ gặp sự cố mạng hoặc lỗi kỹ thuật.
-3. **Chuẩn bị ngân hàng câu hỏi Q&A phản biện dự kiến:**
-   - Mỗi thành viên chuẩn bị sẵn phương án trả lời cho 2-3 câu hỏi phản biện chuyên sâu thuộc phần việc của mình (ví dụ: lý do chọn 168h làm ngưỡng phân tầng, cách xử lý rò rỉ dữ liệu trong Time-based Split, bản chất toán học của Conformal Prediction, cách tính toán đơn giá ROI nhân công ILWU, cơ chế mã hóa MMSI bảo vệ quyền riêng tư).
+### 1. Ma trận phân công Báo cáo Đồ án Cuối kỳ 7 Chương (30-50 trang)
+
+| Chương báo cáo | Tên chương nội dung | Thành viên phụ trách chính | Nội dung cốt lõi cần hoàn thành | Nguồn số liệu chính thức |
+| :---: | :--- | :--- | :--- | :--- |
+| **Chương 1** | **Tổng quan và Bối cảnh nghiệp vụ** | **Đỗ Văn Lộc** *(Chính)* & **Nguyễn Hữu Bảo Lộc** *(SOTA)* | Bối cảnh logistics cảng biển, chi phí trễ/sớm ETA, mục tiêu SMART, tổng quan 6 bài báo SOTA (Springer, Elsevier) và bảng đối sánh quốc tế. | `00_Quan_Ly_Va_Tai_Lieu_Chung/` & tệp `TongQuan_RelatedWork_ETA_6BaiBao_v2.xlsx` |
+| **Chương 2** | **Dữ liệu và Đo lường Chất lượng Dữ liệu** | **Quách Tuấn Kiệt** | Kiểm kê 7 tiêu chí NOAA AIS 2025, từ điển 18/22/27 thuộc tính, đo lường chất lượng 6 chiều DAMA-DMBOK trên 256.94M bản ghi `RAW18`. | `05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/DAMA/` |
+| **Chương 3** | **Phương pháp Tiền xử lý Dữ liệu** | **Huỳnh Chí Kiên** | Kiến trúc 2-Pass Rolling Stream, bộ lọc 3 tầng, Domain-based Imputation (khôi phục khuyết thiếu về 0.00%), chế tác đặc trưng thân vỏ $Area, Volume$. | `05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/IMPUTE_BENCHMARK/` |
+| **Chương 4** | **Phương pháp Nghiên cứu & Thiết kế Thực nghiệm** | **Lê Sỹ Liêm** | Phát biểu bài toán KPDL, kịch bản Expanding Window 3 Folds, hàm mất mát Custom Asymmetric Loss, các độ đo kỹ thuật và nghiệp vụ ($AsymCost$). | `03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Tong_Hop_Ket_Qua_Thuc_Nghiem_Ablation_7_Module.md` |
+| **Chương 5** | **Kết quả Thực nghiệm & Phân tích Đánh giá** | **Trần Hồng Lĩnh** *(Chủ trì)*, **Huỳnh Chí Kiên**, **Lê Sỹ Liêm**, **Nguyễn Hữu Bảo Lộc** | Đối chuẩn Baseline B0 trên 7 mô hình, Ablation Study 7 Module (M1-M7), giải thích SHAP XAI, kiểm định thống kê $p$-value, phân tích Case Study lỗi phân tầng 168h. | `05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/` và `08_Runner_Song_Song_2_M4_M5_M6_M7/results/` |
+| **Chương 6** | **Kiến trúc Ứng dụng & Triển khai Doanh nghiệp** | **Đỗ Văn Lộc** | Sơ đồ kiến trúc Web Demo Streamlit, kịch bản tích hợp hệ thống điều độ cảng biển JIT, các ca sử dụng giao diện và phân cấp rủi ro ETA. | Thư mục `07_Demo/` và mã nguồn `app.py` |
+| **Chương 7** | **Kết luận và Hướng phát triển** | **Võ Đình Kiên** *(Nhóm trưởng)* | Tóm tắt các kết quả đạt được, giá trị kinh tế thực tiễn, các hạn chế còn tồn đọng và định hướng mở rộng đề tài trong tương lai. | Tổng hợp toàn bộ các chương |
 
 ---
 
-## PHẦN E: LỊCH TRÌNH VÀ CÁC MỐC THỜI GIAN NGHIỆM THU NỘI BỘ
+### 2. Phân công các sản phẩm Kỹ thuật và Demo bàn giao
 
-Để đảm bảo hoàn thành xuất sắc đồ án và bàn giao hồ sơ nộp bài đúng hạn, nhóm thống nhất các mốc kiểm soát tiến độ như sau:
+1. **Ứng dụng Demo Web Streamlit (`app.py`):**
+   - **Đỗ Văn Lộc:** Lập trình giao diện, kết nối model, trực quan hóa bản đồ hải trình và phân bổ cầu bến JIT.
+   - **Quách Tuấn Kiệt:** Cung cấp bộ dữ liệu mẫu chuẩn (1,000 - 5,000 dòng).
+   - **Võ Đình Kiên:** Kiểm thử môi trường `requirements.txt` và đóng gói triển khai.
+2. **Bộ Slide Thuyết trình Bảo vệ Cuối kỳ:**
+   - **Đỗ Văn Lộc:** Thiết kế layout đồ họa, cấu trúc 10-12 slides.
+   - **Huỳnh Chí Kiên:** Cung cấp toàn bộ biểu đồ và hình ảnh chất lượng cao.
+   - **Võ Đình Kiên:** Tổng duyệt nội dung học thuật và speaker notes.
+3. **Kiểm định Thống kê & Bảng tính ROI Doanh nghiệp:**
+   - **Lê Sỹ Liêm:** Chạy script kiểm định Wilcoxon, Bootstrap 2,000 lần và lập bảng tính ROI tài chính.
+4. **Phân tích Lỗi Case Study & Giải thích Phân tầng 168h:**
+   - **Trần Hồng Lĩnh:** Trích xuất các case study tàu biển sai số cực trị và hoàn thiện báo cáo phân tích lỗi.
+5. **Đạo đức AI & Danh mục IEEE:**
+   - **Nguyễn Hữu Bảo Lộc:** Soạn thảo tuyên bố liêm chính AI và chuẩn hóa tệp `references.bib`.
 
-| Mốc thời gian | Hạng mục cần hoàn thành nghiệm thu nội bộ                                                                                                                                                                                                                                                                                                                                                            | Trách nhiệm kiểm tra                   |
-| :-----------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------- |
-|   **Mốc 1**   | - Trích xuất bộ dữ liệu mẫu Demo (`04_Data/`) và hoàn thiện `requirements.txt`.- Hoàn thành phân tích SHAP và bộ biểu đồ chuẩn `DPI >= 300` Chương 4, Chương 5.- Hoàn thành bảng kiểm định ý nghĩa thống kê p-value và Bảng quy đổi USD/ROI.- Hoàn thành bài phân tích lỗi Case Study và giải thích phân tầng 168h từ dữ liệu thật.- Hoàn thiện tài liệu Pháp lý, Đạo đức AI và Khai báo sử dụng AI. | Võ Đình Kiên & Đỗ Văn Lộc              |
-|   **Mốc 2**   | - Hoàn thiện ứng dụng Web Demo Streamlit (`app.py`), tích hợp BI Dashboard và suy luận ETA từ trọng số thật.- Quay hoàn tất video demo màn hình dự phòng (`<= 3` phút).- Hoàn thành bản thảo sơ bộ 7 Chương Báo cáo Đồ án (`01_BaoCao/`).                                                                                                                                                            | Cả nhóm họp trực tuyến nghiệm thu Demo |
-|   **Mốc 3**   | - Hoàn thiện bản Báo cáo Đồ án Cuối kỳ chính thức (rà soát lỗi chính tả, chuẩn hóa format `.docx` và xuất bản `.pdf`).- Hoàn thành Bộ Slide Bảo vệ 10 phần (`.pptx` và `.pdf`).- Hoàn thiện Hồ sơ Quản lý nhóm (`08_QuanLyNhom/`): Nhật ký thực nghiệm, Scope Changelog, Biên bản họp, Bảng tự đánh giá đóng góp % 7 thành viên.                                                                     | Nhóm trưởng & Thư ký rà soát chéo      |
-|   **Mốc 4**   | - Chạy script `dong_bo_ho_so_nop.py` kiểm tra toàn diện tính toàn vẹn của thư mục nộp bài [`DS317_R11_Nhom03_HoSoNopDoAn/`](../DS317_R11_Nhom03_HoSoNopDoAn/).- Chạy thử nghiệm trình chiếu slide và tổng duyệt thuyết trình 7 thành viên kèm trả lời câu hỏi Q&A phản biện.- Đóng gói nén hồ sơ nộp bài và đưa lên Git/Hệ thống nộp bài của trường.                                                 | Toàn thể 7 thành viên Nhóm 03          |
+---
+
+## PHẦN E: HƯỚNG DẪN LUỒNG PHỐI HỢP GIT NHÓM (GIT COLLABORATION WORKFLOW)
+
+Để bảo đảm an toàn cho kho lưu trữ, các thành viên cam kết thực hiện đúng quy trình 5 bước:
+
+```
+[Nhánh main trên GitHub]
+       │
+       ├── Bước 1: git checkout main && git pull origin main
+       │
+       ├── Bước 2: git checkout -b feature/<ten_thanh_vien>
+       │
+       ├── Bước 3: Làm việc độc quyền trong thư mục 06_Dong_Gop_Cac_Thanh_Vien/Thanh_Vien_XX_<Ten>/
+       │
+       ├── Bước 4: git add ... && git commit -m "..." && git push origin feature/<ten_thanh_vien>
+       │
+       └── Bước 5: Tạo Pull Request (PR) -> Nhóm trưởng review và merge vào hồ sơ nộp bài chuẩn
+```
+
+- **Quy tắc bất di bất dịch:**
+  1. Tuyệt đối không chỉnh sửa trực tiếp trên nhánh `main`.
+  2. Tuyệt đối không commit đè lên thư mục của thành viên khác.
+  3. Chỉ sử dụng duy nhất **dấu gạch ngang tiêu chuẩn `-` (ASCII 0x2D)** trong toàn bộ văn bản và tên file; nghiêm cấm dùng các ký tự gạch ngang dài en-dash hoặc em-dash.
+  4. Trước khi nộp sản phẩm, kiểm tra kỹ để đảm bảo không tạo ra broken link và không đẩy các file tạm phát sinh vào kho lưu trữ.
