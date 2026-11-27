@@ -71,10 +71,10 @@ Bài tập về nhà/
 - **Nội dung:** Hồ sơ Thuyết minh đề tài chính thức (Lab 3), ứng dụng toàn diện kết quả bài tập Chương 4 (Mục 5.1: 6 chiều chất lượng dữ liệu) và bài tập Chương 5 (Mục 5.2: Khám phá dữ liệu chuyên sâu EDA/BI) cho phần "Kết quả nghiên cứu sơ khởi".
 - **Sản phẩm chính:** Bộ hồ sơ 5 tệp chuẩn mẫu quy định `Lab3_<MãLớp>_<TênNhóm>_<LoạiSảnPhẩm>`: [`Lab3_DS317.R11_Nhom03_ThuyetMinh.docx`](BT3_Thuyet_Minh_De_Tai/Lab3_DS317.R11_Nhom03_ThuyetMinh.docx) & [`.pdf`](BT3_Thuyet_Minh_De_Tai/Lab3_DS317.R11_Nhom03_ThuyetMinh.pdf), [`DataInventory.xlsx`](BT3_Thuyet_Minh_De_Tai/Lab3_DS317.R11_Nhom03_DataInventory.xlsx), [`Code.ipynb`](BT3_Thuyet_Minh_De_Tai/Lab3_DS317.R11_Nhom03_Code.ipynb), [`Slides.pdf`](BT3_Thuyet_Minh_De_Tai/Lab3_DS317.R11_Nhom03_Slides.pdf) và [`PhanCong.docx`](BT3_Thuyet_Minh_De_Tai/Lab3_DS317.R11_Nhom03_PhanCong.docx) & [`.pdf`](BT3_Thuyet_Minh_De_Tai/Lab3_DS317.R11_Nhom03_PhanCong.pdf).
 
-### [BT4 - Công nghệ khai phá dữ liệu](BT4_Cong_Nghe_Khai_Pha_Du_Lieu)
+### [BT4 - Công nghệ khai phá dữ liệu](BT4_Cong_Nghe_Khai_Pha_Du_Lieu/README.md)
 - **Nội dung:** Ứng dụng nội dung Chương 6 và 7 để phân loại phương thức học thuật toán, liệt kê các độ đo đánh giá hồi quy AI, xác định các độ đo đánh giá dự kiến sử dụng, xây dựng kịch bản thực nghiệm và kế hoạch giám sát mô hình.
 - **Sản phẩm chính:** Các tài liệu phân tích kỹ thuật, kịch bản thực nghiệm và kế hoạch giám sát mô hình (giữ tiếng Việt tự nhiên).
 
-### [BT5 - Gom nhóm và xác định ngoại lai](BT5_Gom_Nhom_Va_Ngoai_Lai)
+### [BT5 - Gom nhóm và xác định ngoại lai](BT5_Gom_Nhom_Va_Ngoai_Lai/README.md)
 - **Nội dung:** Đề xuất phương pháp phân cụm và phát hiện hành vi bất thường, ngoại lai hành hải của tàu thuyền trên dữ liệu quỹ đạo AIS.
 - **Sản phẩm chính:** Bản đề xuất `DS317 Nhóm 03 - Đề xuất phát hiện outlier AIS.docx` (bản lưu trữ ngoài repo; xem bản chính thức trong repo tại [`BT5 - Gom nhóm và xác định ngoại lai dữ liệu AIS.docx`](BT5_Gom_Nhom_Va_Ngoai_Lai/BT5%20-%20Gom%20nh%C3%B3m%20v%C3%A0%20x%C3%A1c%20%C4%91%E1%BB%8Bnh%20ngo%E1%BA%A1i%20lai%20d%E1%BB%AF%20li%E1%BB%87u%20AIS.docx)).

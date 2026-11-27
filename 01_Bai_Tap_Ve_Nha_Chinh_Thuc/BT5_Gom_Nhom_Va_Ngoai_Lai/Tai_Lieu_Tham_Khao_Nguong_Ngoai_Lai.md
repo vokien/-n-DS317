@@ -38,7 +38,7 @@
    *International Maritime Organization (IMO)* & *International Association of Classification Societies (IACS)* (2023). **Ship Dimension Limits & Classification Standards for Ultra Large Container Vessels (ULCV)**, London, UK.  
    *(Xác lập kích thước giới hạn đóng tàu tối đa của thế giới hiện nay - thế hệ Megamax-24 / Triple-E như Ever Alot, MSC Irina: Chiều dài tối đa 399.9 mét ~ 400.0m, Chiều rộng tối đa 61.3-61.5m, diện tích boong tối đa ~ 24600 m2. Các thông số Length > 400m hoặc Width > 62m hoặc Area > 25000 m2 là vượt ngưỡng vật lý tuyệt đối).*
 2. **Bài báo quốc tế Q1 (Ocean Engineering):**  
-   Yang, D., Wu, L., Wang, S., Jia, H., & Li, K. X. (2019). *"How big data enriches maritime research – a review"*. **Ocean Engineering** (Elsevier, Q1), Vol. 173, pp. 106098.
+   Yang, D., Wu, L., Wang, S., Jia, H., & Li, K. X. (2019). *"How big data enriches maritime research - a review"*. **Ocean Engineering** (Elsevier, Q1), Vol. 173, pp. 106098.
 
 ---
 

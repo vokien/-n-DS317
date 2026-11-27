@@ -1,6 +1,6 @@
-# TỔNG HỢP KẾT QUẢ THỰC NGHIỆM ABLATION STUDY 7 MODULE — DỰ BÁO ETA HÀNG HẢI (NOAA AIS 2025)
+# TỔNG HỢP KẾT QUẢ THỰC NGHIỆM ABLATION STUDY 7 MODULE - DỰ BÁO ETA HÀNG HẢI (NOAA AIS 2025)
 
-**Học phần:** DS317 — Khai phá Dữ liệu trong Doanh nghiệp (UIT - ĐHQG-HCM)
+**Học phần:** DS317 - Khai phá Dữ liệu trong Doanh nghiệp (UIT - ĐHQG-HCM)
 **Nhóm thực hiện:** Nhóm 03 (7 thành viên)
 **Nguồn dữ liệu chuẩn hóa (Engine v2):** [`05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/`](../05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/runner1_master_summary.csv) (`runner1_master_summary.csv`, `m1_common_rows_comparison.csv`), [`05_Output_Cac_Notebook/08_Runner_Song_Song_2_M4_M5_M6_M7/results/`](../05_Output_Cac_Notebook/08_Runner_Song_Song_2_M4_M5_M6_M7/results/runner2_master_summary.csv) (`runner2_master_summary.csv`, `m7_intervals_m7_adaptive_m7_clusters.csv`) và benchmark điền khuyết thuộc tính thân vỏ tại [`05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/IMPUTE_BENCHMARK/table_6_1_mask_recover.csv`](../05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/IMPUTE_BENCHMARK/table_6_1_mask_recover.csv).
 
@@ -26,7 +26,7 @@
 
 ## PHẦN 1: BẢNG ĐỐI CHUẨN BASELINE TOÀN CỤC (`00_Baseline / B0`)
 
-### 1.1. Kết quả Toàn cục `All` — Trung bình 3 Fold (`Num_Features = 20`, `Coverage = 100%`)
+### 1.1. Kết quả Toàn cục `All` - Trung bình 3 Fold (`Num_Features = 20`, `Coverage = 100%`)
 
 | Mô hình      | MAE (h) $\downarrow$ | RMSE (h) $\downarrow$ | MedAE (h) $\downarrow$ | $R^2$ $\uparrow$ |   MBE (h)    | Under_pct (%) | Within 3h (%) $\uparrow$ | AsymCost (w=2.5) $\downarrow$ | PICP 90% (%) |   MPIW (h)   |  Train (s)  |
 | :----------- | :------------------: | :-------------------: | :--------------------: | :--------------: | :----------: | :-----------: | :----------------------: | :---------------------------: | :----------: | :----------: | :---------: |
@@ -38,7 +38,7 @@
 | **TFT**      |       114.4738       |       274.6010        |        18.5850         |      0.0086      |   -97.2334   |    54.8705    |         13.9654          |         188,214.1392          |   86.0459    |   736.1401   |   87.9600   |
 | **PatchTST** |       114.8535       |       276.2390        |        18.1955         |     -0.0045      |  -100.2798   |    61.9436    |       **18.7964**        |         190,446.9687          |   86.2018    |   737.7322   |   69.4900   |
 
-### 1.2. Đối sánh Phân tầng Chi tiết `LE_168h` (78.6101%) vs `GT_168h` (21.3899%) — Trung bình 3 Fold
+### 1.2. Đối sánh Phân tầng Chi tiết `LE_168h` (78.6101%) vs `GT_168h` (21.3899%) - Trung bình 3 Fold
 
 | Mô hình      | `LE_168h` MAE (h) | `LE_168h` RMSE (h) | `LE_168h` $R^2$ | `LE_168h` MBE (h) | `LE_168h` PICP (%) | `LE_168h` MPIW (h) | `GT_168h` MAE (h) | `GT_168h` RMSE (h) | `GT_168h` $R^2$ | `GT_168h` MBE (h) | `GT_168h` PICP (%) | `GT_168h` MPIW (h) |
 | :----------- | :---------------: | :----------------: | :-------------: | :---------------: | :----------------: | :----------------: | :---------------: | :----------------: | :-------------: | :---------------: | :----------------: | :----------------: |
@@ -78,7 +78,7 @@
 
 ### Nhận định tổng quan về Baseline (Engine v2)
 
-1. **Hiệu năng phân tầng `LE_168h` đạt chuẩn mục tiêu (~24h):** Trên `78.6101%` dữ liệu hành hải thực chất ($\le 168\text{ h}$), toàn bộ 7 mô hình đạt MAE trong khoảng **`23.7802h - 24.9443h`** (`PatchTST 23.78h`, `Bi-LSTM 23.90h`, `TFT 24.25h`, `XGBoost 24.35h`, `LightGBM 24.70h`, `CatBoost 24.89h`, `ST-GNN 24.94h`), độ phủ `PICP_90` đạt **`92.71% - 93.87%`** — khớp hoàn toàn với ngưỡng mục tiêu `~24.37h` của đề tài. Phần MAE toàn cục `~113.1h - 114.9h` và `MBE ~ -93h` đến chủ yếu từ nhóm `GT_168h` (`21.39%` mẫu neo chờ dài ngày, `MAE ~ 438.6h - 449.2h`, `MBE ~ -426h đến -442h`).
+1. **Hiệu năng phân tầng `LE_168h` đạt chuẩn mục tiêu (~24h):** Trên `78.6101%` dữ liệu hành hải thực chất ($\le 168\text{ h}$), toàn bộ 7 mô hình đạt MAE trong khoảng **`23.7802h - 24.9443h`** (`PatchTST 23.78h`, `Bi-LSTM 23.90h`, `TFT 24.25h`, `XGBoost 24.35h`, `LightGBM 24.70h`, `CatBoost 24.89h`, `ST-GNN 24.94h`), độ phủ `PICP_90` đạt **`92.71% - 93.87%`** - khớp hoàn toàn với ngưỡng mục tiêu `~24.37h` của đề tài. Phần MAE toàn cục `~113.1h - 114.9h` và `MBE ~ -93h` đến chủ yếu từ nhóm `GT_168h` (`21.39%` mẫu neo chờ dài ngày, `MAE ~ 438.6h - 449.2h`, `MBE ~ -426h đến -442h`).
 2. **`ST-GNN` được hồi phục hoàn toàn:** Nhờ `LayerNorm + Residual + deterministic permutation`, `ST-GNN` chuyển từ trạng thái suy sụp `161.4022h` ở v1 về **`113.5725h`** (`MAE_All`), **`272.1598h`** (`RMSE_All` thấp nhất), **`0.0256`** (`R2_All` cao nhất), **`184,647.51`** (`AsymCost` thấp nhất nhóm Baseline) và **`24.9443h`** trên `LE_168h`.
 3. **Bước nhảy `PICP_90` nhờ `Dual InnerVal`:** Ở Fold 1 (ValCal là Q1 ngắn ngày thiếu đuôi dài), `PICP_90` đạt `73.62% - 75.69%` (`LE_168h PICP` đã đạt `90.48% - 92.26%`, riêng `GT_168h` là `9.18% - 13.36%`). Từ Fold 2 (`ValCal = 1,191,102`) và Fold 3 (`ValCal = 1,738,135`), `Dual InnerVal` bắt trọn phân phối đuôi dài tự nhiên, đưa `PICP_90` toàn cục lên **`90.25% - 91.59%`** (Fold 2) và **`91.83% - 94.20%`** (Fold 3), đạt trung bình 3 Fold **`85.76% - 87.04%`**.
 
@@ -216,7 +216,7 @@
   - `EXP5_G5` (22 feats, +2 *Rolling Stats* 3 bước).
   - `EXP6_ALL` (40 feats, gộp cả 5 nhóm).
 
-#### Bảng 2.3: Kết quả Master Ablation Study M3 (Trung bình 3 Fold — 42 cấu hình × mô hình)
+#### Bảng 2.3: Kết quả Master Ablation Study M3 (Trung bình 3 Fold - 42 cấu hình × mô hình)
 
 | Biến thể (Feats) | Mô hình      | MAE `All` (h) | $\Delta\text{MAE}$ vs B0 | RMSE `All` (h) | $R^2$ `All` | AsymCost (w=2.5) | PICP `All` (%) | `LE_168h` MAE (h) | $\Delta\text{LE}_{168}$ MAE | `LE_168h` $R^2$ |  Train (s)  |
 | :--------------- | :----------- | :-----------: | :----------------------: | :------------: | :---------: | :--------------: | :------------: | :---------------: | :-------------------------: | :-------------: | :---------: |
@@ -465,12 +465,12 @@
 
 | Chặng cự ly        | Mô hình                           | `All` PICP (%) | `All` MPIW (h)  | `LE_168h` PICP (%) | `LE_168h` MPIW (h) | `GT_168h` PICP (%) | `GT_168h` MPIW (h) |
 | :----------------- | :-------------------------------- | :------------: | :-------------: | :----------------: | :----------------: | :----------------: | :----------------: |
-| `Stage_0_LE_25NM`  | Bi-LSTM / CatBoost / LightGBM     | 79.67 – 80.54  | 446.35 – 447.46 |   82.96 – 83.94    |  447.53 – 448.64   |   47.55 – 47.74    |  437.68 – 438.67   |
-| `Stage_0_LE_25NM`  | PatchTST / ST-GNN / TFT / XGBoost | 80.22 – 81.35  | 445.60 – 448.49 |   83.57 – 84.85    |  446.66 – 449.64   |   47.40 – 47.73    |  437.72 – 440.04   |
-| `Stage_1_25_75NM`  | 7 mô hình (Min–Max)               | 80.30 – 81.46  | 496.47 – 500.82 |   84.15 – 85.49    |  496.71 – 501.12   |   53.23 – 53.49    |  495.86 – 499.95   |
-| `Stage_2_75_250NM` | 7 mô hình (Min–Max)               | 82.89 – 83.99  | 654.74 – 660.21 |   87.85 – 89.17    |  655.71 – 661.34   |   55.74 – 55.90    |  650.41 – 655.20   |
-| `Stage_3_GT_250NM` | Bi-LSTM / CatBoost / LightGBM     | 87.25 – 88.00  | 905.58 – 911.32 |   94.76 – 95.04    |  904.23 – 912.42   |   72.99 – 74.73    |  906.02 – 914.18   |
-| `Stage_3_GT_250NM` | PatchTST / ST-GNN / TFT / XGBoost | 86.97 – 88.05  | 908.52 – 925.69 |   93.34 – 95.02    |  907.75 – 928.12   |   74.75 – 75.90    |  909.26 – 921.51   |
+| `Stage_0_LE_25NM`  | Bi-LSTM / CatBoost / LightGBM     | 79.67 - 80.54  | 446.35 - 447.46 |   82.96 - 83.94    |  447.53 - 448.64   |   47.55 - 47.74    |  437.68 - 438.67   |
+| `Stage_0_LE_25NM`  | PatchTST / ST-GNN / TFT / XGBoost | 80.22 - 81.35  | 445.60 - 448.49 |   83.57 - 84.85    |  446.66 - 449.64   |   47.40 - 47.73    |  437.72 - 440.04   |
+| `Stage_1_25_75NM`  | 7 mô hình (Min-Max)               | 80.30 - 81.46  | 496.47 - 500.82 |   84.15 - 85.49    |  496.71 - 501.12   |   53.23 - 53.49    |  495.86 - 499.95   |
+| `Stage_2_75_250NM` | 7 mô hình (Min-Max)               | 82.89 - 83.99  | 654.74 - 660.21 |   87.85 - 89.17    |  655.71 - 661.34   |   55.74 - 55.90    |  650.41 - 655.20   |
+| `Stage_3_GT_250NM` | Bi-LSTM / CatBoost / LightGBM     | 87.25 - 88.00  | 905.58 - 911.32 |   94.76 - 95.04    |  904.23 - 912.42   |   72.99 - 74.73    |  906.02 - 914.18   |
+| `Stage_3_GT_250NM` | PatchTST / ST-GNN / TFT / XGBoost | 86.97 - 88.05  | 908.52 - 925.69 |   93.34 - 95.02    |  907.75 - 928.12   |   74.75 - 75.90    |  909.26 - 921.51   |
 
 - **Khác biệt & Luận giải nguyên nhân:**
   - **Thu hẹp mạnh độ rộng khoảng dự báo mà vẫn tái phân bổ hợp lý theo rủi ro:** Nhờ `Dual InnerVal`, `M7_Adaptive` khắc phục hoàn toàn hiện tượng sụt PICP ở bản v1 (`66.2% -> 84.0% - 84.5%`). So với Baseline B0 (hệ số toàn cục rộng `730.71h - 738.32h`), **`M7_Adaptive` cắt giảm `38.53h - 49.39h` MPIW (`-5.23%` đến `-6.69%`, xuống `688.93h - 697.61h`)**, giữ độ phủ tầng mục tiêu `LE_168h` ở mức **`88.56% - 89.15%`** (riêng chặng viễn dương `Stage_3` đạt **`93.34% - 95.04%`**), đồng thời **tăng độ phủ cho tầng đuôi dài `GT_168h` thêm `+4.98 pp` đến `+7.23 pp`** (`59.73% - 61.45%` lên **`65.43% - 67.34%`**).
@@ -504,7 +504,7 @@ Dựa trên bằng chứng định lượng đầy đủ từ 546 lượt chạy
    - Kích hoạt **`M2_V4_Full_Combined` + `cascade_3level`** (`mmsi -> vessel_type -> group`) học hoàn toàn trên `df_fit` để khôi phục `length`, `width`, `draft` (MAE chỉ `7.07m / 0.98m / 1.11m`) và bảo toàn nhất quán chuỗi trước khi tính các biến dẫn xuất.
 2. **Tầng Kỹ thuật Đặc trưng & Thời tiết (`Feature Pipeline`: `M3-G1 (+G3+G4)` + `M4-RTMA` + `M5-ST1/ST2` theo nhánh):**
 
-   - Bổ sung nhóm động học hướng cảng **`M3 EXP1_G1`** (`+7` biến `bearing_to_berth`, `v_closing`, `v_cross`, ...) — hoặc tổ hợp tinh gọn `G1 + G3 + G4` / `EXP6_ALL` tùy ngân sách huấn luyện — giúp hạ MAE toàn cục xuống mốc `110.12h - 110.21h` (`CatBoost`/`XGBoost`) và `LE_168h` xuống `22.93h` (`TFT`).
+   - Bổ sung nhóm động học hướng cảng **`M3 EXP1_G1`** (`+7` biến `bearing_to_berth`, `v_closing`, `v_cross`, ...) - hoặc tổ hợp tinh gọn `G1 + G3 + G4` / `EXP6_ALL` tùy ngân sách huấn luyện - giúp hạ MAE toàn cục xuống mốc `110.12h - 110.21h` (`CatBoost`/`XGBoost`) và `LE_168h` xuống `22.93h` (`TFT`).
    - Tích hợp **12 biến khí tượng `M4-RTMA`** cho bài toán vận hành thực tế quanh năm nhằm hóa giải biến động mùa bão (giúp `TFT` giảm `-10.88h` / `-8.61%` MAE và `-14.17%` AsymCost trong Q3).
    - **Phân nhánh chiến lược `M5 log1p` (`ST1_mi16_log1p` / `ST2_mi12_log1p` / `T1`):**
      - **Nếu mục tiêu là điều phối cầu bến ngắn-trung hạn (`LE_168h`, chiếm 78.61% lưu lượng):** Bắt buộc kích hoạt `log1p(Target_Hours)` (`ST2_mi12_log1p` hoặc `T1_all20_log1p`), giúp **`XGBoost / CatBoost / LightGBM` hạ `LE_168h MAE` xuống kỷ lục `21.64h - 21.74h` (`LE_168h R2 = 0.175`)** và nâng độ chính xác $\pm 3\text{ h}$ (`Within_3h`) lên `21% - 23%`.

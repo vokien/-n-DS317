@@ -42,7 +42,11 @@ def inventory_outputs(output_root: Path) -> list[tuple[str, int, int]]:
         files = [
             path
             for path in subdir.rglob("*")
-            if path.is_file() and path.name != ".gitkeep"
+            if (
+                path.is_file()
+                and path.name != ".gitkeep"
+                and path.name.lower() != "readme.md"
+            )
         ]
         total_bytes = sum(path.stat().st_size for path in files)
         rows.append((subdir.name, len(files), total_bytes))
@@ -71,7 +75,11 @@ def _collect_dir_files(
     if not src_dir.exists():
         return
     for src in sorted(src_dir.rglob("*")):
-        if not src.is_file() or src.name == ".gitkeep":
+        if (
+            not src.is_file()
+            or src.name == ".gitkeep"
+            or src.name.lower() == "readme.md"
+        ):
             continue
         if allowed_exts is not None:
             if src.suffix.lower() not in allowed_exts:

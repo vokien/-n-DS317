@@ -538,7 +538,7 @@ Báo cáo thuyết minh ver1 đi trễ: bảo lộc, liêm, chí kiên, lĩnh
 
 3. Chuyển bài toán nghiệp vụ thành bài toán khai phá dữ liệu và Thẩm định tính khả thi (2 người)
 
-- Nhiệm vụ thực hiện: chuyển hóa bài toán (phát biểu theo cấu trúc: Cho trước – Cần tìm – Đầu vào – Đầu ra – Ràng buộc; xác định rõ là bài toán hồi quy hay phân loại); Thẩm định tính khả thi (đánh giá theo các tiêu chí trong file DS317_Huong_dan_THUC_HANH.pdf); chạy thử nghiệm dataset với các mô hình đơn giản (Linear Regression / Decision Tree / Random Forest) để kiểm chứng tính khả thi
+- Nhiệm vụ thực hiện: chuyển hóa bài toán (phát biểu theo cấu trúc: Cho trước - Cần tìm - Đầu vào - Đầu ra - Ràng buộc; xác định rõ là bài toán hồi quy hay phân loại); Thẩm định tính khả thi (đánh giá theo các tiêu chí trong file DS317_Huong_dan_THUC_HANH.pdf); chạy thử nghiệm dataset với các mô hình đơn giản (Linear Regression / Decision Tree / Random Forest) để kiểm chứng tính khả thi
 
 - Output: "Phát biểu bài toán và thẩm định tính khả thi.docs" (nội dung này dùng cho thuyết minh đề tài: Phát biểu bài toán)
 

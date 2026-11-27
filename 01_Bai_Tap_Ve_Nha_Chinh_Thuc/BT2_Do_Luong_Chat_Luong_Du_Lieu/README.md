@@ -60,8 +60,8 @@
 - Notebook tính toán và trích xuất:
   - [`DS317 - Đo lường giám sát chất lượng 6 khía cạnh.ipynb`](DS317%20-%20%C4%90o%20l%C6%B0%E1%BB%9Dng%20gi%C3%A1m%20s%C3%A1t%20ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng%206%20kh%C3%ADa%20c%E1%BA%A1nh.ipynb)
   - `DS317 C4 - Mẫu hướng dẫn giáo viên.ipynb` (lưu trữ ngoài repo)
-- Thư mục biểu đồ dùng chung trong repo: [`04_So_Lieu_Kiem_Ke_Va_Bieu_Do/Hinh_Anh_Bieu_Do_Chung/`](../../04_So_Lieu_Kiem_Ke_Va_Bieu_Do/Hinh_Anh_Bieu_Do_Chung) (đã quy chuẩn từ thư mục `Hình ảnh biểu đồ/` gốc) chứa:
-  - `Hình 1 - Phân phối Target Hours.png`
-  - `Hình 2 - Phân tán Dist vs Target.png`
-  - `Hình 3 - Biểu đồ hộp SOG Draft Cargo vs Tanker.png`
-  - `Hình 4 - Mật độ địa không gian.png`
+- Thư mục biểu đồ dùng chung trong repo: [`04_So_Lieu_Kiem_Ke_Va_Bieu_Do/Hinh_Anh_Bieu_Do_Chung/`](../../04_So_Lieu_Kiem_Ke_Va_Bieu_Do/Hinh_Anh_Bieu_Do_Chung) chứa:
+  - `Hinh1_Phan_Phoi_Target_Hours.png`
+  - `Hinh2_Scatter_Dist_vs_Target.png`
+  - `Hinh3_Boxplot_SOG_Draft_Cargo_vs_Tanker.png`
+  - `Hinh4_Mat_Do_Dia_Khong_Gian.png`
