@@ -13,7 +13,7 @@ Thư mục này tập hợp toàn diện các sản phẩm nghiệm thu cuối k
 | STT | Thư mục nộp bài | Phân loại sản phẩm | Trách nhiệm chính | Chi tiết tài liệu hướng dẫn |
 | :-: | :--- | :--- | :--- | :--- |
 | 1 | [`01_BaoCao/`](01_BaoCao/README.md) | Báo cáo Đồ án Cuối kỳ 7 Chương (`.docx`, `.pdf`, 30-50 trang) | **Cả nhóm** (Võ Đình Kiên chủ trì) | [`01_BaoCao/README.md`](01_BaoCao/README.md) |
-| 2 | [`02_Slides/`](02_Slides/README.md) | Bộ Slide Thuyết trình Bảo vệ 10 phần (`.pptx`, `.pdf`, 15-20 phút) | **Cả nhóm** (Đỗ Văn Lộc chủ trì) | [`02_Slides/README.md`](02_Slides/README.md) |
+| 2 | [`02_Slides/`](02_Slides/README.md) | Bộ Slide Thuyết trình Bảo vệ 10 phần (`.pptx`, `.pdf`, 15-20 phút) | **Trần Hồng Lĩnh** chủ trì toàn bộ (các thành viên khác cung cấp nội dung đầu vào) | [`02_Slides/README.md`](02_Slides/README.md) |
 | 3 | [`03_SourceCode/`](03_SourceCode/README.md) | Toàn bộ mã nguồn, script kiểm định thống kê, `requirements.txt`, `environment.yml` | **Võ Đình Kiên** | [`03_SourceCode/README.md`](03_SourceCode/README.md) |
 | 4 | [`04_Data/`](04_Data/README.md) | Dữ liệu mẫu demo (`demo_sample_3000.*`), từ điển 39 thuộc tính, liên kết dữ liệu lớn | **Quách Tuấn Kiệt** | [`04_Data/README.md`](04_Data/README.md) |
 | 5 | [`05_Model/`](05_Model/README.md) | Hệ thống tham số cấu hình (`parameters/`), siêu tham số và trọng số mô hình (`saved_models/`) | **Võ Đình Kiên & Trần Hồng Lĩnh** | [`05_Model/README.md`](05_Model/README.md) |

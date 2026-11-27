@@ -32,11 +32,13 @@ Runner 2 phụ trách các phân hệ thực nghiệm chuyên sâu và tối ưu
 
 ---
 
-## 3. Quản Trị Trọng Số và Tham Số
+## 3. Quản Trị Trọng Số và Tham Số & Đường Link Tải Kaggle Output
 
+- **Đường link Kaggle Output trực tiếp:** [4 thí nghiệm cuối (Kaggle Output)](https://www.kaggle.com/code/kienvo134/4-th-nghi-m-cu-i/output) - Tải trực tiếp file trọng số nén `runner2_saved_models.zip` và các bảng dự đoán chi tiết `.parquet`.
 - **Tham số (`parameters/` - 274 tệp):** Chứa 273 tệp `*_meta.json` chi tiết từng mô hình ($13 \times 7 \times 3 = 273$) lưu trữ hệ số mất mát bất đối xứng `asym_alpha`, khoảng tin cậy conformal `conformal_q90`, siêu tham số mô hình và danh sách biến; cùng 1 bảng tổng hợp `parameters_summary.csv`.
 - **Cờ thực thi (`execution_flags/` - 13 tệp):** 13 tệp `.flag` đảm bảo tính khép kín và an toàn của pipeline, cho phép tiếp tục chạy nối tiếp nếu phiên Kaggle bị gián đoạn.
 - **Trọng số (`saved_models/`):** Toàn bộ 273 tệp nhị phân trọng số (`.pt`, `.cbm`, `.txt`, `.json`) được đóng gói thành tệp nén duy nhất `runner2_saved_models.zip` (dung lượng 74.40 MB, tuân thủ giới hạn < 100 MB của GitHub).
+- **Dự đoán chi tiết (`detailed_predictions/`):** Lưu trữ các file `.parquet` chi tiết từng dòng dữ liệu và từng chuyến đi phục vụ kiểm toán sâu sai số.
 
 ---
 

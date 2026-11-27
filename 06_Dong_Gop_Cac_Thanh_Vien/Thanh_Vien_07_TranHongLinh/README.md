@@ -3,35 +3,38 @@
 ## 1. THÔNG TIN THÀNH VIÊN
 - **Họ và tên:** Trần Hồng Lĩnh
 - **Mã số sinh viên (MSSV):** 24520970
-- **Vai trò trong đồ án:** Kỹ sư Học máy & Tối ưu hóa Mô hình (ML/DL Engineer & Error Analysis Specialist)
+- **Vai trò trong đồ án:** Chủ trì toàn bộ Slide Bảo vệ; Kỹ sư ML/DL & Error Analysis Specialist
 - **Tỷ lệ đóng góp cam kết:** 14.28%
 
 ---
 
-## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT
-1. **Phân tích Lỗi Chuyên sâu có Kiểm chứng (Case Study Error Analysis):**
-   - Viết script Python trích xuất từ dữ liệu kiểm thử các chuyến tàu biển thật (kèm định danh `MMSI`, tên/loại tàu, vận tốc `sog`, cự ly `Dist_To_Berth_NM`) có sai số thặng dư (Residual) cực trị:
-     + Nhóm chuyến tàu dự báo cực kỳ chính xác (sai số $< 3$ giờ).
-     + Nhóm chuyến tàu sai số lớn ở phân tầng `<= 168h` (giải thích nguyên nhân vật lý/hàng hải: thời tiết bão, giảm tốc đột ngột, chờ lệnh hoa tiêu).
-     + Nhóm chuyến tàu ở phân tầng `> 168h` (giải thích đặc thù tàu neo đậu kéo dài, hải trình đa chặng).
-   - Soạn thảo tài liệu **Báo cáo Phân tích Lỗi Case Study và Bản chất Phân tầng 168h** chuẩn mực thay thế tài liệu cũ đã xóa.
-2. **Soạn thảo Báo cáo Cuối kỳ:**
-   - **Chương 5: Kết quả Thực nghiệm và Thảo luận (Trọng tâm kỹ thuật):**
-     + Soạn thảo phân tích kết quả Baseline toàn cục B0 trên 7 kiến trúc mô hình (Ridge, CatBoost, LightGBM, XGBoost, Bi-LSTM, ST-GNN, PatchTST, TFT).
-     + Phân tích Module M3: Đóng góp của các đặc trưng tương tác vật lý hàng hải (Cự ly $\times$ Vận tốc, Tỷ lệ cản gió, Gia tốc).
-     + Phân tích Module M4: Đóng góp của trường khí tượng hải văn RTMA (Tốc độ gió, Chiều cao sóng, Hướng gió ngược).
-     + Phân tích Module M6: Đóng góp của hàm mất mát tùy biến Custom Asymmetric Loss (cơ chế phạt lệch dự báo sớm với trọng số $w=2.5$, đánh đổi giữa MAE đối xứng và chi phí vận hành cảng).
-3. **Đóng gói và Rà soát Mã nguồn Thực nghiệm:**
-   - Kiểm tra khả năng chạy tái lập của các file mã nguồn và notebook trong `05_Output_Cac_Notebook/`.
-   - Bảo đảm cấu trúc dữ liệu đầu ra ngăn nắp, sạch sẽ, không có đường dẫn tuyệt đối cứng.
+## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT (CHỈ PHẦN CÒN THIẾU)
+
+> [!NOTE]
+> Phân công đã được điều chỉnh theo yêu cầu của ĐẠI CA: chỉ giao phần việc CÒN THIẾU; nội dung đã có sẵn trong workspace không giao lại. Chi tiết xem [Kế hoạch hoàn thiện](../../00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md) (Phần A, B, C). Các điểm ghi **[Chờ ĐẠI CA xác nhận]** là đề xuất, chưa là quyết định cuối.
+
+1. **CHỦ TRÌ TOÀN BỘ SLIDE BẢO VỆ CUỐI KỲ** (20% điểm sản phẩm A4; thư mục `02_Slides/`):
+   - Tự thiết kế và dựng cả **10 phần** theo [`02_Slides/README.md`](../../DS317_R11_Nhom03_HoSoNopDoAn/02_Slides/README.md), xuất `DS317_R11_Nhom03_Slides.pptx` và `.pdf` (16:9, 15-20 phút).
+   - Các thành viên khác chỉ gửi nội dung/biểu đồ/số liệu đầu vào của phần mình; Hồng Lĩnh tích hợp, thống nhất định dạng và chuẩn bị ghi chú trình bày.
+   - Chỉ dùng số liệu có nguồn trong workspace hoặc kết quả mới đã nghiệm thu; nhận ảnh/video Demo từ Đỗ Văn Lộc. Nhóm trưởng duyệt học thuật.
+2. **Phân tích lỗi Case Study có kiểm chứng:** trích xuất các chuyến tàu thật (`MMSI`, loại tàu, `sog`, `Dist_To_Berth_NM`) có residual cực trị ở cả hai tầng `<= 168h` và `> 168h` từ `detailed_predictions/` (chưa có trong workspace, chạy trên Kaggle); viết **Báo cáo Phân tích Lỗi Case Study và Bản chất Phân tầng 168h**.
+3. **Chương 5:** chỉ phần **Baseline B0** và **Module M6** (viết từ số liệu Engine v2 `00_baseline_b0_*`, `m6_asymloss_*`).
+- **Lưu ý chạy trên Kaggle:** `detailed_predictions/*.parquet` bị `.gitignore` và chưa có trong workspace; mọi tác vụ cần dữ liệu này phải chạy trên Kaggle, không chạy nặng trên máy cá nhân.
+
+### 2.1. Đã có sẵn - KHÔNG phân công (chỉ sử dụng/trích dẫn)
+- Số liệu Baseline B0, M6 và phân tầng: [`runner1_master_horizons.csv`](../../05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/runner1_master_horizons.csv), [`runner2_master_horizons.csv`](../../05_Output_Cac_Notebook/08_Runner_Song_Song_2_M4_M5_M6_M7/results/runner2_master_horizons.csv).
+- Báo cáo M6 (Engine v1): [`Bao_cao_Thuc_nghiem_Module_M6.docx`](../../03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Bao_cao_Modules/Bao_cao_Thuc_nghiem_Module_M6.docx); số liệu Engine v2: [`Tong_Hop_..._Ablation_7_Module.md`](../../03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Tong_Hop_Ket_Qua_Thuc_Nghiem_Ablation_7_Module.md).
+- Baseline Ridge: [`04_DS317_04_Baseline_Ridge/`](../../05_Output_Cac_Notebook/04_DS317_04_Baseline_Ridge/README.md).
+- Biểu đồ có sẵn dùng cho Slide: [`04_So_Lieu_Kiem_Ke_Va_Bieu_Do/`](../../04_So_Lieu_Kiem_Ke_Va_Bieu_Do/README.md).
+- **Đã chuyển đi để giảm tải:** chủ trì Chương 5 (Võ Đình Kiên), phần M3 (Quách Tuấn Kiệt), phần M4 (Võ Đình Kiên), rà soát tái lập code (Quách Tuấn Kiệt), đồng phụ trách ROI (Lê Sỹ Liêm).
 
 ---
 
 ## 3. DANH MỤC SẢN PHẨM CẦN BÀN GIAO
+- [ ] Slide Bảo vệ 10 phần: `DS317_R11_Nhom03_Slides.pptx` và `DS317_R11_Nhom03_Slides.pdf`.
 - [ ] Báo cáo phân tích lỗi Case Study và Bản chất phân tầng 168h (`Bao_Cao_Phan_Tich_Loi_Case_Study.md` hoặc `.docx`).
-- [ ] Script Python trích xuất case study và vẽ biểu đồ quỹ đạo sai số (`case_study_error_analysis.py`).
-- [ ] Bản thảo nội dung Baseline B0, Module M3, Module M4, Module M6 trong Chương 5 Báo cáo cuối kỳ.
-- [ ] Báo cáo rà soát tính tái lập của mã nguồn thực nghiệm (`Kiem_Tra_Tai_Lap_Code.md`).
+- [ ] Script trích xuất case study (`case_study_error_analysis.py`, chạy được trên Kaggle).
+- [ ] Bản thảo phần Baseline B0 và Module M6 trong Chương 5.
 
 ---
 

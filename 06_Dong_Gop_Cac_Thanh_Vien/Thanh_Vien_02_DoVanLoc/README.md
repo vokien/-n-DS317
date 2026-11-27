@@ -8,31 +8,32 @@
 
 ---
 
-## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT
-1. **Phát triển Chương trình Web Demo tương tác (`app.py`):**
-   - Trọng tâm chiếm **50% điểm sản phẩm A4**: Xây dựng hoàn chỉnh ứng dụng Web Demo bằng Streamlit phục vụ Trung tâm Điều độ Cầu bến (Berth Planning Center).
-   - Nạp trọng số mô hình đã huấn luyện (CatBoost/LightGBM/XGBoost từ `05_Model/` hoặc `05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/`).
-   - Nạp dữ liệu mẫu từ Quách Tuấn Kiệt để mô phỏng suy luận thời gian thực cho tàu biển đang hành trình.
-   - Hiển thị: Mốc giờ cập bến dự báo (Predicted ATA), Khoảng an toàn 90% Conformal (Safety Buffer), Bảng phân cấp rủi ro trễ và đề xuất phân bổ cầu bến JIT.
-   - Tích hợp BI Dashboard trực quan hóa chất lượng dữ liệu DAMA 6 chiều.
-2. **Soạn thảo Báo cáo Cuối kỳ:**
-   - **Chương 1: Tổng quan và Bối cảnh nghiệp vụ:** Lý do chọn đề tài, phân tích chi phí sai lệch ETA trong logistics hàng hải quốc tế, mục tiêu SMART của đề tài Nâng cao.
-   - **Chương 6: Kiến trúc Ứng dụng và Triển khai Doanh nghiệp:** Thiết kế kiến trúc tổng thể của hệ thống, luồng dữ liệu (Data Pipeline -> Serving Engine -> Web Dashboard), mô tả giao diện và các ca sử dụng (Use Cases) cho nhân viên điều độ.
-3. **Thiết kế Bộ Slide Bảo vệ Cuối kỳ:**
-   - Chủ trì thiết kế bộ Slide bảo vệ cuối kỳ (10-12 slides chuẩn môn học), bảo đảm thẩm mỹ cao, bố cục trực quan, tập trung vào sơ đồ, biểu đồ và mockup giao diện.
-4. **Quản lý Hồ sơ Nhóm Cuối kỳ (`08_QuanLyNhom/`):**
-   - Tập hợp và hoàn thiện các Biên bản họp nhóm giai đoạn sau Lab 3.
-   - Nhật ký thực nghiệm tổng hợp và Scope Changelog (lý giải sự điều chỉnh từ Engine v1 sang Engine v2).
-   - Bảng tự đánh giá đóng góp công việc của 7 thành viên.
+## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT (CHỈ PHẦN CÒN THIẾU)
+
+> [!NOTE]
+> Phân công đã được điều chỉnh theo yêu cầu của ĐẠI CA: chỉ giao phần việc CÒN THIẾU; nội dung đã có sẵn trong workspace không giao lại. Chi tiết xem [Kế hoạch hoàn thiện](../../00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md) (Phần A, B, C). Các điểm ghi **[Chờ ĐẠI CA xác nhận]** là đề xuất, chưa là quyết định cuối.
+
+1. **Phát triển Web Demo tương tác (`app.py`)** (50% điểm sản phẩm A4; hiện chưa có `app.py`, chỉ có `07_Demo/README.md`):
+   - Ứng dụng Streamlit cho Trung tâm Điều độ Cầu bến; nạp trọng số CatBoost/LightGBM/XGBoost từ gói `runner*_saved_models.zip` đã có.
+   - Dùng trực tiếp dữ liệu mẫu có sẵn `demo_sample_3000.csv/.parquet` (không chờ thêm).
+   - Hiển thị: Predicted ATA, khoảng an toàn 90% Conformal, bảng phân cấp rủi ro trễ, đề xuất phân bổ cầu bến JIT; tích hợp BI Dashboard DAMA 6 chiều (số liệu DAMA đã có).
+2. **Soạn thảo Báo cáo:** Chương 1 (Tổng quan và Bối cảnh nghiệp vụ; tiểu mục 1.4 do Bảo Lộc viết) và Chương 6 (Kiến trúc Ứng dụng và Triển khai).
+3. **Hồ sơ Quản lý Nhóm (`08_QuanLyNhom/`):** Biên bản họp giai đoạn sau Lab 3, Nhật ký thực nghiệm, Scope Changelog Engine v1 -> v2, Bảng tự đánh giá đóng góp 7 thành viên (hiện thư mục chỉ có `README.md`).
+4. **Cung cấp đầu vào cho Slide (Phần 9):** ảnh chụp màn hình/video Demo gửi cho Trần Hồng Lĩnh. **Không làm slide.**
+
+### 2.1. Đã có sẵn - KHÔNG phân công (chỉ sử dụng/trích dẫn)
+- Dữ liệu mẫu Demo: [`demo_sample_3000.csv`](../../DS317_R11_Nhom03_HoSoNopDoAn/04_Data/demo_sample_3000.csv), [`.parquet`](../../DS317_R11_Nhom03_HoSoNopDoAn/04_Data/demo_sample_3000.parquet).
+- Trọng số: [`runner1_saved_models.zip`](../../05_Output_Cac_Notebook/runner1_saved_models.zip), [`runner2_saved_models.zip`](../../05_Output_Cac_Notebook/runner2_saved_models.zip).
+- Số liệu DAMA: [`DAMA_26_Dac_Trung/`](../../DS317_R11_Nhom03_HoSoNopDoAn/06_Results/DAMA_26_Dac_Trung/) (29 tệp); mockup giao diện: [`Hinh_PL1_Mockup_Demo_Streamlit.png`](../../04_So_Lieu_Kiem_Ke_Va_Bieu_Do/Hinh_Anh_Bieu_Do_Chung/Hinh_PL1_Mockup_Demo_Streamlit.png).
 
 ---
 
 ## 3. DANH MỤC SẢN PHẨM CẦN BÀN GIAO
-- [ ] Toàn bộ mã nguồn Web Demo (`app.py`, components, `config.yaml`, assets).
-- [ ] Hướng dẫn cài đặt và sử dụng Web Demo (`HDSD_Demo_Streamlit.md`).
-- [ ] Bản thảo Chương 1 và Chương 6 Báo cáo cuối kỳ (`Chuong_01_Tong_Quan.docx`, `Chuong_06_Kien_Truc_Ung_Dung_Demo.docx` hoặc `.md`).
-- [ ] Bộ Slide bảo vệ cuối kỳ (`Slide_Bao_Ve_Cuoi_Ky_DS317.pptx` và `.pdf`).
-- [ ] Hồ sơ quản lý nhóm (`Bien_Ban_Hop_Nhom.docx`, `Nhat_Ky_Thuc_Nghiem.md`, `Bang_Tu_Danh_Gia_7_Thanh_Vien.xlsx`).
+- [ ] Mã nguồn Web Demo (`app.py`, components, `config.yaml`, assets).
+- [ ] Hướng dẫn cài đặt và sử dụng (`HDSD_Demo_Streamlit.md`).
+- [ ] Bản thảo Chương 1 và Chương 6.
+- [ ] Hồ sơ quản lý nhóm (`Bien_Ban_Hop_Nhom.docx`, `Nhat_Ky_Thuc_Nghiem.md`, `Scope_Changelog_Engine_v1_sang_v2.md`, `Bang_Tu_Danh_Gia_7_Thanh_Vien.xlsx`).
+- [ ] Ảnh/video màn hình Demo gửi Trần Hồng Lĩnh cho Phần 9 Slide.
 
 ---
 

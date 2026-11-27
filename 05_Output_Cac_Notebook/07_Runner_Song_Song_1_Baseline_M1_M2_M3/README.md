@@ -36,10 +36,12 @@ Mỗi biến thể đều có đủ bộ 3 tệp CSV chuẩn hóa:
 
 ---
 
-## 3. Quản Trị Trọng Số và Tham Số
+## 3. Quản Trị Trọng Số và Tham Số & Đường Link Tải Kaggle Output
 
+- **Đường link Kaggle Output trực tiếp:** [4 Thí nghiệm đầu (Kaggle Output)](https://www.kaggle.com/code/kienvo134/4-th-nghi-m-u/output) - Tải trực tiếp file trọng số nén `runner1_saved_models.zip` và các bảng dự đoán chi tiết `.parquet`.
 - **Tham số (`parameters/` - 274 tệp):** Lưu trữ chi tiết 273 tệp `*_meta.json` cho từng mô hình cụ thể ($13 \times 7 \times 3 = 273$), ghi nhận danh sách đặc trưng đầu vào `feature_cols`, giá trị trung vị điền khuyết `fit_medians`, tham số chuẩn hóa và siêu tham số huấn luyện; cùng 1 bảng tra cứu tập trung `parameters_summary.csv`.
 - **Trọng số (`saved_models/`):** Toàn bộ 273 tệp nhị phân trọng số (`.pt`, `.cbm`, `.txt`, `.json`) được đóng gói thành tệp nén duy nhất `runner1_saved_models.zip` (dung lượng 72.98 MB, tuân thủ giới hạn < 100 MB của GitHub).
+- **Dự đoán chi tiết (`detailed_predictions/`):** Lưu trữ các file `.parquet` chi tiết từng dòng dữ liệu và từng chuyến đi phục vụ kiểm toán sâu sai số.
 
 ---
 

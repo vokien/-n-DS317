@@ -3,33 +3,34 @@
 ## 1. THÔNG TIN THÀNH VIÊN
 - **Họ và tên:** Nguyễn Hữu Bảo Lộc
 - **Mã số sinh viên (MSSV):** 24520983
-- **Vai trò trong đồ án:** Chuyên viên Tổng quan Học thuật & Đạo đức AI (Academic Literature & AI Ethics Specialist)
+- **Vai trò trong đồ án:** Chuyên viên Tổng quan Học thuật, Trích dẫn IEEE & Đạo đức AI
 - **Tỷ lệ đóng góp cam kết:** 14.28%
 
 ---
 
-## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT
-1. **Nghiên cứu Tổng quan Công trình Liên quan (Related Work) & Bảng Đối sánh SOTA:**
-   - Phân tích chuyên sâu 6 bài báo khoa học quốc tế uy tín (Springer, Elsevier) về bài toán ETA hàng hải.
-   - Xây dựng bảng ma trận đối sánh toàn diện theo 5 tiêu chí: Phương pháp mô hình, Nguồn và quy mô dữ liệu, Kết quả định lượng (MAE, RMSE), Hạn chế thực tiễn và Điểm kế thừa của đề tài.
-   - Khẳng định rõ **Khoảng trống nghiên cứu (Research Gap)**: các nghiên cứu trước đây đa phần chạy trên dữ liệu nhỏ, gọt giũa nhân tạo hoặc không tính đến hàm phạt trễ/sớm bất đối xứng và biến động thời tiết biển mở.
-2. **Chuẩn hóa Danh mục Trích dẫn Học thuật chuẩn IEEE:**
-   - Quản lý và chuẩn hóa toàn bộ trích dẫn trong Báo cáo cuối kỳ theo chuẩn **IEEE** (đánh số theo thứ tự xuất hiện [1], [2], [3]...).
-   - Xuất bản và kiểm tra tính toàn vẹn của tệp `references.bib`, đảm bảo 100% trích dẫn trong văn bản đều có liên kết nguồn rõ ràng.
-3. **Soạn thảo Khung Tuân thủ Pháp lý & Đạo đức AI:**
-   - Rà soát việc tuân thủ **Luật An toàn thông tin mạng** và **Luật Bảo vệ dữ liệu cá nhân (Decree 13/2023/ND-CP)**: chứng minh dữ liệu NOAA AIS hoàn toàn ẩn danh thuyền viên, định danh bằng mã MMSI công cộng quốc tế, không lưu trữ dữ liệu định danh cá nhân (No PII).
-   - Soạn thảo bản **Khai báo Minh bạch Sử dụng AI (AI Transparency & Ethics Declaration)**: công khai mục đích sử dụng các mô hình hỗ trợ viết code/rà soát văn bản, khẳng định tính liêm chính học thuật 100% của nhóm.
-4. **Soạn thảo Báo cáo Cuối kỳ:**
-   - **Chương 1 (Tiểu mục 1.4):** Toàn bộ nội dung Tổng quan tình hình nghiên cứu trong và ngoài nước.
-   - **Chương 5 (phần Module M5):** Phân tích kết quả thực nghiệm Module M5 (Biến đổi mục tiêu phi tuyến $\log(1+y)$ và chọn lọc đặc trưng tối ưu qua Mutual Information).
+## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT (CHỈ PHẦN CÒN THIẾU)
+
+> [!NOTE]
+> Phân công đã được điều chỉnh theo yêu cầu của ĐẠI CA: chỉ giao phần việc CÒN THIẾU; nội dung đã có sẵn trong workspace không giao lại. Chi tiết xem [Kế hoạch hoàn thiện](../../00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md) (Phần A, B, C). Các điểm ghi **[Chờ ĐẠI CA xác nhận]** là đề xuất, chưa là quyết định cuối.
+
+1. **Chuẩn hóa trích dẫn IEEE:** xây dựng và kiểm tra `references.bib` (chưa có trong workspace), bảo đảm 100% trích dẫn trong văn bản có nguồn.
+2. **Chương 1 (tiểu mục 1.4):** viết nội dung Tổng quan tình hình nghiên cứu và Research Gap, dựa trên bảng Related Work ĐÃ CÓ (`TongQuan_RelatedWork_ETA_6BaiBao_v2.xlsx`), không làm lại phần nghiên cứu 6 bài báo.
+3. **Tuân thủ Pháp lý & Đạo đức AI:** tài liệu tuân thủ pháp luật bảo vệ dữ liệu cá nhân và Bản khai báo sử dụng AI minh bạch (`08_QuanLyNhom/` hiện chỉ có `README.md`).
+4. **Chương 5 phần Module M5** (log1p và chọn lọc Mutual Information; viết từ số liệu Engine v2 `m5_selection_*`).
+5. **Cung cấp nội dung cho Slide (Phần 2, Phần 10)** gửi Trần Hồng Lĩnh. **Không làm slide.**
+
+### 2.1. Đã có sẵn - KHÔNG phân công (chỉ sử dụng/trích dẫn)
+- Bảng Related Work 6 bài báo: [`TongQuan_RelatedWork_ETA_6BaiBao_v2.xlsx`](../../00_Quan_Ly_Va_Tai_Lieu_Chung/TongQuan_RelatedWork_ETA_6BaiBao_v2.xlsx).
+- Báo cáo M5 (Engine v1): [`BaoCao_M5.docx`](../../03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Bao_cao_Modules/BaoCao_M5.docx); số liệu Engine v2 M5: [`Tong_Hop_..._Ablation_7_Module.md`](../../03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Tong_Hop_Ket_Qua_Thuc_Nghiem_Ablation_7_Module.md) và `m5_*` trong `08_.../results/`.
 
 ---
 
 ## 3. DANH MỤC SẢN PHẨM CẦN BÀN GIAO
-- [ ] Bản thảo phần Tổng quan công trình liên quan (Related Work) cho Chương 1 (`Tong_Quan_SOTA_Related_Work.docx` hoặc `.md`).
-- [ ] Tệp trích dẫn tài liệu tham khảo chuẩn IEEE (`references.bib`).
-- [ ] Báo cáo chuyên đề Tuân thủ Pháp lý & Đạo đức AI (`Bao_Cao_Tuan_Thu_Phap_Ly_Va_Dao_Duc_AI.md`).
-- [ ] Bản thảo phần phân tích Module M5 trong Chương 5 Báo cáo cuối kỳ.
+- [ ] Tệp `references.bib` chuẩn IEEE.
+- [ ] Bản thảo tiểu mục 1.4 Chương 1 (`Tong_Quan_SOTA_Related_Work.docx` hoặc `.md`).
+- [ ] Tài liệu Tuân thủ Pháp lý & Đạo đức AI và Bản khai báo sử dụng AI.
+- [ ] Bản thảo phần Module M5 trong Chương 5.
+- [ ] Nội dung Phần 2 và Phần 10 Slide gửi Trần Hồng Lĩnh.
 
 ---
 

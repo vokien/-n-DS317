@@ -3,35 +3,34 @@
 ## 1. THÔNG TIN THÀNH VIÊN
 - **Họ và tên:** Quách Tuấn Kiệt
 - **Mã số sinh viên (MSSV):** 24520911
-- **Vai trò trong đồ án:** Kỹ sư Dữ liệu (Data Engineer), Kiểm kê & Giám sát Chất lượng Dữ liệu DAMA
+- **Vai trò trong đồ án:** Kỹ sư Dữ liệu (Data Engineer), Chương 2 Dữ liệu & DAMA, Module M3 và Rà soát tái lập code
 - **Tỷ lệ đóng góp cam kết:** 14.28%
 
 ---
 
-## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT
-1. **Xây dựng Bộ dữ liệu mẫu chạy Demo (Sample Dataset for Demo):**
-   - Trích xuất từ 1,000 đến 5,000 dòng quan trắc hành hải đại diện từ tập kiểm thử Quý 4 (`q4.parquet` trong `03_ban_tien_xu_ly_27_thuoc_tinh/`).
-   - Đảm bảo đầy đủ 27 đặc trưng chế tác + trường khí tượng hải văn RTMA, kèm biến mục tiêu `Target_Hours` và mốc cập bến `ata_time`.
-   - Bao phủ đa dạng các nhóm tàu (Cargo và Tanker), các phân tầng thời gian (`<= 168h` và `> 168h`) để phục vụ kiểm thử Demo thông suốt.
-   - Viết script tự động hóa trích xuất dữ liệu mẫu để phục vụ tái lập độc lập.
-2. **Soạn thảo Báo cáo Cuối kỳ:**
-   - **Chương 2: Dữ liệu và Đo lường Chất lượng Dữ liệu:**
-     + Bảng kiểm kê tài sản dữ liệu NOAA AIS 2025 theo 7 tiêu chí chuẩn.
-     + Từ điển dữ liệu chi tiết cho hệ 3 phiên bản thuộc tính (18 cột thô, 22 cột nền tảng, 27 cột tiền xử lý).
-     + Bảng đo lường và giám sát độ đo chất lượng dữ liệu 6 chiều DAMA-DMBOK (Completeness, Consistency, Accuracy, Timeliness, Validity, Uniqueness) trên 256.94 triệu dòng thô `RAW18`.
-     + Đánh giá tương quan Pearson giữa cự ly `Dist_To_Berth_NM` và biến mục tiêu qua các giai đoạn làm sạch.
-3. **Cập nhật và Chuẩn hóa File Kiểm kê Dữ liệu:**
-   - Hoàn thiện tệp Excel `Lab3_DS317_Nhom03_DataInventory.xlsx` (3 sheets chuyên nghiệp: `KiemKe_7TieuChi`, `TuDien_22ThuocTinh`, `DoDo_ChatLuong_6Chieu`) khớp 100% với các bảng biểu trong Báo cáo.
-4. **Phối hợp Thử nghiệm Demo:**
-   - Bàn giao dữ liệu mẫu cho Đỗ Văn Lộc và phối hợp kiểm thử nạp dữ liệu vào ứng dụng `app.py`.
+## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT (CHỈ PHẦN CÒN THIẾU)
+
+> [!NOTE]
+> Phân công đã được điều chỉnh theo yêu cầu của ĐẠI CA: chỉ giao phần việc CÒN THIẾU; nội dung đã có sẵn trong workspace không giao lại. Chi tiết xem [Kế hoạch hoàn thiện](../../00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md) (Phần A, B, C). Các điểm ghi **[Chờ ĐẠI CA xác nhận]** là đề xuất, chưa là quyết định cuối.
+
+1. **Soạn thảo Chương 2: Dữ liệu và Đo lường Chất lượng Dữ liệu** (chỉ viết văn bản, tổng hợp từ số liệu DAMA, từ điển dữ liệu và Data Inventory ĐÃ CÓ SẴN, không tính lại).
+2. **Chương 5 phần Module M3:** viết từ Engine v2 (`m3_features_*` và mục M3 trong tệp Ablation `.md`); báo cáo `Bao_cao_Thuc_nghiem_Module_M3_Ablation_Study.docx` đã có là số liệu Engine v1, khi trích dẫn phải đối chiếu số liệu Engine v2.
+3. **Rà soát tính tái lập mã nguồn** (chuyển từ Trần Hồng Lĩnh): kiểm tra khả năng chạy lại notebook/script trong `05_Output_Cac_Notebook/` và `02_Ma_Nguon_Tien_Xu_Ly_Va_Thuc_Nghiem/`, không có đường dẫn tuyệt đối cứng.
+4. **Cung cấp đầu vào cho Slide (Phần 3: Tài sản dữ liệu & DAMA)** gửi cho Trần Hồng Lĩnh. **Không làm slide.**
+
+### 2.1. Đã có sẵn - KHÔNG phân công (chỉ sử dụng/trích dẫn)
+- Dữ liệu mẫu Demo (3,000 dòng, 39 cột): [`demo_sample_3000.csv`](../../DS317_R11_Nhom03_HoSoNopDoAn/04_Data/demo_sample_3000.csv), [`.parquet`](../../DS317_R11_Nhom03_HoSoNopDoAn/04_Data/demo_sample_3000.parquet).
+- Kiểm kê dữ liệu: [`Lab3_DS317.R11_Nhom03_DataInventory.xlsx`](../../01_Bai_Tap_Ve_Nha_Chinh_Thuc/BT3_Thuyet_Minh_De_Tai/Lab3_DS317.R11_Nhom03_DataInventory.xlsx).
+- Đo lường DAMA: [`06_.../DAMA/`](../../05_Output_Cac_Notebook/06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN/DAMA/) (8 tệp), [`02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/`](../../05_Output_Cac_Notebook/02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung/README.md) (30 tệp), từ điển RAW18/PREP27 trong `DICTIONARY/`.
+- Báo cáo module M3: [`Bao_cao_Modules/`](../../03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Bao_cao_Modules/README.md).
 
 ---
 
 ## 3. DANH MỤC SẢN PHẨM CẦN BÀN GIAO
-- [ ] Tệp dữ liệu mẫu chạy Demo (`sample_demo_1000.parquet` và `sample_demo_1000.csv`).
-- [ ] Script Python trích xuất và kiểm tra tính hợp lệ của dữ liệu mẫu (`extract_sample_data.py`).
-- [ ] Bản thảo Chương 2 Báo cáo cuối kỳ (`Chuong_02_Du_Lieu_Va_Do_Luong_DAMA.docx` hoặc `.md`).
-- [ ] Tệp Excel kiểm kê và giám sát chất lượng dữ liệu 6 chiều cập nhật (`DataInventory_Final_DAMA.xlsx`).
+- [ ] Bản thảo Chương 2 (`Chuong_02_Du_Lieu_Va_Do_Luong_DAMA.docx` hoặc `.md`).
+- [ ] Bản thảo phần Module M3 trong Chương 5.
+- [ ] Báo cáo rà soát tái lập (`Kiem_Tra_Tai_Lap_Code.md`).
+- [ ] Nội dung/ảnh Phần 3 Slide gửi Trần Hồng Lĩnh.
 
 ---
 

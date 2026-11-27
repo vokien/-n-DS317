@@ -3,36 +3,39 @@
 ## 1. THÔNG TIN THÀNH VIÊN
 - **Họ và tên:** Võ Đình Kiên
 - **Mã số sinh viên (MSSV):** 24520893
-- **Vai trò trong đồ án:** Nhóm trưởng (Project Leader), Quản trị dự án & Kiến trúc hệ thống
+- **Vai trò trong đồ án:** Nhóm trưởng (Project Leader), Quản trị dự án, Chủ trì Chương 5 & tổng biên tập Báo cáo
 - **Tỷ lệ đóng góp cam kết:** 14.28%
 
 ---
 
-## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT
+## 2. NHIỆM VỤ ĐƯỢC GIAO CHI TIẾT (CHỈ PHẦN CÒN THIẾU)
+
+> [!NOTE]
+> Phân công đã được điều chỉnh theo yêu cầu của ĐẠI CA: chỉ giao phần việc CÒN THIẾU; nội dung đã có sẵn trong workspace không giao lại. Chi tiết xem [Kế hoạch hoàn thiện](../../00_Quan_Ly_Va_Tai_Lieu_Chung/K%E1%BA%BF%20ho%E1%BA%A1ch%20ho%C3%A0n%20thi%E1%BB%87n%20v%C3%A0%20ph%C3%A2n%20c%C3%B4ng%20c%C3%B4ng%20vi%E1%BB%87c%20cu%E1%BB%91i%20k%E1%BB%B3.md) (Phần A, B, C). Các điểm ghi **[Chờ ĐẠI CA xác nhận]** là đề xuất, chưa là quyết định cuối.
+
 1. **Quản trị dự án & Tích hợp hồ sơ cuối kỳ:**
-   - Điều phối tiến độ tổng thể của 7 thành viên theo kế hoạch cuối kỳ.
-   - Tiếp nhận, kiểm tra đối chuẩn và tích hợp các phần đóng góp từ 7 thư mục thành viên vào hồ sơ nộp bài chính thức `DS317_R11_Nhom03_HoSoNopDoAn/`.
-   - Quản lý quy chuẩn chất lượng: kiểm soát không có broken link, tuân thủ định dạng dấu gạch ngang tiêu chuẩn `-` (ASCII 0x2D), không rò rỉ dữ liệu tạm.
-2. **Soạn thảo và Tổng biên tập Báo cáo Cuối kỳ:**
-   - Chủ trì tổng biên tập toàn bộ Báo cáo Đồ án Cuối kỳ 7 Chương (`.docx` và `.pdf`).
-   - Trực tiếp soạn thảo **Chương 7: Kết luận và Hướng phát triển** (Tóm tắt các đóng góp cốt lõi, giá trị thực tiễn, hạn chế và lộ trình nâng cấp hệ thống).
-3. **Môi trường thực thi & Script tự động hóa:**
-   - Xây dựng và kiểm tra tệp phụ thuộc môi trường `requirements.txt` chuẩn hóa cho toàn dự án.
-   - Cập nhật và vận hành script đồng bộ hồ sơ nộp bài tự động `dong_bo_ho_so_nop.py` đạt chuẩn PEP 8.
-4. **Phân tích Rủi ro Kỹ thuật Big Data:**
-   - Hoàn thiện tài liệu phân tích rủi ro Big Data khi xử lý 320.78 triệu dòng thô NOAA AIS 2025 (rủi ro OOM RAM, tràn đĩa đệm, tín hiệu gián đoạn và trôi dạt phân phối thời tiết mùa đông).
-5. **Tổng duyệt Slide Thuyết trình:**
-   - Cùng Đỗ Văn Lộc hoàn thiện và tổng duyệt bộ Slide thuyết trình cuối kỳ (10-12 slides chuẩn môn học).
-   - Đóng gói tệp ZIP nộp bài chính thức `DS317_R11_Nhom03.zip`.
+   - Điều phối tiến độ 7 thành viên; tiếp nhận, kiểm tra và tích hợp sản phẩm vào `DS317_R11_Nhom03_HoSoNopDoAn/`.
+   - Kiểm soát chất lượng: 0 broken link, chỉ dùng dấu `-` (ASCII 0x2D), không rò rỉ dữ liệu tạm.
+2. **Chương 7: Kết luận và Hướng phát triển** (tự soạn thảo).
+3. **Chủ trì và tổng hợp Chương 5** (thay Trần Hồng Lĩnh) **[Chờ ĐẠI CA xác nhận]**; tự viết phần **Module M4 (RTMA)**.
+4. **Báo cáo rủi ro Big Data** khi xử lý 320.78 triệu dòng thô NOAA AIS 2025 (OOM RAM, tràn đĩa đệm, tín hiệu gián đoạn, trôi dạt thời tiết mùa đông).
+5. **Tổng biên tập Báo cáo 7 chương và đóng gói ZIP** `DS317_R11_Nhom03.zip`; duyệt học thuật nội dung Slide (Slide do Trần Hồng Lĩnh làm, Kiên không làm slide).
+6. **Hỗ trợ Kaggle:** là người đã chạy 2 Runner; cung cấp lại hoặc chạy lại `detailed_predictions/` cho Liêm, Chí Kiên, Hồng Lĩnh nếu tệp không còn trên Kaggle **[Chờ ĐẠI CA xác nhận]**.
+- **Lưu ý chạy trên Kaggle:** `detailed_predictions/*.parquet` bị `.gitignore` và chưa có trong workspace; mọi tác vụ cần dữ liệu này phải chạy trên Kaggle, không chạy nặng trên máy cá nhân.
+
+### 2.1. Đã có sẵn - KHÔNG phân công (chỉ sử dụng/trích dẫn)
+- Môi trường `requirements.txt`, `environment.yml`: [`03_SourceCode/requirements.txt`](../../DS317_R11_Nhom03_HoSoNopDoAn/03_SourceCode/requirements.txt).
+- Script đồng bộ: [`dong_bo_ho_so_nop.py`](../../05_Output_Cac_Notebook/dong_bo_ho_so_nop.py) (chỉ vận hành, không phải xây mới).
+- Số liệu Runner: [`07_.../results/`](../../05_Output_Cac_Notebook/07_Runner_Song_Song_1_Baseline_M1_M2_M3/results/), [`08_.../results/`](../../05_Output_Cac_Notebook/08_Runner_Song_Song_2_M4_M5_M6_M7/results/); số liệu M4 đã có trong [`Tong_Hop_..._Ablation_7_Module.md`](../../03_Bao_Cao_Va_Ket_Qua_Thuc_Nghiem/Tong_Hop_Ket_Qua_Thuc_Nghiem_Ablation_7_Module.md).
 
 ---
 
 ## 3. DANH MỤC SẢN PHẨM CẦN BÀN GIAO
-- [ ] Bản thảo Chương 7 Báo cáo cuối kỳ (`Chuong_07_Ket_Luan_Huong_Phat_Trien.docx` hoặc `.md`).
-- [ ] Tệp môi trường thực thi `requirements.txt` đã được kiểm thử thông suốt.
-- [ ] Bản tổng duyệt Báo cáo 7 chương hoàn chỉnh (`BaoCao_CuoiKy_DS317_Nhom03.docx` và `.pdf`).
-- [ ] Bản tổng duyệt Slide thuyết trình cuối kỳ (`Slide_Bao_Ve_Cuoi_Ky_Nhom03.pptx` và `.pdf`).
-- [ ] Báo cáo phân tích rủi ro Big Data và phương án dự phòng (`Bao_Cao_Rui_Ro_BigData.md`).
+- [ ] Bản thảo Chương 7 (`Chuong_07_Ket_Luan_Huong_Phat_Trien.docx` hoặc `.md`).
+- [ ] Bản tổng hợp Chương 5 và phần Module M4.
+- [ ] Báo cáo rủi ro Big Data (`Bao_Cao_Rui_Ro_BigData.md`).
+- [ ] Bản tổng duyệt Báo cáo 7 chương (`BaoCao_CuoiKy_DS317_Nhom03.docx` và `.pdf`).
+- [ ] Biên bản duyệt học thuật Slide và gói ZIP nộp bài `DS317_R11_Nhom03.zip`.
 
 ---
 

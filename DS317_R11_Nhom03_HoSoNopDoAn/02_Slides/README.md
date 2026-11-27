@@ -33,5 +33,5 @@ Thư mục này lưu trữ bộ Slide trình chiếu phục vụ buổi báo cá
 
 ## 3. Phân Công Trách Nhiệm
 
-- **Đỗ Văn Lộc (Thư ký):** Chủ trì thiết kế bộ Slide tổng hợp, đồng bộ định dạng đồ họa và chuẩn bị video demo màn hình dự phòng.
-- **Cả nhóm:** Cung cấp số liệu, biểu đồ thuộc phần phụ trách và tham gia luyện tập thuyết trình khớp mốc 15-20 phút.
+- **Trần Hồng Lĩnh:** Chủ trì và thực hiện TOÀN BỘ việc thiết kế, dựng bộ Slide 10 phần (`.pptx` và `.pdf`), đồng bộ định dạng đồ họa.
+- **Các thành viên còn lại:** Chỉ cung cấp nội dung, biểu đồ, số liệu đầu vào của phần mình cho Trần Hồng Lĩnh (không tự làm slide) và tham gia luyện tập thuyết trình khớp mốc 15-20 phút. Đỗ Văn Lộc cung cấp ảnh/video màn hình Demo dự phòng cho Phần 9. Võ Đình Kiên duyệt học thuật.
