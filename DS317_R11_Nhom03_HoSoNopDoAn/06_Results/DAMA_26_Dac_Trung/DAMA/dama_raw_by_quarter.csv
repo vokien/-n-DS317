@@ -1,0 +1,5 @@
+version,scope,rows,completeness_rec_all_pct,completeness_rec_non_cargo_pct,completeness_field_all_pct,completeness_field_non_cargo_pct,consistency_kinematic_pct,consistency_operational_pct,accuracy_kinematic_pct,pearson_dist_target_r,timeliness_2025_causal_pct,timeliness_168h_window_pct,validity_pct,uniqueness_pct,duplicate_rows
+RAW_18,Q1,57639006,95.3536,95.7277,99.7121,99.7184,47.2293,37.3221,44.9129,0.27415,99.9571,70.6315,46.1791,99.96,23065
+RAW_18,Q2,53468044,93.7445,94.3311,99.5762,99.5863,52.7169,41.257,52.7127,0.25785,99.958,71.9759,51.1626,99.9404,31845
+RAW_18,Q3,50196082,93.6891,94.0453,99.5725,99.5769,53.4302,41.9069,53.4819,0.28625,99.9566,72.6015,51.555,99.0979,452832
+RAW_18,Q4,47319756,94.0047,94.5398,99.5992,99.6144,51.7068,41.1455,50.8631,0.23338,99.9583,72.9112,50.205,99.5553,210429

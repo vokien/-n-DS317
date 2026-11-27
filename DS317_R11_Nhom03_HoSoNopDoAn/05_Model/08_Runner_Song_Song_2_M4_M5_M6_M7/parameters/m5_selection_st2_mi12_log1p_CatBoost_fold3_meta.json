@@ -1,0 +1,33 @@
+{
+  "exp_id": "m5_selection_st2_mi12_log1p",
+  "experiment_name": "M5_Selection",
+  "variant_name": "ST2_mi12_log1p",
+  "model_name": "CatBoost",
+  "fold": 3,
+  "feature_cols": [
+    "longitude",
+    "latitude",
+    "sog",
+    "heading_sin",
+    "heading_cos",
+    "length",
+    "draft",
+    "Area_Proxy",
+    "Volume_Proxy",
+    "berth_lon",
+    "berth_lat",
+    "Dist_To_Berth_NM"
+  ],
+  "target_mode": "log1p",
+  "asym_alpha": 0.0,
+  "conformal_q90": {
+    "q_low": -30.386996841430665,
+    "q_high": 995.1855339050283
+  },
+  "model_file": "m5_selection_st2_mi12_log1p_CatBoost_fold3.cbm",
+  "model_format": "catboost_cbm",
+  "fit_medians": null,
+  "scaler_mean": null,
+  "scaler_std": null,
+  "base_score_mean_y_fit": null
+}

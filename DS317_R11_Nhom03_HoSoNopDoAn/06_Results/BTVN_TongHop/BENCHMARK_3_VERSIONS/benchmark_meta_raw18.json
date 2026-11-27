@@ -1,0 +1,8 @@
+{
+  "version_dir": "01_ban_tho_18_thuoc_tinh",
+  "n_train": 209615498,
+  "dummy_median_h": 91.805,
+  "nonfinite_filled_tr": 16045691,
+  "nonfinite_filled_te": 3284418,
+  "elapsed_sec": 107.52
+}

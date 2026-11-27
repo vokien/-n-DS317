@@ -1,0 +1,8 @@
+{
+  "version_dir": "03_ban_tien_xu_ly_27_thuoc_tinh",
+  "n_train": 68489376,
+  "dummy_median_h": 31.595000000000002,
+  "nonfinite_filled_tr": 0,
+  "nonfinite_filled_te": 0,
+  "elapsed_sec": 333.01
+}

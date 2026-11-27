@@ -1,0 +1,26 @@
+{
+  "n_clean_cc": 272806551,
+  "n_train": 217335623,
+  "n_test": 44348487,
+  "n_crossing_removed": 11122441,
+  "dummy_median": 103.69277954101562,
+  "results": [
+    {
+      "Model": "Dummy_Median_RawCC",
+      "N_Test": 44348487,
+      "MAE_Hours": 152.0931,
+      "RMSE_Hours": 288.9898,
+      "R2_Score": -0.0598,
+      "Asym_L1_2_0": 262.4546
+    },
+    {
+      "Model": "Ridge_Alpha1_RawCC",
+      "N_Test": 44348487,
+      "MAE_Hours": 175.338,
+      "RMSE_Hours": 280.7384,
+      "R2_Score": -0.0001,
+      "Asym_L1_2_0": 266.0313
+    }
+  ],
+  "elapsed_sec": 7500.52
+}

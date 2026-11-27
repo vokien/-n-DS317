@@ -1,0 +1,4 @@
+version,scope,rows,completeness_rec_all_pct,completeness_rec_non_cargo_pct,completeness_field_all_pct,completeness_field_non_cargo_pct,consistency_kinematic_pct,consistency_operational_pct,accuracy_kinematic_pct,pearson_dist_target_r,timeliness_2025_causal_pct,timeliness_168h_window_pct,validity_pct,uniqueness_pct,duplicate_rows
+RAW_18,Overall,208622888,94.2348,94.6955,99.6181,99.6269,51.1433,40.3009,50.3233,0.26336,99.9575,71.9671,49.6629,99.6558,718171
+RAW_18,Train,161303132,94.3023,94.7412,99.6236,99.6306,50.978,40.0532,50.1649,0.27192,99.9573,71.6902,49.5039,99.6852,507742
+RAW_18,Test,47319756,94.0047,94.5398,99.5992,99.6144,51.7068,41.1455,50.8631,0.23338,99.9583,72.9112,50.205,99.5553,210429

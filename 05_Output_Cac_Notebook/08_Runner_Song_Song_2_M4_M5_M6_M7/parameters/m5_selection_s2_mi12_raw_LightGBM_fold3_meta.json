@@ -1,0 +1,33 @@
+{
+  "exp_id": "m5_selection_s2_mi12_raw",
+  "experiment_name": "M5_Selection",
+  "variant_name": "S2_mi12_raw",
+  "model_name": "LightGBM",
+  "fold": 3,
+  "feature_cols": [
+    "longitude",
+    "latitude",
+    "sog",
+    "heading_sin",
+    "heading_cos",
+    "length",
+    "draft",
+    "Area_Proxy",
+    "Volume_Proxy",
+    "berth_lon",
+    "berth_lat",
+    "Dist_To_Berth_NM"
+  ],
+  "target_mode": "raw",
+  "asym_alpha": 0.0,
+  "conformal_q90": {
+    "q_low": -43.1344886779785,
+    "q_high": 985.0106083869931
+  },
+  "model_file": "m5_selection_s2_mi12_raw_LightGBM_fold3.txt",
+  "model_format": "lgbm_booster_txt",
+  "fit_medians": null,
+  "scaler_mean": null,
+  "scaler_std": null,
+  "base_score_mean_y_fit": null
+}

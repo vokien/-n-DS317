@@ -1,0 +1,11 @@
+﻿col_a,col_b,pearson_r,proposed_drop
+longitude,berth_lon,0.8974,berth_lon
+cog_sin,heading_sin,0.9593,cog_sin
+cog_cos,heading_cos,0.955,heading_cos
+vessel_type,Is_Tanker,0.8623,vessel_type
+length,width,0.8649,length
+length,Area_Proxy,0.9519,Area_Proxy
+length,Volume_Proxy,0.9023,Volume_Proxy
+width,Area_Proxy,0.9461,Area_Proxy
+width,Volume_Proxy,0.8855,Volume_Proxy
+Area_Proxy,Volume_Proxy,0.9591,Area_Proxy

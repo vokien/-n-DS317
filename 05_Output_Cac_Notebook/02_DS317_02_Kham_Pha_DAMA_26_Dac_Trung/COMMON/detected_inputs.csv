@@ -1,0 +1,9 @@
+version,input_mode,split_tag,file_path,num_rows,num_cols,size_mb
+RAW_18,SPLIT_POST_QUARTERS,train,/kaggle/input/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng/01_ban_tho_18_thuoc_tinh/q1.parquet,57639006,18,1529.08
+RAW_18,SPLIT_POST_QUARTERS,train,/kaggle/input/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng/01_ban_tho_18_thuoc_tinh/q2.parquet,53468044,18,1446.74
+RAW_18,SPLIT_POST_QUARTERS,train,/kaggle/input/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng/01_ban_tho_18_thuoc_tinh/q3.parquet,50196082,18,1362.09
+RAW_18,SPLIT_POST_QUARTERS,test,/kaggle/input/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng/01_ban_tho_18_thuoc_tinh/q4.parquet,47319756,18,1282.08
+PREP_27,SPLIT_POST_QUARTERS,train,/kaggle/input/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng/03_ban_tien_xu_ly_27_thuoc_tinh/q1.parquet,18486710,27,797.67
+PREP_27,SPLIT_POST_QUARTERS,train,/kaggle/input/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng/03_ban_tien_xu_ly_27_thuoc_tinh/q2.parquet,27906228,27,1177.94
+PREP_27,SPLIT_POST_QUARTERS,train,/kaggle/input/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng/03_ban_tien_xu_ly_27_thuoc_tinh/q3.parquet,26413447,27,1119.27
+PREP_27,SPLIT_POST_QUARTERS,test,/kaggle/input/datasets/kienvo134/noaa-ais-2025-full-year-tin-x-l-nn-tng/03_ban_tien_xu_ly_27_thuoc_tinh/q4.parquet,24192474,27,1029.4

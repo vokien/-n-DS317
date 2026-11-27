@@ -1,0 +1,3 @@
+﻿version,model,N_Test,MAE_h,RMSE_h,R2,MAPE_pct,SMAPE_pct,Asym_L1_2_0,Asym_L2_2_5,Early_Pred_pct,Bias_h
+01_ban_tho_18_thuoc_tinh,Dummy_Median,47319756,156.4664,306.3366,-0.0916,1062.47,97.78,279.072,231075.7863,41.5,-88.7447
+01_ban_tho_18_thuoc_tinh,Ridge_Streaming,47319756,299.7095,351.5,-0.4372,3719.59,125.33,355.3748,184327.6901,13.51,188.3791

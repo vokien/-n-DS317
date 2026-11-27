@@ -1,0 +1,10 @@
+﻿step,remaining_rows
+00_Initial_Raw,320000
+01_SOG_1_to_40,163512
+02_Not_Moored_Anchored,161555
+03_US_BBox,160384
+04_Vessel_Type_70_89,160384
+05_After_ATD_Prev,160384
+06_Dist_1800_2300_NM,141444
+07_Target_gt_0,141444
+08_Implied_Spd_ge_1_62,90192

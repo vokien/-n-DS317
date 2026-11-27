@@ -1,0 +1,61 @@
+{
+  "exp_id": "m7_intervals_m7_adaptive",
+  "experiment_name": "M7_Intervals",
+  "variant_name": "M7_Adaptive",
+  "model_name": "XGBoost",
+  "fold": 1,
+  "feature_cols": [
+    "longitude",
+    "latitude",
+    "sog",
+    "cog_sin",
+    "cog_cos",
+    "heading_sin",
+    "heading_cos",
+    "length",
+    "width",
+    "draft",
+    "cargo",
+    "Area_Proxy",
+    "Volume_Proxy",
+    "status",
+    "vessel_type",
+    "Is_Tanker",
+    "berth_lon",
+    "berth_lat",
+    "Dist_To_Berth_NM",
+    "imputation_flag"
+  ],
+  "target_mode": "raw",
+  "asym_alpha": 0.0,
+  "conformal_q90": {
+    "q_low": -75.90556640625,
+    "q_high": 72.67113952636716,
+    "cluster_q_low": [
+      -3.829357814788818,
+      -4.884653389453888,
+      -8.715837812423706,
+      -9.411728620529175,
+      -24.655306243896483,
+      -26.11342854499817,
+      -134.76733322143554,
+      -212.6871551513672
+    ],
+    "cluster_q_high": [
+      0.4162843704223525,
+      -0.14553070068359375,
+      12.727560901641828,
+      11.298290061950677,
+      29.456015777587872,
+      50.06541080474853,
+      236.34171905517567,
+      133.6914211273192
+    ]
+  },
+  "model_file": "m7_intervals_m7_adaptive_XGBoost_fold1.json",
+  "model_format": "xgboost_json",
+  "fit_medians": null,
+  "scaler_mean": null,
+  "scaler_std": null,
+  "base_score_mean_y_fit": null
+}

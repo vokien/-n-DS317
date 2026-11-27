@@ -1,0 +1,41 @@
+{
+  "exp_id": "m5_selection_t1_all20_log1p",
+  "experiment_name": "M5_Selection",
+  "variant_name": "T1_all20_log1p",
+  "model_name": "LightGBM",
+  "fold": 1,
+  "feature_cols": [
+    "longitude",
+    "latitude",
+    "sog",
+    "cog_sin",
+    "cog_cos",
+    "heading_sin",
+    "heading_cos",
+    "length",
+    "width",
+    "draft",
+    "cargo",
+    "Area_Proxy",
+    "Volume_Proxy",
+    "status",
+    "vessel_type",
+    "Is_Tanker",
+    "berth_lon",
+    "berth_lat",
+    "Dist_To_Berth_NM",
+    "imputation_flag"
+  ],
+  "target_mode": "log1p",
+  "asym_alpha": 0.0,
+  "conformal_q90": {
+    "q_low": -49.16755752563476,
+    "q_high": 81.32986679077146
+  },
+  "model_file": "m5_selection_t1_all20_log1p_LightGBM_fold1.txt",
+  "model_format": "lgbm_booster_txt",
+  "fit_medians": null,
+  "scaler_mean": null,
+  "scaler_std": null,
+  "base_score_mean_y_fit": null
+}

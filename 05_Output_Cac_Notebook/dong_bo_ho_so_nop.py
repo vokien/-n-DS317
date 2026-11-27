@@ -1,8 +1,10 @@
 """Kiem ke output cac notebook va dong bo ho so nop do an DS317.
 
 Script nay quet toan bo 9 thu muc con trong 05_Output_Cac_Notebook/,
-thong ke so luong file thuc te (bo qua .gitkeep) va ho tro sao chep
-cac tep trong so / ket qua nhe sang DS317_R11_Nhom03_HoSoNopDoAn/.
+thong ke so luong file thuc te (bo qua .gitkeep), phan dinh ro rang giua
+file so lieu thuc nghiem (results), tham so cau hinh mo hinh (parameters),
+va trong so (saved_models); dong thoi dong bo cac tep nhe sang
+thu muc nop do an DS317_R11_Nhom03_HoSoNopDoAn/.
 """
 
 import argparse
@@ -19,6 +21,8 @@ RUNNER_DIRS = (
 )
 
 RESULT_EXTENSIONS = {".csv", ".json", ".md", ".png", ".txt"}
+PARAMETER_EXTENSIONS = {".csv", ".json", ".txt"}
+MODEL_EXTENSIONS = {".cbm", ".joblib", ".json", ".pt", ".txt", ".zip"}
 
 
 def inventory_outputs(output_root: Path) -> list[tuple[str, int, int]]:
@@ -33,7 +37,7 @@ def inventory_outputs(output_root: Path) -> list[tuple[str, int, int]]:
     """
     rows: list[tuple[str, int, int]] = []
     for subdir in sorted(output_root.iterdir()):
-        if not subdir.is_dir():
+        if not subdir.is_dir() or subdir.name.startswith("__"):
             continue
         files = [
             path
@@ -87,6 +91,11 @@ def collect_sync_pairs(
 ) -> tuple[list[tuple[Path, Path]], list[tuple[Path, int]]]:
     """Thu thap danh sach cap nguon-dich can dong bo va file qua lon.
 
+    Dong bo cac phan luu tru:
+    1. So lieu ket qua (results) -> 06_Results/
+    2. Tham so mo hinh (parameters) -> 05_Model/.../parameters/
+    3. Trong so mo hinh (saved_models) -> 05_Model/.../saved_models/
+
     Args:
         output_root (Path): Duong dan 05_Output_Cac_Notebook.
         submission_root (Path): Duong dan DS317_R11_Nhom03_HoSoNopDoAn.
@@ -102,16 +111,31 @@ def collect_sync_pairs(
     model_dest = submission_root / "05_Model"
     result_dest = submission_root / "06_Results"
 
+    # 1. Cac Runner song song v2 (07 va 08)
     for runner_name in RUNNER_DIRS:
         runner_dir = output_root / runner_name
+
+        # Trong so mo hinh
         _collect_dir_files(
             src_dir=runner_dir / "saved_models",
-            dst_dir=model_dest / runner_name,
+            dst_dir=model_dest / runner_name / "saved_models",
             max_bytes=max_bytes,
-            allowed_exts=None,
+            allowed_exts=MODEL_EXTENSIONS,
             sync_pairs=sync_pairs,
             skipped_large=skipped_large,
         )
+
+        # Tham so, sieu tham so va metadata cau hinh
+        _collect_dir_files(
+            src_dir=runner_dir / "parameters",
+            dst_dir=model_dest / runner_name / "parameters",
+            max_bytes=max_bytes,
+            allowed_exts=PARAMETER_EXTENSIONS,
+            sync_pairs=sync_pairs,
+            skipped_large=skipped_large,
+        )
+
+        # So lieu thuc nghiem do luong
         _collect_dir_files(
             src_dir=runner_dir / "results",
             dst_dir=result_dest / "Runner_v2",
@@ -121,6 +145,35 @@ def collect_sync_pairs(
             skipped_large=skipped_large,
         )
 
+    # 2. Baseline Ridge (04_DS317_04_Baseline_Ridge)
+    baseline_dir = output_root / "04_DS317_04_Baseline_Ridge"
+    if baseline_dir.exists():
+        _collect_dir_files(
+            src_dir=baseline_dir / "results",
+            dst_dir=result_dest / "Baseline_Ridge",
+            max_bytes=max_bytes,
+            allowed_exts=RESULT_EXTENSIONS,
+            sync_pairs=sync_pairs,
+            skipped_large=skipped_large,
+        )
+        _collect_dir_files(
+            src_dir=baseline_dir / "parameters",
+            dst_dir=model_dest / "04_Baseline_Ridge" / "parameters",
+            max_bytes=max_bytes,
+            allowed_exts=PARAMETER_EXTENSIONS,
+            sync_pairs=sync_pairs,
+            skipped_large=skipped_large,
+        )
+        _collect_dir_files(
+            src_dir=baseline_dir / "saved_models",
+            dst_dir=model_dest / "04_Baseline_Ridge" / "saved_models",
+            max_bytes=max_bytes,
+            allowed_exts=MODEL_EXTENSIONS,
+            sync_pairs=sync_pairs,
+            skipped_large=skipped_large,
+        )
+
+    # 3. Cac nguon du lieu kiem ke va BTVN tong hop
     extra_sources = (
         ("02_DS317_02_Kham_Pha_DAMA_26_Dac_Trung", "DAMA_26_Dac_Trung"),
         ("06_DS317_Tong_Hop_Xuat_So_Lieu_BTVN", "BTVN_TongHop"),

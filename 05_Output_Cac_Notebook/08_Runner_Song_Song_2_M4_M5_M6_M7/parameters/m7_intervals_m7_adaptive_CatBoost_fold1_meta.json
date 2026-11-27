@@ -1,0 +1,61 @@
+{
+  "exp_id": "m7_intervals_m7_adaptive",
+  "experiment_name": "M7_Intervals",
+  "variant_name": "M7_Adaptive",
+  "model_name": "CatBoost",
+  "fold": 1,
+  "feature_cols": [
+    "longitude",
+    "latitude",
+    "sog",
+    "cog_sin",
+    "cog_cos",
+    "heading_sin",
+    "heading_cos",
+    "length",
+    "width",
+    "draft",
+    "cargo",
+    "Area_Proxy",
+    "Volume_Proxy",
+    "status",
+    "vessel_type",
+    "Is_Tanker",
+    "berth_lon",
+    "berth_lat",
+    "Dist_To_Berth_NM",
+    "imputation_flag"
+  ],
+  "target_mode": "raw",
+  "asym_alpha": 0.0,
+  "conformal_q90": {
+    "q_low": -64.80061950683593,
+    "q_high": 80.03676452636707,
+    "cluster_q_low": [
+      -14.214845433831215,
+      -14.49100947380066,
+      -11.04568545818329,
+      -11.270352673530578,
+      -21.40001277923584,
+      -20.853557062149047,
+      -115.73878860473633,
+      -116.71077308654785
+    ],
+    "cluster_q_high": [
+      -7.09687104225159,
+      -8.117009162902832,
+      11.343910217285144,
+      9.672809696197502,
+      30.107734680175707,
+      55.52707481384276,
+      260.33580703735345,
+      144.2309776306152
+    ]
+  },
+  "model_file": "m7_intervals_m7_adaptive_CatBoost_fold1.cbm",
+  "model_format": "catboost_cbm",
+  "fit_medians": null,
+  "scaler_mean": null,
+  "scaler_std": null,
+  "base_score_mean_y_fit": null
+}

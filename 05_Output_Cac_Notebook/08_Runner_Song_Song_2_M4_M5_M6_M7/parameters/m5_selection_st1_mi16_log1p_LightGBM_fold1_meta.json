@@ -1,0 +1,37 @@
+{
+  "exp_id": "m5_selection_st1_mi16_log1p",
+  "experiment_name": "M5_Selection",
+  "variant_name": "ST1_mi16_log1p",
+  "model_name": "LightGBM",
+  "fold": 1,
+  "feature_cols": [
+    "longitude",
+    "latitude",
+    "sog",
+    "cog_sin",
+    "cog_cos",
+    "heading_sin",
+    "heading_cos",
+    "length",
+    "width",
+    "draft",
+    "cargo",
+    "Area_Proxy",
+    "Volume_Proxy",
+    "berth_lon",
+    "berth_lat",
+    "Dist_To_Berth_NM"
+  ],
+  "target_mode": "log1p",
+  "asym_alpha": 0.0,
+  "conformal_q90": {
+    "q_low": -50.00284118652343,
+    "q_high": 82.9891239166259
+  },
+  "model_file": "m5_selection_st1_mi16_log1p_LightGBM_fold1.txt",
+  "model_format": "lgbm_booster_txt",
+  "fit_medians": null,
+  "scaler_mean": null,
+  "scaler_std": null,
+  "base_score_mean_y_fit": null
+}

@@ -1,0 +1,16 @@
+﻿asset,found,path
+RAW_LABELED_PATH (Thô gốc),False,None
+SPLIT_ROOT (01/02/03),True,/kaggle/input/noaa-ais-2025-full-year-tin-x-l-nn-tng
+WEATHER_DIR (04_39cols),False,None
+SPLIT_MANIFEST,True,/kaggle/input/noaa-ais-2025-full-year-tin-x-l-nn-tng/noaa_ais_2025_trip_split_manifest.parquet
+IMPUTE_ARTIFACTS,True,/kaggle/input/noaa-ais-2025-full-year-tin-x-l-nn-tng/train_imputation_artifacts.json
+CP: Phần 1 RAW_PRE_SPLIT,False,Pass 1 Checkpoint
+CP: Phần 2 RAW18_SPLIT,False,Pass 2 Checkpoint
+CP: Phần 3 IMPUTE_BENCHMARK,False,Pass 2 Checkpoint
+CP: Phần 4A DAMA Thô (Raw),False,Pass 2 Raw DAMA
+CP: Phần 4B DAMA Bản 22,True,Pass 2 Base22 DAMA
+CP: Phần 5 TASK03 LightGBM,False,Pass 2 Checkpoint
+CP: Phần 6A Raw Complete-Case,False,Pass 1 Checkpoint
+CP: Phần 6B raw18,True,Phần 6B raw18 Done
+CP: Phần 6B base22,True,Phần 6B base22 Done
+CP: Phần 6B prep27,True,Phần 6B prep27 Done

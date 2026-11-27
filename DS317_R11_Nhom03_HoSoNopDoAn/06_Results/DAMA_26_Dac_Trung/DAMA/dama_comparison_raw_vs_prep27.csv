@@ -1,0 +1,14 @@
+dimension,raw18_pct,prep27_pct,delta_pct
+1a. Completeness (Record All),94.2348,96.9054,2.6706
+1b. Completeness (Record Non-Cargo),94.6955,97.3901,2.6946
+1c. Completeness (Field All),99.6181,99.6937,0.0756
+1d. Completeness (Field Non-Cargo),99.6269,99.7014,0.0745
+2a. Consistency (Kinematic),51.1433,99.987,48.8437
+2b. Consistency (Operational <=168h),40.3009,81.1977,40.8968
+3. Accuracy (Implied Spd >=1.62kn),50.3233,77.2877,26.9644
+4a. Timeliness (2025 Causal),99.9575,100.0,0.0425
+4b. Timeliness (168h Window),71.9671,81.2076,9.2405
+5. Validity (Physical Rules),49.6629,97.3901,47.7272
+6. Uniqueness (MMSI+Timestamp),99.6558,100.0,0.3442
+"Pearson r (Dist, Target_Hours) [Full]",0.26336,0.35068,0.08732
+"Spearman rho (Dist, Target_Hours) [Sample]",0.27402,0.62287,0.34885

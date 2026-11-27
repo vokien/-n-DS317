@@ -1,0 +1,3 @@
+﻿version,model,N_Test,MAE_h,RMSE_h,R2,MAPE_pct,SMAPE_pct,Asym_L1_2_0,Asym_L2_2_5,Early_Pred_pct,Bias_h
+03_ban_tien_xu_ly_27_thuoc_tinh,Dummy_Median,24192474,129.2013,293.4503,-0.1764,322.65,101.5,250.6157,215009.2192,59.19,-113.6276
+03_ban_tien_xu_ly_27_thuoc_tinh,Ridge_Streaming,24192474,115.2655,271.4764,-0.0068,156.47,97.76,216.833,182401.3762,59.02,-87.8694

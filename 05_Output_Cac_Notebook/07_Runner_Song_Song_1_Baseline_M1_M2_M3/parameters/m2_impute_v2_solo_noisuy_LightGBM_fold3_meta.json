@@ -1,0 +1,41 @@
+{
+  "exp_id": "m2_impute_v2_solo_noisuy",
+  "experiment_name": "M2_Impute",
+  "variant_name": "V2_Solo_NoiSuy",
+  "model_name": "LightGBM",
+  "fold": 3,
+  "feature_cols": [
+    "longitude",
+    "latitude",
+    "sog",
+    "cog_sin",
+    "cog_cos",
+    "heading_sin",
+    "heading_cos",
+    "length",
+    "width",
+    "draft",
+    "cargo",
+    "Area_Proxy",
+    "Volume_Proxy",
+    "status",
+    "vessel_type",
+    "Is_Tanker",
+    "berth_lon",
+    "berth_lat",
+    "Dist_To_Berth_NM",
+    "imputation_flag"
+  ],
+  "target_mode": "raw",
+  "asym_alpha": 0.0,
+  "conformal_q90": {
+    "q_low": -42.50973663330076,
+    "q_high": 986.8049544334382
+  },
+  "model_file": "m2_impute_v2_solo_noisuy_LightGBM_fold3.txt",
+  "model_format": "lgbm_booster_txt",
+  "fit_medians": null,
+  "scaler_mean": null,
+  "scaler_std": null,
+  "base_score_mean_y_fit": null
+}

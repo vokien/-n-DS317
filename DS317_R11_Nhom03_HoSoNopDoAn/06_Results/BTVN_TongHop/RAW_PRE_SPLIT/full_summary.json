@@ -1,0 +1,16 @@
+{
+  "input_file": "/kaggle/input/noaa-ais-2025-full-year-tin-x-l-nn-tng/noaa_ais_2025_raw_labeled.parquet",
+  "raw_rows_total": 320776922,
+  "filtered_rows_total": 90586699,
+  "unique_mmsi": 11632,
+  "target_mismatch_gt_5s": 0,
+  "pearson_raw": {
+    "n": 282323914,
+    "r": 0.280732489013404
+  },
+  "pearson_filtered": {
+    "n": 90586699,
+    "r": 0.7771583432345274
+  },
+  "elapsed_sec": 7415.56
+}

@@ -1,0 +1,5 @@
+version,scope,rows,completeness_rec_all_pct,completeness_rec_non_cargo_pct,completeness_field_all_pct,completeness_field_non_cargo_pct,consistency_kinematic_pct,consistency_operational_pct,accuracy_kinematic_pct,pearson_dist_target_r,timeliness_2025_causal_pct,timeliness_168h_window_pct,validity_pct,uniqueness_pct,duplicate_rows
+PREP_27,Q1,18486710,99.5418,100.0,99.983,100.0,100.0,91.1192,100.0,0.75603,100.0,91.1192,100.0,100.0,0
+PREP_27,Q2,27906228,96.3739,96.8968,99.6294,99.6353,99.9916,78.3713,72.3934,0.33163,100.0,78.3791,96.8968,100.0,0
+PREP_27,Q3,26413447,96.0996,96.4101,99.6011,99.5998,99.9708,78.5666,72.4095,0.36659,100.0,78.5886,96.4101,100.0,0
+PREP_27,Q4,24192474,96.3835,97.0347,99.6479,99.6605,99.9896,79.749,70.9036,0.31305,100.0,79.7558,97.0347,100.0,0

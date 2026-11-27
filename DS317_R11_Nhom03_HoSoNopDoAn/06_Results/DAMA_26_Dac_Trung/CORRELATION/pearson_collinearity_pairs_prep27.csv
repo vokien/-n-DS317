@@ -1,0 +1,11 @@
+feature_1,feature_2,pearson_r
+longitude,berth_lon,0.92351
+cog_sin,heading_sin,0.96022
+cog_cos,heading_cos,0.95829
+vessel_type,Is_Tanker,0.86456
+length,width,0.86428
+length,Area_Proxy,0.94453
+length,Volume_Proxy,0.88265
+width,Area_Proxy,0.94432
+width,Volume_Proxy,0.88798
+Area_Proxy,Volume_Proxy,0.95771

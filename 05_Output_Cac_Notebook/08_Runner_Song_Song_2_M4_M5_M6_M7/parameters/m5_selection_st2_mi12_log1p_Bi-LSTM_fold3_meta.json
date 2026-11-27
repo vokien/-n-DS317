@@ -1,0 +1,77 @@
+{
+  "exp_id": "m5_selection_st2_mi12_log1p",
+  "experiment_name": "M5_Selection",
+  "variant_name": "ST2_mi12_log1p",
+  "model_name": "Bi-LSTM",
+  "fold": 3,
+  "feature_cols": [
+    "longitude",
+    "latitude",
+    "sog",
+    "heading_sin",
+    "heading_cos",
+    "length",
+    "draft",
+    "Area_Proxy",
+    "Volume_Proxy",
+    "berth_lon",
+    "berth_lat",
+    "Dist_To_Berth_NM"
+  ],
+  "target_mode": "log1p",
+  "asym_alpha": 0.0,
+  "conformal_q90": {
+    "q_low": -37.668184280395494,
+    "q_high": 981.8674980163562
+  },
+  "model_file": "m5_selection_st2_mi12_log1p_Bi-LSTM_fold3.pt",
+  "model_format": "pytorch_state_dict",
+  "fit_medians": {
+    "longitude": -83.98743438720703,
+    "latitude": 33.244205474853516,
+    "sog": 11.699999809265137,
+    "heading_sin": -0.0871560275554657,
+    "heading_cos": 0.06975656747817993,
+    "length": 199.0,
+    "draft": 8.899999618530273,
+    "Area_Proxy": 6210.0,
+    "Volume_Proxy": 56320.0,
+    "berth_lon": -90.08875274658203,
+    "berth_lat": 33.74552917480469,
+    "Dist_To_Berth_NM": 181.44049072265625
+  },
+  "scaler_mean": [
+    -92.47978210449219,
+    33.8336296081543,
+    11.463845252990723,
+    -0.06830606609582901,
+    0.05951441079378128,
+    213.59521484375,
+    9.064813613891602,
+    7389.1591796875,
+    73668.8671875,
+    -93.57022094726562,
+    35.04716110229492,
+    333.52130126953125
+  ],
+  "scaler_std": [
+    19.703622817993164,
+    7.478298187255859,
+    3.9392199516296387,
+    0.6918280720710754,
+    0.7163564562797546,
+    64.84901428222656,
+    2.408231019973755,
+    3971.29248046875,
+    54607.55078125,
+    18.280941009521484,
+    7.2407355308532715,
+    384.4088134765625
+  ],
+  "base_score_mean_y_fit": null,
+  "pytorch_arch": "Bi-LSTM",
+  "pytorch_kwargs": {
+    "in_dim": 12
+  },
+  "seq_len": 12
+}

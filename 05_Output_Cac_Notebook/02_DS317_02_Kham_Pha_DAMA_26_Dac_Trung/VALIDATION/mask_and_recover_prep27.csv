@@ -1,0 +1,4 @@
+column,masked_n,hierarchy_MAE,hierarchy_RMSE,global_median_MAE,global_median_RMSE
+length,12674,0.1095,2.5652,51.9783,69.6679
+width,12631,0.023,0.6394,6.6574,9.1691
+draft,12553,0.3257,0.9452,2.0007,2.587
