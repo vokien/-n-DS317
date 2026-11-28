@@ -26,11 +26,11 @@
 
 ---
 
-## 3. DANH MỤC SẢN PHẨM CẦN BÀN GIAO
-- [ ] Bản thảo Chương 2 (`Chuong_02_Du_Lieu_Va_Do_Luong_DAMA.docx` hoặc `.md`).
-- [ ] Bản thảo phần Module M3 trong Chương 5.
-- [ ] Báo cáo rà soát tái lập (`Kiem_Tra_Tai_Lap_Code.md`).
-- [ ] Nội dung/ảnh Phần 3 Slide gửi Trần Hồng Lĩnh.
+## 3. DANH MỤC SẢN PHẨM CẦN BÀN GIAO (ĐÃ HOÀN THÀNH 100%)
+- [x] Bản thảo Chương 3: [`Chuong_03_Du_Lieu_Va_Do_Luong_DAMA.md`](./Chuong_03_Du_Lieu_Va_Do_Luong_DAMA.md) và [`Chuong_03_Du_Lieu_Va_Do_Luong_DAMA.docx`](./Chuong_03_Du_Lieu_Va_Do_Luong_DAMA.docx).
+- [x] Bản thảo phần Module M3 trong Chương 5: [`Chuong_05_Phan_Module_M3_Feature_Engineering.md`](./Chuong_05_Phan_Module_M3_Feature_Engineering.md) và [`Chuong_05_Phan_Module_M3_Feature_Engineering.docx`](./Chuong_05_Phan_Module_M3_Feature_Engineering.docx).
+- [x] Báo cáo rà soát tái lập mã nguồn: [`Kiem_Tra_Tai_Lap_Code.md`](./Kiem_Tra_Tai_Lap_Code.md).
+- [x] Nội dung/ảnh Phần 3 Slide gửi Trần Hồng Lĩnh: [`Noi_Dung_Slide_Phan_03_Tai_San_Du_Lieu_Va_DAMA.md`](./Noi_Dung_Slide_Phan_03_Tai_San_Du_Lieu_Va_DAMA.md).
 
 ---
 
